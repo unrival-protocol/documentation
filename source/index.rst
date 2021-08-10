@@ -11,6 +11,12 @@ Unrival Protocol
    :caption: Contents:
 
    gherkin
+   modules
+
+.. autosummary::
+   :toctree: _autosummary
+   :template: custom-module-template.rst
+   :recursive:
 
 
 Indices and tables
