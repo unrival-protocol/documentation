@@ -4,11 +4,12 @@ Features
 .. toctree::
     :maxdepth: 4
 
-    Features.Agent.feature-file
-    Features.Claim.feature-file
-    Features.Judgment.feature-file
-    Features.Name.feature-file
-    Features.Namespace.feature-file
-    Features.Object.feature-file
-    Features.Proof.feature-file
-    Features.Universe.feature-file
+    Features.Agent.feature-file.rst
+    Features.Claim.feature-file.rst
+    Features.Judgment.feature-file.rst
+    Features.Name.feature-file.rst
+    Features.Namespace.feature-file.rst
+    Features.Object.feature-file.rst
+    Features.Proof.feature-file.rst
+    Features.Server.feature-file.rst
+    Features.Universe.feature-file.rst

@@ -10,6 +10,7 @@ Unrival Protocol
    :maxdepth: 2
    :caption: Contents:
 
+   whitepaper
    gherkin
    modules
 
