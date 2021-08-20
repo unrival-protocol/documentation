@@ -18,24 +18,29 @@
 :gherkin-feature-keyword:`Feature:` :gherkin-feature-content:`Namespace`
 ========================================================================
 
-:gherkin-scenario-keyword:`Scenario:` :gherkin-scenario-content:`create a namespace`
-------------------------------------------------------------------------------------
+:gherkin-scenario-keyword:`Scenario:` :gherkin-scenario-content:`create base namespace`
+---------------------------------------------------------------------------------------
 
-| :gherkin-step-keyword:`Given` a name
-| :gherkin-step-keyword:`Then` a namespace can be created from this name
+| :gherkin-step-keyword:`Given` the root proof
+| :gherkin-step-keyword:`And` the namespace proof
+| :gherkin-step-keyword:`And` a namespace containing the name object
+| :gherkin-step-keyword:`And` a universe containing this namespace
+| :gherkin-step-keyword:`And` an interpretation
+| :gherkin-step-keyword:`And` parts containing these objects
+| :gherkin-step-keyword:`And` an object is created from these parts
+| :gherkin-step-keyword:`Then` it can be read and parsed
+| :gherkin-step-keyword:`And` it can be proved
 
-:gherkin-scenario-keyword:`Scenario:` :gherkin-scenario-content:`create a nested namespace`
--------------------------------------------------------------------------------------------
+::
 
-| :gherkin-step-keyword:`Given` a namespace
-| :gherkin-step-keyword:`And` a name
-| :gherkin-step-keyword:`Then` a namespace can be created from this name that inherits from this namespace
+    Scenario\: subscribe to a namespace
 
-:gherkin-scenario-keyword:`Scenario:` :gherkin-scenario-content:`subscribe to a namespace`
-------------------------------------------------------------------------------------------
+      Given an agent
 
-| :gherkin-step-keyword:`Given` an agent
-| :gherkin-step-keyword:`And` a namespace
-| :gherkin-step-keyword:`When` this agent subscribes to this namespace
-| :gherkin-step-keyword:`Then` this agent is in the namespace's subscribers list
+      And a namespace
+
+      When this agent subscribes to this namespace
+
+      Then this agent is in the namespace's subscribers list
+
 

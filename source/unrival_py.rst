@@ -20,6 +20,14 @@ unrival\_py.goal module
    :undoc-members:
    :show-inheritance:
 
+unrival\_py.interpretation module
+---------------------------------
+
+.. automodule:: unrival_py.interpretation
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 unrival\_py.namespace module
 ----------------------------
 
@@ -32,6 +40,22 @@ unrival\_py.outcome module
 --------------------------
 
 .. automodule:: unrival_py.outcome
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unrival\_py.proof module
+------------------------
+
+.. automodule:: unrival_py.proof
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unrival\_py.universe module
+---------------------------
+
+.. automodule:: unrival_py.universe
    :members:
    :undoc-members:
    :show-inheritance:

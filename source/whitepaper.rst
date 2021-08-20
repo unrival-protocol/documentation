@@ -4,20 +4,16 @@ Whitepaper
 
     :Author: David Joseph
 
-.. contents::
-
 
 
 Abstract
 --------
 
-Unrival is a protocol that enables users (i.e. agents) to cooperate more effectively on accomplishing common goals.  It does so by:
+Unrival is a protocol that enables its users (agents) to cooperate more effectively on accomplishing common goals.  Agents communicate their intentions via a set of shared objects, which constitute composable, bottom-up building blocks for maintaining complex social and economic relationships founded on mutual understanding and accountability.
 
-1) enabling agents to communicate their intentions via a set of shared concepts, which constitute composable, bottom-up building blocks for maintaining complex social and economic relationships founded on mutual understanding and accountability.
+Any thing whose existence or validity can be confirmed or denied by third parties is an eligible Unrival object.  This may leaves out some things, like agents' internal states, or inherentily unfalsifiable claims, but most things are included.  In particular, those things with compromised credibility as of late, upon which many people may nonetheless come to depend -- like political parties, medicines, cryptocurrencies, advertisements, etc. -- are eligible objects.  Thus, the credibility of these things can be asserted by their proponents, and confirmed or denied by the agents who experience them.
 
-2) minimizing asymmetric information.
-
-This protocol can be implemented using a variety of technologies, but some are more conducive to the goal of enabling efficient cooperation than others.  One such implementation, which seeks to mitigate certain failure modes associated with some technological implementations, will be described in the following.  
+The protocol itself can be stated as `a set of guidelines <protocol.html>`_ that are open to interpretation as far as technological implementation goes.  An implementation seeking to mitigate the failure modes associated with some technological modalities will be described in the following, but it is by no means the only possible interpretation.
 
 Overview
 --------
@@ -29,7 +25,7 @@ Unrival seeks to pave a road to cooperation when defection seems, in the realest
 
 But, where agents stand to benefit maximally by cooperating, shouldn't they be doing so already?  This may seem paradoxical, but not always.  Think of Mutually Assured Destruction: although individual nations may prefer all-around nuclear disarmament, they'd be crazy (by this calculus) to adopt this strategy - doing so would only give other nations a leg up in the struggle for international dominance, and would be very unlikely to bring about the optimaly outcome.  Thus, in a nuclear-armed world, nations are trapped in a *race to the bottom*.
 
-In short, our problem boils down to: *how can we cooperate when we are stuck in rivalrous equilibria*?  Unrival is an attempt at a technological answer to this question.  Our answer starts with a set of shared concepts, use of which lowers the coordination costs (e.g. the requisite energy, the inherent risk, and so on) associated with cooperating.  This has the effect of putting maximally beneficial outcomes within agents' reach.  
+In short, our problem boils down to: *how can we cooperate when we are stuck in rivalrous equilibria*?  Unrival is an attempt at a technological answer to this question.  Our answer starts with a set of shared concepts, the use of which lowers the coordination costs (e.g. the requisite energy, the inherent risk, and so on) associated with cooperating.  This has the effect of putting maximally beneficial outcomes within agents' reach.  Thus, agents using Unrival outcompete those that don't.  Although selfish individuals beat non-selfish individuals, non-selfish groups beat selfish groups, according to `multi-level selection theory <https://en.wikipedia.org/wiki/Group_selection#Multilevel_selection_theory>`_.
 
 The Stag Hunt
 ~~~~~~~~~~~~~
@@ -44,30 +40,22 @@ This leads to a paradoxical situation in which *acting rationally* means *settli
 
 .. image:: ./static/images/stag_hunt.png
 
+**Key Takeaways**
 
-1. there's a paradoxical situation
+- There exist paradoxical situations in which self-interested agents choose strategies leading to suboptimal outcomes.
 
-2. there's an attempt to cooperate
-   a. the attempt brings problems
-   b. the problems are continual and can never be solved
-   c. nonetheless we must keep trying - this resembles navigation
-   d. we need an organic, evolving navigation protocol
+- Should agents attempt to cooperate, they are confronted by some difficulties:     
+
+  - Communication may be impossible or so costly that, should it lead to optimal outcomes, nonetheless offsets the benefit such that agents choose not to communicate.  Besides the costs of physical media, like smoke signals and fiber optics, this costliness may materialize in:
+
+  - The ability of agents to deceive one another, whereby they forego an ideal outcome but gain the upper hand over their rivals.
+
+Thus, there are no simple solutions to coordination problems, as proposed solutions (e.g. better, faster communication channels) often enable more efficient deception for any added benefit.  Unrival introduces a meta-game for overcoming these difficulties.
 
 The Meta-Game
 ~~~~~~~~~~~~~
 
-One thing is certain: it really is the most rational choice for hunters to hunt for hares - *within the confines of the staghunt game*.  But games aren't real life; their rules are not necessarily the only relevant ones.  It may also be possible to play a meta-game that can improve outcomes within the given game.
-
-The way to play the meta game is simple:
-
-For Individuals
-^^^^^^^^^^^^^^^
-
-The Individual Protocol is described in a different paper.
-(In short: create small amounts of todo items -- these are like the steam that powers the Unrival engine.)
-
-For Groups
-^^^^^^^^^^
+One thing is certain: it really is the most rational choice for hunters to hunt for hares - *within the confines of the staghunt game*.  But games aren't real life; their rules don't necessarily reflect the full range of choices available to agents.  It may also be possible to play a meta-game that can improve outcomes within the given game.
 
 The subject of this paper is a group protocol for playing meta-games.  Such a protocol should confer enough benefit on its users to outweigh any associated costs associated with its use.
 
@@ -112,18 +100,20 @@ Suppose a developer is passionate about *todo lists*, and wants to make a way fo
 
 - make this type *claimable* - i.e.
 
-The Goal Engine (aka Super App)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The Goal Engine
+~~~~~~~~~~~~~~~
 
 1. enables access to non-rivalrous resources
 
-The Universal Feedback System
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Universal Feedback
+~~~~~~~~~~~~~~~~~~
 
-Protocol
---------
+Objects
+-------
 
-As mentioned, Unrival is based on concepts that improve the ability of agents to cooperate.  It accomplishes this by giving agents a language for clarifying their intentions and finding common ground in these intentions with those of others.  This language is based on two foundational concepts: *proofs* and *objects*.  A **proof** is a computer program that checks whether some **object** has certain properties.
+As mentioned, Unrival is based on concepts that improve the ability of agents to cooperate.  It accomplishes this by giving agents a language for finding common ground with others.  Underlying this is the assumption that agents may err or deceive while communicating about objects (as certain auto mechanics are won't to do when informing customers which repairs their cars will need, or used car dealers as they unload their lemons on the unsuspecting.  Most industries are full of examples).  Therefore, common ground must be built on trust, and objects must have this baked into them.
+
+Unrival can be seen as a way of making sure objects are what they say they are.  In order to accomplish this, we make any objects amenable to verification.  Objects reference *proofs* and/or *claims*, either directly or indirectly, and these must be falsifiable.  A **proof** is a computer program that checks whether some object has certain properties.  A **claim** is like a proof that requires input from human agents, usually because the satisfiability criteria are subjective.  For example, a proof may require some integer stored at address X to be divisible by 3, while a claim can be made that this integer is a lucky number.
 
 Proof
 ^^^^^

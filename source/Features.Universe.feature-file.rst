@@ -18,6 +18,17 @@
 :gherkin-feature-keyword:`Feature:` :gherkin-feature-content:`Universe`
 =======================================================================
 
+:gherkin-scenario-keyword:`Scenario:` :gherkin-scenario-content:`create base universe`
+--------------------------------------------------------------------------------------
+
+| :gherkin-step-keyword:`Given` a universe only containing the base namespace
+| :gherkin-step-keyword:`And` the universe proof
+| :gherkin-step-keyword:`And` a namespace containing the name universe
+| :gherkin-step-keyword:`And` an interpretation whereby universe inherits from object
+| :gherkin-step-keyword:`And` an object is created from these parts
+| :gherkin-step-keyword:`Then` it can be read and parsed
+| :gherkin-step-keyword:`And` it can be proved
+
 :gherkin-scenario-keyword:`Scenario:` :gherkin-scenario-content:`get an address for a namespace`
 ------------------------------------------------------------------------------------------------
 

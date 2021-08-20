@@ -11,8 +11,11 @@ Unrival Protocol
    :caption: Contents:
 
    whitepaper
+   protocol
    gherkin
    modules
+   step_glossary
+   
 
 .. autosummary::
    :toctree: _autosummary
