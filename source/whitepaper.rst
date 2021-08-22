@@ -117,11 +117,15 @@ We'll now shift our focus from problems to some historical attempts at solutions
 
   - Goals, whether their subscribers are conscious of them or not, already underlie every action we perform.  Many subpar group action-performances are due to the inability of group members to unite under the same goal, such that their individual efforts may be combined, instead of dissipating in directionlessness.
 
-To make this last point more concrete, imagine what the *Internet of TODO lists* might look like.  First of all, the act of TODO list creation has been turned from monologue to dialogue, so a mechanism for group decision making is a necessary pre-requisite (and simulataneously a side-effect, which is common in complex systems).
+To make this last point more concrete, imagine what the *Internet of TODO lists* might look like:
 
-It may be necessary to provide some motivation for such a curious use of networking technology.  If we start with the end-result, it's conceivable that this sort of thing could be quite advantageous.  A single, top-level TODO list could exist for a group of agents of arbitrary size, and it could represent these agents' common goals.  TODO items could be nested TODO lists themselves.  All lists and items could be curated through a combination of meritocratic and democratic selection processes.  Given such an application, and enough users involved in curation, it's conceivable that the inadequate responses to which we alluded in `The Meta-Crisis`_ could be the exception rather than the rule.
+The act of TODO list creation will have been turned from monologue to dialogue, for which a mechanism for group decision making is both a pre-requisite and a side-effect (which is a feature common to complex systems, and not a contradiction as it may seem).
+
+First, It may be necessary to provide some motivation for such a curious use of networking technology.  If we start with the end-result, it's conceivable that this sort of thing could be quite advantageous.  A single, top-level TODO list could exist for a group of agents of arbitrary size, and it could represent these agents' common goals.  TODO items could be nested TODO lists themselves.  All lists and items could be curated through a combination of meritocratic and democratic selection processes.  Given such an application, and enough users involved in curation, it's conceivable that the inadequate responses to which we alluded in `The Meta-Crisis`_ could be the exception rather than the rule.
 
 But how do we get there?  How are TODO items to be prioritized?  Who can interact with them?  All of these rules can be enforced by `Proof`_.  To illustrate:
+
+
 *(The following is written in natural language for sake of comprehensibility, but code examples are readily available)*.
 
 .. code:: org-mode

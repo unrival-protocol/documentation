@@ -3,9 +3,9 @@
 #+OPTIONS: toc:nil
 
 * Abstract
-Unrival is a protocol that enables its users (agents) to cooperate more effectively on accomplishing common goals, or to become aware of them when surface-level conflict appears more imminent.  Agents communicate their intentions via a set of shared objects, which constitute composable, bottom-up building blocks for maintaining complex social and economic relationships founded on mutual understanding and accountability.  In addition, these objects are not just mental constructs - they have a physical existence as data that agents interface with.
+Unrival is a protocol that enables its users (agents) to cooperate more effectively on accomplishing common goals, or to become aware of them when surface-level conflicts appear more imminent.  Agents communicate their intentions via a set of shared objects, which constitute composable, bottom-up building blocks for maintaining complex social and economic relationships founded on mutual understanding and accountability.  In addition, these objects are not just mental constructs - they have a physical existence as data that agents may interface with via client applications.
    
-Any thing whose existence or validity can be confirmed or denied by third parties (including computer programs) is an eligible Unrival object.  This may leave out some things, such as first-person experiences, inherently unfalsifiable claims, and so on, but most things are included;  in particular, those things with compromisedy credibility as of late, upon which many people may nonetheless come to depend, like:
+Any thing whose existence or validity can be confirmed or denied by third parties (including computer programs) is an eligible Unrival object.  This may leave out some things, such as first-person experiences, inherently unfalsifiable claims, and so on, but most things are included;  in particular, those things with compromised credibility as of late, upon which many people may nonetheless come to depend, like:
 - political parties
 - medicines
 - cryptocurrencies
@@ -35,7 +35,7 @@ The following scenario was introduced by Rousseau in his [[https://en.wikipedia.
 #+END_QUOTE
 This leads to a paradoxical situation in which /acting rationally/ means /settling for a sub-optimal outcome/.  Although both hunters would rather come home with a stag, they are forced to hunt for hares - otherwise they could be left with nothing.
 
-[[./static/images/stag_hunt.png]]
+v[[./static/images/stag_hunt.png]]
 
 *Key Takeaways*
 - There exist paradoxical situations in which self-interested agents choose strategies leading to suboptimal outcomes.
@@ -79,11 +79,15 @@ We'll now shift our focus from problems to some historical attempts at solutions
   - Clarity regarding goals is a missing element of many group endeavors, and an easy way to achieve this would be readily adopted by many.
   - Goals, whether their subscribers are conscious of them or not, already underlie every action we perform.  Many subpar group action-performances are due to the inability of group members to unite under the same goal, such that their individual efforts may be combined, instead of dissipating in directionlessness.
 
-To make this last point more concrete, imagine what the /Internet of TODO lists/ might look like.  First of all, the act of TODO list creation has been turned from monologue to dialogue, so a mechanism for group decision making is a necessary pre-requisite (and simulataneously a side-effect, which is common in complex systems).
+To make this last point more concrete, imagine what the /Internet of TODO lists/ might look like:
 
-It may be necessary to provide some motivation for such a curious use of networking technology.  If we start with the end-result, it's conceivable that this sort of thing could be quite advantageous.  A single, top-level TODO list could exist for a group of agents of arbitrary size, and it could represent these agents' common goals.  TODO items could be nested TODO lists themselves.  All lists and items could be curated through a combination of meritocratic and democratic selection processes.  Given such an application, and enough users involved in curation, it's conceivable that the inadequate responses to which we alluded in [[*The Meta-Crisis][the Meta-Crisis]] could be the exception rather than the rule.
+The act of TODO list creation will have been turned from monologue to dialogue, for which a mechanism for group decision making is both a pre-requisite and a side-effect (which is a feature common to complex systems, and not a contradiction as it may seem).
+
+First, It may be necessary to provide some motivation for such a curious use of networking technology.  If we start with the end-result, it's conceivable that this sort of thing could be quite advantageous.  A single, top-level TODO list could exist for a group of agents of arbitrary size, and it could represent these agents' common goals.  TODO items could be nested TODO lists themselves.  All lists and items could be curated through a combination of meritocratic and democratic selection processes.  Given such an application, and enough users involved in curation, it's conceivable that the inadequate responses to which we alluded in [[*The Meta-Crisis][the Meta-Crisis]] could be the exception rather than the rule.
 
 But how do we get there?  How are TODO items to be prioritized?  Who can interact with them?  All of these rules can be enforced by [[*Proof][proofs]].  To illustrate:
+
+
 /(The following is written in natural language for sake of comprehensibility, but code examples are readily available)/.
 #+begin_src org-mode
 ,* A todo list is associated with an interpretation.
@@ -93,7 +97,7 @@ But how do we get there?  How are TODO items to be prioritized?  Who can interac
 ,* A todo item has an interface that allows it to be created, edited, or deleted.
 ,* Only agents subscribing to the interpretation with which it is associated by perform these actions.
 #+end_src
-These conditions describe properties of data that client applications are able to consume.  
+These conditions describe properties of data consumable by client applications.
 
 One concept central to Unrivyal is the *goal*, which helps agents decide which actions to take, as well as ensure that individual efforts can be effectively combined into a group effort more potent than the sum of its parts.
 
