@@ -66,14 +66,14 @@ Each of the above crises (indeed, any crisis) is undergirded by a crisis of anot
 
 ** The Internet of Goals
 
-We'll now shift our focus from problems to some historical attempts at solutions, and Unrival's place among them.
+We'll now shift our focus from problems to some historical attempts at solutions, and how Unrival intends to fit among them.
    
 - The internet turned computing from a /monologue/ to a /dialogue/ (or a whole host of dialogues).
 - The web did the same for content creation, and can be considered the /internet of HTML websites/.
 - We sometimes refer to new technologies as the /internet of X/, where X purportedly does for some subject what the internet did for computing - that is, democratize, interconnect, and so on.
 - For example, Bitcoin has been called the [[https://theinternetofmoney.info/][the Internet of Money]], and has been claimed to do for money what the web did for humanly-digestible text.
-- The subjects of such claims (and the claims themselves) are eligible to be Unrival objects.
-- The competitive advantage of Unrival use may confer attempts at creating /internets of X/, where X is an arbitrary object, with growth via network effects.  Turning monologues into dialogues is only possible when the conversation is compelling enough to attract a host of participants.
+- The subjects of such claims (and the claims themselves) can be turned into Unrival objects.
+- The competitive advantage therein may confer /internets of X/ using Unrival, where X is an arbitrary object, with significant growth via network effects.  Turning monologues into dialogues is only possible when the conversation is compelling enough to attract a host of participants.
 - Naturally, not all objects have the potential to inspire dialogue with significant growth factor.
 - One object in particular that may have this potential is the [[*Goal][goal]].  This is because:
   - Clarity regarding goals is a missing element of many group endeavors, and an easy way to achieve this would be readily adopted by many.
