@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-08-14 Sat 08:06 -->
+<!-- 2021-08-22 Sun 11:19 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Protocol</title>
@@ -220,21 +220,31 @@
 <div id="content">
 <h1 class="title">Protocol</h1>
 <ol class="org-ol">
-<li>An Unrival object satisfies all of the following conditions:</li>
-<li>An  object is uniquely determined by an address.</li>
-<li>A proof is an object which, given another object, is either satisfied or not satisfied by this other object.</li>
-<li>An object may reference a proof.</li>
-<li>If an object contains a proof, it must satisfy this proof.</li>
-<li>An ancestor is an object from which another object inherits, such that the inheriting object must satisfy any proofs it references as well as any proofs referenced by its ancestor(s).</li>
-<li>A name is a possibly non-unique label by which an object can be called.</li>
+<li>An Unrival object (hereinafter simply referred to as <i>an object</i>) satisfies all of the following conditions:</li>
+</ol>
+<div class="details" id="orga6603b1">
+<div class="org-src-container">
+<pre class="src src-elisp"><span style="color: #8c8c8c;">(</span>message <span style="color: #a3be8c;">"Dummy code"</span><span style="color: #8c8c8c;">)</span>
+</pre>
+</div>
+
+</div>
+<ol class="org-ol">
+<li>An object is uniquely determined by an address.</li>
+<li>A name is a possibly non-unique, humanly-readable way of referring to an object.</li>
+<li>An interpretation is a hierarchical ordering of names.</li>
+<li>A universe is a mapping from interpretations to addresses.</li>
+<li>A proof is an object which, given another object and within a certain universe, is either satisfied by or not satisfied by this other object.</li>
+<li>If an object references a proof, it must satisfy this proof.</li>
+<li>An ancestor is an object from which another object inherits, such that the inheriting object must satisfy any proofs referenced by its ancestor(s) in addition to those it references directly.</li>
 <li>A namespace is a set of names that can be considered equivalent for some purpose.</li>
-<li>Let a universe be a mapping from namespaces to</li>
-<li>Furthermore, let a namespace be an object associated with (contained by) another object that determines an ordered set of ancestors whose respective proofs the containing object must satisfy.  In other words, a namespace determines a succession of ancestors.</li>
+<li>An object must reference a universe in which any ancestors it references may be interpreted.</li>
+<li>If an object references a namespace,</li>
 </ol>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: David Joseph</p>
-<p class="date">Created: 2021-08-14 Sat 08:06</p>
+<p class="date">Created: 2021-08-22 Sun 11:19</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

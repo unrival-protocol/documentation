@@ -6,24 +6,30 @@ Protocol
 
 .. contents::
 
-1. An Unrival object satisfies all of the following conditions:
+1) An Unrival object (hereinafter simply referred to as *an object*) satisfies all of the following conditions:
 
-2. An  object is uniquely determined by an address.
+.. details::
 
-3. A proof is an object which, given another object, is either satisfied or not satisfied by this other object.
+    .. code:: elisp
 
-4. An object may reference a proof.
+        (message "Dummy code")
 
-5. If an object references a proof, it must satisfy this proof.
+1) An object is uniquely determined by an address.
 
-6. An ancestor is an object from which another object inherits, such that the inheriting object must satisfy any proofs referenced by its ancestor(s) in addition to those it references directly.
+2) A name is a possibly non-unique, humanly-readable way of referring to an object.
 
-7. A name is a possibly non-unique label by which an object can be called.
+3) An interpretation is a hierarchical ordering of names.
 
-8. A namespace is a set of names that can be considered equivalent for some purpose.
+4) A universe is a mapping from interpretations to addresses.
 
-9. A universe:
+5) A proof is an object which, given another object and within a certain universe, is either satisfied by or not satisfied by this other object.
 
-   - assigns a hierarchy to a set of namespaces
+6) If an object references a proof, it must satisfy this proof.
 
-   - maps each namespace to an address
+7) An ancestor is an object from which another object inherits, such that the inheriting object must satisfy any proofs referenced by its ancestor(s) in addition to those it references directly.
+
+8) A namespace is a set of names that can be considered equivalent for some purpose.
+
+9) An object must reference a universe in which any ancestors it references may be interpreted.
+
+10) If an object references a namespace,

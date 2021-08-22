@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-08-20 Fri 12:20 -->
+<!-- 2021-08-22 Sun 10:39 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Whitepaper</title>
@@ -220,46 +220,59 @@
 <div id="content">
 <h1 class="title">Whitepaper</h1>
 
-<div id="outline-container-org03d4b4a" class="outline-2">
-<h2 id="org03d4b4a">Abstract</h2>
-<div class="outline-text-2" id="text-org03d4b4a">
+<div id="outline-container-org6711358" class="outline-2">
+<h2 id="org6711358">Abstract</h2>
+<div class="outline-text-2" id="text-org6711358">
 <p>
-Unrival is a protocol that enables its users (agents) to cooperate more effectively on accomplishing common goals.  Agents communicate their intentions via a set of shared objects, which constitute composable, bottom-up building blocks for maintaining complex social and economic relationships founded on mutual understanding and accountability.
+Unrival is a protocol that enables its users (agents) to cooperate more effectively on accomplishing common goals, or to become aware of them when surface-level conflict appears more imminent.  Agents communicate their intentions via a set of shared objects, which constitute composable, bottom-up building blocks for maintaining complex social and economic relationships founded on mutual understanding and accountability.  In addition, these objects are not just mental constructs - they have a physical existence as data that agents interface with.
 </p>
 
 <p>
-Any thing whose existence or validity can be confirmed or denied by third parties is an eligible Unrival object.  This may leaves out some things, like agents' internal states, or inherentily unfalsifiable claims, but most things are included.  In particular, those things with compromised credibility as of late, upon which many people may nonetheless come to depend &#x2013; like political parties, medicines, cryptocurrencies, advertisements, etc. &#x2013; are eligible objects.  Thus, the credibility of these things can be asserted by their proponents, and confirmed or denied by the agents who experience them.
+Any thing whose existence or validity can be confirmed or denied by third parties is an eligible Unrival object.  This may leave out some things, such as first-person experiences, inherently unfalsifiable claims, and so on, but most things are included;  in particular, those things with compromisedy credibility as of late, upon which many people may nonetheless come to depend, like:
+</p>
+<ul class="org-ul">
+<li>political parties</li>
+<li>medicines</li>
+<li>cryptocurrencies</li>
+<li>advertisements</li>
+<li>religious doctrines claiming practical benefit</li>
+<li>lawyers</li>
+<li>etc.</li>
+</ul>
+
+<p>
+are all eligible objects.  The credibility of these things can be asserted by their proponents, and confirmed or denied by the agents who experience them first hand.  Furthermore, these claims and corresponding assessments thereof are accessible to all agents.  
 </p>
 
 <p>
-The protocol itself can be stated as <a href="protocol.html">a set of guidelines</a> that are open to interpretation as far as technological implementation goes.  An implementation seeking to mitigate the failure modes associated with some technological modalities will be described in the following, but it is by no means the only possible interpretation.
+The protocol itself can be stated as <a href="protocol.html">a set of guidelines</a>, which are open to interpretation as far as technological implementation goes.  One implementation will be described in this document, but it is by no means definitive.
 </p>
 </div>
 </div>
-<div id="outline-container-org686c8e4" class="outline-2">
-<h2 id="org686c8e4">Overview</h2>
-<div class="outline-text-2" id="text-org686c8e4">
+<div id="outline-container-org1b00682" class="outline-2">
+<h2 id="org1b00682">Overview</h2>
+<div class="outline-text-2" id="text-org1b00682">
 </div>
-<div id="outline-container-org39cec9f" class="outline-3">
-<h3 id="org39cec9f">Introduction</h3>
-<div class="outline-text-3" id="text-org39cec9f">
+<div id="outline-container-orgb64195c" class="outline-3">
+<h3 id="orgb64195c">Introduction</h3>
+<div class="outline-text-3" id="text-orgb64195c">
 <p>
-Unrival seeks to pave a road to cooperation when defection seems, in the realest sense, like the more rational choice for self-interested agents.  As it is meant to be realistic and not fanciful, it does so without appealing to the moral inclinations of its subjects - but instead by re-framing self-interest and laying bare latent incentives to cooperate.
+Unrival seeks to pave a road to cooperation when defection seems to be, in the realest sense, the more rational choice for self-interested agents.  As it is meant to be realistic and not fantastic, it does so without appealing to the moral inclinations of its subjects - but instead by re-framing self-interest and laying bare latent incentives to cooperate.
 </p>
 
 <p>
-But, where agents stand to benefit maximally by cooperating, shouldn't they be doing so already?  This may seem paradoxical, but not always.  Think of Mutually Assured Destruction: although individual nations may prefer all-around nuclear disarmament, they'd be crazy (by this calculus) to adopt this strategy - doing so would only give other nations a leg up in the struggle for international dominance, and would be very unlikely to bring about the optimaly outcome.  Thus, in a nuclear-armed world, nations are trapped in a <i>race to the bottom</i>.
+But, where agents stand to benefit maximally by cooperating, shouldn't they be doing so already?  This may seem paradoxical, but not always.  Think of Mutually Assured Destruction: although individual nations may prefer all-around nuclear disarmament, they'd be crazy (by this calculus) to adopt this strategy - doing so would only give other nations a leg up in the struggle for international dominance, and would be very unlikely to bring about the optimal outcome.  Thus, in a nuclear-armed world, nations are trapped in a <i>race to the bottom</i>.
 </p>
 
 <p>
-In short, our problem boils down to: <i>how can we cooperate when we are stuck in rivalrous equilibria</i>?  Unrival is an attempt at a technological answer to this question.  Our answer starts with a set of shared concepts, the use of which lowers the coordination costs (e.g. the requisite energy, the inherent risk, and so on) associated with cooperating.  This has the effect of putting maximally beneficial outcomes within agents' reach.  Thus, agents using Unrival outcompete those that don't.  Although selfish individuals beat non-selfish individuals, non-selfish groups beat selfish groups, according to <a href="https://en.wikipedia.org/wiki/Group_selection#Multilevel_selection_theory">multi-level selection theory</a>.
+In short, our problem boils down to: <i>how can we cooperate when we are stuck in rivalrous equilibria</i>?  Unrival is an attempt at a technological answer to this question.  Our answer starts with a set of shared concepts, the use of which lowers the coordination costs (e.g. the requisite energy, the inherent risk, and so on) associated with cooperation.  This has the effect of putting maximally beneficial outcomes within agents' reach.  Hence our claim that <i>agents using Unrival outcompete those that don't</i>.  Although selfish individuals beat non-selfish individuals, non-selfish groups beat selfish groups, according to <a href="https://en.wikipedia.org/wiki/Group_selection#Multilevel_selection_theory">multi-level selection theory</a>.  In brief: <b>Unrival is a technology for creating non-selfish groups</b>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org479a6d2" class="outline-3">
-<h3 id="org479a6d2">The Stag Hunt</h3>
-<div class="outline-text-3" id="text-org479a6d2">
+<div id="outline-container-org659c066" class="outline-3">
+<h3 id="org659c066">The Stag Hunt</h3>
+<div class="outline-text-3" id="text-org659c066">
 <p>
 <i>We'd like to take this opportunity to drive home the notion that greater benefit is sometimes theoretically possible, but is nonetheless passed over by self-interested agents.  Readers who are familiar with game theory may feel free to skip this section.</i>
 </p>
@@ -277,7 +290,7 @@ This leads to a paradoxical situation in which <i>acting rationally</i> means <i
 </p>
 
 
-<div id="org35ae219" class="figure">
+<div id="org5686e7d" class="figure">
 <p><img src="./static/images/stag_hunt.png" alt="stag_hunt.png" />
 </p>
 </div>
@@ -289,46 +302,67 @@ This leads to a paradoxical situation in which <i>acting rationally</i> means <i
 <li>There exist paradoxical situations in which self-interested agents choose strategies leading to suboptimal outcomes.</li>
 <li>Should agents attempt to cooperate, they are confronted by some difficulties:     <br />
 <ul class="org-ul">
-<li>Communication may be impossible or so costly that, should it lead to optimal outcomes, nonetheless offsets the benefit such that agents choose not to communicate.  Besides the costs of physical media, like smoke signals and fiber optics, this costliness may materialize in:     <br /></li>
+<li>Communication may be impossible, impractical, or so costly that, even if it should it lead to optimal outcomes in the short-term, nonetheless offsets the benefit gained therefrom in the long-term.  Besides the costs of physical media, like smoke signals and fiber optics, this costliness may materialize in:     <br /></li>
 <li>The ability of agents to deceive one another, whereby they forego an ideal outcome but gain the upper hand over their rivals.     <br /></li>
 </ul></li>
 </ul>
 
 <p>
-Thus, there are no simple solutions to coordination problems, as proposed solutions (e.g. better, faster communication channels) often enable more efficient deception for any added benefit.  <span class="underline">Unrival introduces a meta-game for overcoming these difficulties</span>.
+yThus, there are no simple solutions to coordination problems, as proposed solutions (e.g. better, faster communication channels) often enable more efficient deception for any added benefit.  <span class="underline">Unrival strives to be a meta-game for finding solutions that are immune to this type of weaponization</span>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org8002ac1" class="outline-3">
-<h3 id="org8002ac1">The Meta-Game</h3>
-<div class="outline-text-3" id="text-org8002ac1">
+<div id="outline-container-org2651ccb" class="outline-3">
+<h3 id="org2651ccb">The Meta-Game</h3>
+<div class="outline-text-3" id="text-org2651ccb">
 <p>
-One thing is certain: it really is the most rational choice for hunters to hunt for hares - <i>within the confines of the staghunt game</i>.  But games aren't real life; their rules don't necessarily reflect the full range of choices available to agents.  It may also be possible to play a meta-game that can improve outcomes within the given game.
+One thing is certain: it really is the most rational choice for hunters to hunt for hares - <i>within the confines of the staghunt game</i>.  But games aren't real life; their rules don't necessarily reflect the full range of choices available to agents.  It may also be possible to play a meta-game that can improve outcomes within any given game.
 </p>
 
 <p>
 The subject of this paper is a group protocol for playing meta-games.  Such a protocol should confer enough benefit on its users to outweigh any associated costs associated with its use.
 </p>
+</div>
+</div>
 
+<div id="outline-container-orgc2b5f86" class="outline-3">
+<h3 id="orgc2b5f86">The Meta-Crisis</h3>
+<div class="outline-text-3" id="text-orgc2b5f86">
 <p>
-The original problem wouldn't be solved if only the hunters had access to cell phones.  There can still be an incentive to distort data.  
+If we accept that a meta-game is possible that would enable us to improve outcomes beyond the arbitrary limits of a given game, we must also be prepared to consider the costs of losing.  We who are playing (i.e. everyone, aware or not of the fact) are, for all intents and purposes, not fairing well so far, and this is cause for concern.
 </p>
 
 <p>
-So the group method is as follows:
+For starters, take any impending crisis requiring mass cooperative effort to avert.  E.g.:
 </p>
+
 <ul class="org-ul">
-<li>Make signals between agents easy to send</li>
-<li>Make it easy for agents to interpret these signals based on evidence</li>
-<li>For example, if an agent has many broken promises on Unrival, this may make you less likely to rely on them.</li>
+<li>climate change</li>
+<li>global pandemics</li>
+<li>proliferation of WMDs</li>
 </ul>
-</div>
-</div>
 
-<div id="outline-container-org985e8e0" class="outline-3">
-<h3 id="org985e8e0">The Meta-Crisis</h3>
-<div class="outline-text-3" id="text-org985e8e0">
+<p>
+(The decision to add or exclude certain issues from this list is, sadly, considered a political statement for many, and this gets at the root of what we call the meta-crisis.)  Let's see if we can pin it down:
+</p>
+
+<p>
+Given any crisis, another crisis exists that thwarts out attempts to make sense of it and act accordingly.  We call this the <b>meta-crisis</b>, and we believe it underlies all of the above mentioned crises.  One effect of this is that good- and bad-faith attempts to address these issues are virtually indistinguishable at the level of national dialogue.  
+</p>
+
+<p>
+Just as 
+</p>
+
+<p>
+This is largely a result of pollution information ecology.  
+</p>
+
+<p>
+Take the immenent crises , we can't reach a degree of consensus on the severity of the crises we're facing such that we might be able to act to avert these.
+</p>
+
 <p>
 The growing threat of disasters in the world due to climate change should be cause for serious concern.  It is obvious we are not properly preparing.  Even when we know something bad is about to happen, we aren't able to avert the worst of it by prudent planning; instead, we suffer needlessly in many cases.
 </p>
@@ -356,9 +390,9 @@ Also, public goods are underfunded.  This is a problem of incentives.  When ther
 </div>
 </div>
 
-<div id="outline-container-org246a5b7" class="outline-3">
-<h3 id="org246a5b7">The Internet of X</h3>
-<div class="outline-text-3" id="text-org246a5b7">
+<div id="outline-container-orgf38b2a3" class="outline-3">
+<h3 id="orgf38b2a3">The Internet of X</h3>
+<div class="outline-text-3" id="text-orgf38b2a3">
 <p>
 <b>ywhere <i>X</i> is {goals, ideas, theories, &#x2026;}</b>       <br />
 </p>
@@ -380,40 +414,40 @@ Suppose a developer is passionate about <i>todo lists</i>, and wants to make a w
 </ul>
 </div>
 </div>
-<div id="outline-container-orged2abf8" class="outline-3">
-<h3 id="orged2abf8">The Goal Engine</h3>
-<div class="outline-text-3" id="text-orged2abf8">
+<div id="outline-container-org208d56e" class="outline-3">
+<h3 id="org208d56e">The Goal Engine</h3>
+<div class="outline-text-3" id="text-org208d56e">
 <ol class="org-ol">
 <li>enables access to non-rivalrous resources</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org234d6ef" class="outline-3">
-<h3 id="org234d6ef">Universal Feedback</h3>
+<div id="outline-container-orga0527cb" class="outline-3">
+<h3 id="orga0527cb">Universal Feedback</h3>
 </div>
 </div>
-<div id="outline-container-org45986ad" class="outline-2">
-<h2 id="org45986ad">Objects</h2>
-<div class="outline-text-2" id="text-org45986ad">
+<div id="outline-container-org7f4deb5" class="outline-2">
+<h2 id="org7f4deb5">Objects</h2>
+<div class="outline-text-2" id="text-org7f4deb5">
 <p>
 As mentioned, Unrival is based on concepts that improve the ability of agents to cooperate.  It accomplishes this by giving agents a language for finding common ground with others.  Underlying this is the assumption that agents may err or deceive while communicating about objects (as certain auto mechanics are won't to do when informing customers which repairs their cars will need, or used car dealers as they unload their lemons on the unsuspecting.  Most industries are full of examples).  Therefore, common ground must be built on trust, and objects must have this baked into them.
 </p>
 
 <p>
-Unrival can be seen as a way of making sure objects are what they say they are.  In order to accomplish this, we make objects amenable to verification.  Objects reference <i>proofs</i> and/or <i>claims</i>, either directly or indirectly, and these must be falsifiable.  A <b>proof</b> is a computer program that checks whether some object has certain properties.  A <b>claim</b> is like a proof that requires input from human agents, usually because the satisfiability criteria are subjective.  For example, a proof may require some integer stored at address X to be divisible by 3, while a claim can be made that this integer is a lucky number.
+Unrival can be seen as a way of making sure objects are what they say they are.  In order to accomplish this, we make objects amenable to verification.  Objects reference <i>proofs</i> and/or <i>claims</i>, either directly or indirectly, and these must be falsifiable.  A <b>proof</b> is a computer program that checks whether some object has certain properties.  A <b>claim</b> is like a proof that requires input from human agents, usually because the satisfiability criteria are subjective.  For example, a proof may require some integer stored at a certain address to be divisible by 3, while a claim can be made regarding this number's auspiciousness.
 </p>
 
 <p>
 There are two types of objects: simple and complex.
 </p>
 </div>
-<div id="outline-container-orga639c55" class="outline-3">
-<h3 id="orga639c55">Simple Objects</h3>
-<div class="outline-text-3" id="text-orga639c55">
+<div id="outline-container-org1805d24" class="outline-3">
+<h3 id="org1805d24">Simple Objects</h3>
+<div class="outline-text-3" id="text-org1805d24">
 </div>
-<div id="outline-container-org5228b1f" class="outline-4">
-<h4 id="org5228b1f">Proof</h4>
-<div class="outline-text-4" id="text-org5228b1f">
+<div id="outline-container-orgd9b0cef" class="outline-4">
+<h4 id="orgd9b0cef">Proof</h4>
+<div class="outline-text-4" id="text-orgd9b0cef">
 <p>
 In Unrival, anything that exists does so because of its having been proved in some way.
 </p>
@@ -433,20 +467,20 @@ In Unrival, anything that exists does so because of its having been proved in so
 </ul>
 </div>
 </div>
-<div id="outline-container-orgabd2e36" class="outline-4">
-<h4 id="orgabd2e36">Name</h4>
+<div id="outline-container-orgff6c780" class="outline-4">
+<h4 id="orgff6c780">Name</h4>
 </div>
-<div id="outline-container-org10ef154" class="outline-4">
-<h4 id="org10ef154">Interpretation</h4>
+<div id="outline-container-org6bb68c3" class="outline-4">
+<h4 id="org6bb68c3">Interpretation</h4>
 </div>
 </div>
-<div id="outline-container-org60ce603" class="outline-3">
-<h3 id="org60ce603">Complex Objects</h3>
-<div class="outline-text-3" id="text-org60ce603">
+<div id="outline-container-org159fe05" class="outline-3">
+<h3 id="org159fe05">Complex Objects</h3>
+<div class="outline-text-3" id="text-org159fe05">
 </div>
 <ul class="org-ul">
-<li><a id="org9d18d3a"></a>Criteria<br />
-<div class="outline-text-5" id="text-org9d18d3a">
+<li><a id="org5989416"></a>Criteria<br />
+<div class="outline-text-5" id="text-org5989416">
 <ul class="org-ul">
 <li>any object that comes into existence must meet certain proof criteria</li>
 <li>objects must meet both subjective and objective proof criteria</li>
@@ -462,23 +496,23 @@ It is difficult to query for subjective opinions about things that matter and ge
 </li>
 </ul>
 </div>
-<div id="outline-container-org38dbbb8" class="outline-3">
-<h3 id="org38dbbb8">Simple Objects</h3>
-<div class="outline-text-3" id="text-org38dbbb8">
+<div id="outline-container-org17497d1" class="outline-3">
+<h3 id="org17497d1">Simple Objects</h3>
+<div class="outline-text-3" id="text-org17497d1">
 <p>
 Objects are content-addressed arrays of <b>parts</b>.  For example, the following object has two parts:
 </p>
 <div class="org-src-container">
-<pre class="src src-json"><span style="color: #4f97d7;">[</span>
-  <span style="color: #bc6ec5;">{</span>
-    <span style="color: #4f97d7; font-weight: bold;">"label"</span>: <span style="color: #2d9574;">"breed"</span>,
-    <span style="color: #4f97d7; font-weight: bold;">"value"</span>: <span style="color: #2d9574;">"Dalmation"</span>
-  <span style="color: #bc6ec5;">}</span>,
-  <span style="color: #bc6ec5;">{</span>
-    <span style="color: #4f97d7; font-weight: bold;">"label"</span>: <span style="color: #2d9574;">"name"</span>,
-    <span style="color: #4f97d7; font-weight: bold;">"value"</span>: <span style="color: #2d9574;">"Daisy"</span>
-  <span style="color: #bc6ec5;">}</span>  
-<span style="color: #4f97d7;">]</span>
+<pre class="src src-json"><span style="color: #8c8c8c;">[</span>
+  <span style="color: #93a8c6;">{</span>
+    <span style="color: #b48ead;">"label"</span>: <span style="color: #a3be8c;">"breed"</span>,
+    <span style="color: #b48ead;">"value"</span>: <span style="color: #a3be8c;">"Dalmation"</span>
+  <span style="color: #93a8c6;">}</span>,
+  <span style="color: #93a8c6;">{</span>
+    <span style="color: #b48ead;">"label"</span>: <span style="color: #a3be8c;">"name"</span>,
+    <span style="color: #b48ead;">"value"</span>: <span style="color: #a3be8c;">"Daisy"</span>
+  <span style="color: #93a8c6;">}</span>  
+<span style="color: #8c8c8c;">]</span>
 </pre>
 </div>
 
@@ -494,34 +528,31 @@ Hashing the above data using IPFS produces the content-based address <code>QmeDW
 Simple objects are objects that do not contain other objects embedded in them.  Since neither of the above object's parts are content-addressed objects, it is a simple object.
 </p>
 </div>
-<div id="outline-container-orgc304414" class="outline-4">
-<h4 id="orgc304414">Name</h4>
-<div class="outline-text-4" id="text-orgc304414">
+<div id="outline-container-org61d90d1" class="outline-4">
+<h4 id="org61d90d1">Name</h4>
+<div class="outline-text-4" id="text-org61d90d1">
 <p>
 Currently there is only need for one type of simple object - a <i>name</i>.  A <b>name</b> acts as a mnemonic label attached to (i.e. part of) other objects.  Names can have attributes (like "language<sub>code</sub>" in the following example), which can be useful in various client applications:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-json"><span style="color: #4f97d7;">[</span>
-    <span style="color: #bc6ec5;">{</span>
-        <span style="color: #4f97d7; font-weight: bold;">"type"</span>: <span style="color: #2d9574;">"name"</span>,
-        <span style="color: #4f97d7; font-weight: bold;">"value"</span>: <span style="color: #2d9574;">"dog"</span>,
-        <span style="color: #4f97d7; font-weight: bold;">"language_code"</span>: <span style="color: #2d9574;">"EN"</span>
-    <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">]</span>
+<pre class="src src-json"><span style="color: #8c8c8c;">[</span>
+    <span style="color: #93a8c6;">{</span>
+        <span style="color: #b48ead;">"type"</span>: <span style="color: #a3be8c;">"name"</span>,
+        <span style="color: #b48ead;">"value"</span>: <span style="color: #a3be8c;">"dog"</span>,
+        <span style="color: #b48ead;">"language_code"</span>: <span style="color: #a3be8c;">"EN"</span>
+    <span style="color: #93a8c6;">}</span>
+<span style="color: #8c8c8c;">]</span>
 </pre>
 </div>
 </div>
 </div>
-
-<div id="outline-container-org50de933" class="outline-4">
-<h4 id="org50de933">Image</h4>
-</div>
 </div>
 
-<div id="outline-container-orgb89db14" class="outline-3">
-<h3 id="orgb89db14">Proofs</h3>
-<div class="outline-text-3" id="text-orgb89db14">
+
+<div id="outline-container-orgb1fa691" class="outline-3">
+<h3 id="orgb1fa691">Proofs</h3>
+<div class="outline-text-3" id="text-orgb1fa691">
 <p>
 A <b>proof</b> is a program that is fed an address as its input and terminates in either success or failure, usually dependent upon the attributes of the data at said address.  
 </p>
@@ -533,15 +564,15 @@ An object has been proved <b>subjectively</b> if it reflects the opinions of fai
 </p>
 </div>
 
-<div id="outline-container-org0ee41cd" class="outline-4">
-<h4 id="org0ee41cd">Objective</h4>
-<div class="outline-text-4" id="text-org0ee41cd">
+<div id="outline-container-org3d9d212" class="outline-4">
+<h4 id="org3d9d212">Objective</h4>
+<div class="outline-text-4" id="text-org3d9d212">
 <p>
 Most of Unrival's advanced functionality is due to the ability of complex objects to be <i>proved</i>, either directly or indirectly.  Objects that are proved directly have a proof part, while objects proved indirectly have a prototypal parent with a proof they must also satisfy:
 </p>
 
 
-<div id="org0e4b35e" class="figure">
+<div id="org4b55380" class="figure">
 <p><object type="image/svg+xml" data="static/images/proofs.svg" class="org-svg">
 Sorry, your browser does not support SVG.</object>
 </p>
@@ -551,42 +582,42 @@ Sorry, your browser does not support SVG.</object>
 To continue our example from above, if the following code is hashed and added as a part to the Dalmation object, it would make sure that the breed of dog is equal to <code>'Dalmation'</code>.
 </p>
 <div class="org-src-container">
-<pre class="src src-python"><span style="color: #2aa1ae; background-color: #292e34;">#</span><span style="color: #2aa1ae; background-color: #292e34;">!/usr/bin python3</span>
+<pre class="src src-python"><span style="color: #c0c5ce;">#</span><span style="color: #65737e;">!/usr/bin python3</span>
 
-<span style="color: #4f97d7; font-weight: bold;">from</span> unrival_py <span style="color: #4f97d7; font-weight: bold;">import</span> *
+<span style="color: #b48ead;">from</span> unrival_py <span style="color: #b48ead;">import</span> *
 
-<span style="color: #7590db;">address</span> = sys.argv<span style="color: #4f97d7;">[</span><span style="color: #a45bad;">1</span><span style="color: #4f97d7;">]</span> <span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">could be equal to the above hash, for example (QmeDWRWMc3YoRKyueRAmqmJ3bVwD1oc74eVoEATtfdYJJh)</span>
+<span style="color: #bf616a;">address</span> = sys.argv<span style="color: #8c8c8c;">[</span><span style="color: #d08770;">1</span><span style="color: #8c8c8c;">]</span> <span style="color: #c0c5ce;"># </span><span style="color: #65737e;">could be equal to the above hash, for example (QmeDWRWMc3YoRKyueRAmqmJ3bVwD1oc74eVoEATtfdYJJh)</span>
 
-<span style="color: #7590db;">object_string</span> = read<span style="color: #4f97d7;">(</span>address<span style="color: #4f97d7;">)</span> <span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">gets the data from the content-address</span>
-<span style="color: #7590db;">parsed_object</span> = parse<span style="color: #4f97d7;">(</span>object_string<span style="color: #4f97d7;">)</span> <span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">converts the data into a python dictionary</span>
+<span style="color: #bf616a;">object_string</span> = read<span style="color: #8c8c8c;">(</span>address<span style="color: #8c8c8c;">)</span> <span style="color: #c0c5ce;"># </span><span style="color: #65737e;">gets the data from the content-address</span>
+<span style="color: #bf616a;">parsed_object</span> = parse<span style="color: #8c8c8c;">(</span>object_string<span style="color: #8c8c8c;">)</span> <span style="color: #c0c5ce;"># </span><span style="color: #65737e;">converts the data into a python dictionary</span>
 
-<span style="color: #4f97d7; font-weight: bold;">assert</span> has_part<span style="color: #4f97d7;">(</span>parsed_object, <span style="color: #2d9574;">'breed'</span>, <span style="color: #2d9574;">'Dalmation'</span><span style="color: #4f97d7;">)</span> 
+<span style="color: #b48ead;">assert</span> has_part<span style="color: #8c8c8c;">(</span>parsed_object, <span style="color: #a3be8c;">'breed'</span>, <span style="color: #a3be8c;">'Dalmation'</span><span style="color: #8c8c8c;">)</span> 
 
 </pre>
 </div>
 </div>
 <ul class="org-ul">
-<li><a id="orgeeef8c7"></a>Direct Proof<br />
-<div class="outline-text-5" id="text-orgeeef8c7">
+<li><a id="org9ef3d1f"></a>Direct Proof<br />
+<div class="outline-text-5" id="text-org9ef3d1f">
 <p>
 Once we hash the above and add it as a part to our original set, we have the following:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-json"><span style="color: #4f97d7;">[</span>
-  <span style="color: #bc6ec5;">{</span>
-    <span style="color: #4f97d7; font-weight: bold;">"type"</span>: <span style="color: #2d9574;">"proof"</span>,
-    <span style="color: #4f97d7; font-weight: bold;">"address"</span>: <span style="color: #2d9574;">"QmV7HTZJqd81DWo12MVmB6BtkS8V28JNU3587HPsJj1rv6"</span>
-  <span style="color: #bc6ec5;">}</span>,
-  <span style="color: #bc6ec5;">{</span>
-    <span style="color: #4f97d7; font-weight: bold;">"label"</span>: <span style="color: #2d9574;">"breed"</span>,
-    <span style="color: #4f97d7; font-weight: bold;">"value"</span>: <span style="color: #2d9574;">"Dalmation"</span>
-  <span style="color: #bc6ec5;">}</span>,
-  <span style="color: #bc6ec5;">{</span>
-    <span style="color: #4f97d7; font-weight: bold;">"label"</span>: <span style="color: #2d9574;">"name"</span>,
-    <span style="color: #4f97d7; font-weight: bold;">"value"</span>: <span style="color: #2d9574;">"Daisy"</span>
-  <span style="color: #bc6ec5;">}</span>  
-<span style="color: #4f97d7;">]</span>
+<pre class="src src-json"><span style="color: #8c8c8c;">[</span>
+  <span style="color: #93a8c6;">{</span>
+    <span style="color: #b48ead;">"type"</span>: <span style="color: #a3be8c;">"proof"</span>,
+    <span style="color: #b48ead;">"address"</span>: <span style="color: #a3be8c;">"QmV7HTZJqd81DWo12MVmB6BtkS8V28JNU3587HPsJj1rv6"</span>
+  <span style="color: #93a8c6;">}</span>,
+  <span style="color: #93a8c6;">{</span>
+    <span style="color: #b48ead;">"label"</span>: <span style="color: #a3be8c;">"breed"</span>,
+    <span style="color: #b48ead;">"value"</span>: <span style="color: #a3be8c;">"Dalmation"</span>
+  <span style="color: #93a8c6;">}</span>,
+  <span style="color: #93a8c6;">{</span>
+    <span style="color: #b48ead;">"label"</span>: <span style="color: #a3be8c;">"name"</span>,
+    <span style="color: #b48ead;">"value"</span>: <span style="color: #a3be8c;">"Daisy"</span>
+  <span style="color: #93a8c6;">}</span>  
+<span style="color: #8c8c8c;">]</span>
 </pre>
 </div>
 <p>
@@ -598,14 +629,14 @@ One more hash gives us the result: <code>QmWJwaDMcKgysTwC2qktH27eqYHHauNXHryhzTz
 </p>
 </div>
 </li>
-<li><a id="org4ce37c2"></a>Indirect Proof<br />
-<div class="outline-text-5" id="text-org4ce37c2">
+<li><a id="org5209cd6"></a>Indirect Proof<br />
+<div class="outline-text-5" id="text-org5209cd6">
 <p>
 Some objects do not contain explicit references to proofs.  Instead, they contain references to prototypes, whose proofs they must satisify.  
 </p>
 
 
-<div id="org53b408f" class="figure">
+<div id="org86c93aa" class="figure">
 <p><object type="image/svg+xml" data="static/images/indirect-proof-1.svg" class="org-svg">
 Sorry, your browser does not support SVG.</object>
 </p>
@@ -615,7 +646,7 @@ Sorry, your browser does not support SVG.</object>
 This means that in order to come into existence, "some dalmation" must satisfy both the life form proof and the mammal proof, besides its namesake proof:
 </p>
 
-<div id="org5a801b8" class="figure">
+<div id="orga9b22b0" class="figure">
 <p><object type="image/svg+xml" data="static/images/indirect-proof-2.svg" class="org-svg">
 Sorry, your browser does not support SVG.</object>
 </p>
@@ -623,10 +654,10 @@ Sorry, your browser does not support SVG.</object>
 </div>
 </li>
 
-<li><a id="org07e0b3e"></a>Multiple Inheritance<br /></li>
+<li><a id="orgd455b5e"></a>Multiple Inheritance<br /></li>
 
-<li><a id="org4338826"></a>Archetypal Proof<br />
-<div class="outline-text-5" id="text-org4338826">
+<li><a id="org883a98b"></a>Archetypal Proof<br />
+<div class="outline-text-5" id="text-org883a98b">
 <p>
 The properties of proofs described above are determined by a single proof, called an <b>archetypal proof</b>.  This is part of an <b>archetypal object</b>, which is an object all complex objects in Unrival have as an ancestor.
 </p>
@@ -634,28 +665,28 @@ The properties of proofs described above are determined by a single proof, calle
 </li>
 </ul>
 </div>
-<div id="outline-container-org68a1914" class="outline-4">
-<h4 id="org68a1914">Subjective</h4>
-<div class="outline-text-4" id="text-org68a1914">
+<div id="outline-container-org31f2b87" class="outline-4">
+<h4 id="org31f2b87">Subjective</h4>
+<div class="outline-text-4" id="text-org31f2b87">
 <p>
 Subjective Proofs are required for each and every Unrival object.  Not every object
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org7dfe530" class="outline-3">
-<h3 id="org7dfe530">Complex Objects</h3>
-<div class="outline-text-3" id="text-org7dfe530">
+<div id="outline-container-org26df82b" class="outline-3">
+<h3 id="org26df82b">Complex Objects</h3>
+<div class="outline-text-3" id="text-org26df82b">
 </div>
-<div id="outline-container-org18e7b01" class="outline-4">
-<h4 id="org18e7b01">Namespace</h4>
-<div class="outline-text-4" id="text-org18e7b01">
+<div id="outline-container-org1640d60" class="outline-4">
+<h4 id="org1640d60">Namespace</h4>
+<div class="outline-text-4" id="text-org1640d60">
 <p>
 A <b>namespace</b> is a collection of names that can be considered equivalent for some purpose.  
 </p>
 
 
-<div id="orga4ef5f7" class="figure">
+<div id="orga20706c" class="figure">
 <p><object type="image/svg+xml" data="static/images/namespace.svg" class="org-svg">
 Sorry, your browser does not support SVG.</object>
 </p>
@@ -666,15 +697,15 @@ In Unrival there are two kinds of names:
 </p>
 </div>
 <ul class="org-ul">
-<li><a id="org160ae4c"></a>Authoritative<br />
-<div class="outline-text-5" id="text-org160ae4c">
+<li><a id="org66c9b9d"></a>Authoritative<br />
+<div class="outline-text-5" id="text-org66c9b9d">
 <p>
 Also called an object's <i>type</i>, this is an indication to prefer one name over others &#x2013; when there are multiple name variants referring to the same object &#x2013; for the purpose of simplicity.
 </p>
 </div>
 </li>
-<li><a id="orgbdb3549"></a>Non-Authoritative<br />
-<div class="outline-text-5" id="text-orgbdb3549">
+<li><a id="orgc77213e"></a>Non-Authoritative<br />
+<div class="outline-text-5" id="text-orgc77213e">
 <p>
 Non-authoritative names are variants of an authoritative name.
 </p>
@@ -686,20 +717,20 @@ For example, Unrival Clients and Servers (if they implement Universe <span class
 </li>
 </ul>
 </div>
-<div id="outline-container-org3a3ad43" class="outline-4">
-<h4 id="org3a3ad43">Agent/Actor/User</h4>
+<div id="outline-container-orgb89d682" class="outline-4">
+<h4 id="orgb89d682">Agent/Actor/User</h4>
 </div>
-<div id="outline-container-org7000c92" class="outline-4">
-<h4 id="org7000c92">Outcome/Event</h4>
-<div class="outline-text-4" id="text-org7000c92">
+<div id="outline-container-org3ea75c2" class="outline-4">
+<h4 id="org3ea75c2">Outcome/Event</h4>
+<div class="outline-text-4" id="text-org3ea75c2">
 <p>
 An outcome is a claim that is a subjective event.      
 </p>
 </div>
 </div>
-<div id="outline-container-orgd457357" class="outline-4">
-<h4 id="orgd457357">Claim (Subjective Proof Criteria)</h4>
-<div class="outline-text-4" id="text-orgd457357">
+<div id="outline-container-org245ec56" class="outline-4">
+<h4 id="org245ec56">Claim (Subjective Proof Criteria)</h4>
+<div class="outline-text-4" id="text-org245ec56">
 <p>
 A claim is just a subjective proof that hasn't been validated.
 </p>
@@ -709,9 +740,9 @@ Every object must start with a claim, and this claim, after having been proved, 
 </p>
 </div>
 </div>
-<div id="outline-container-org036d285" class="outline-4">
-<h4 id="org036d285">Judgment/Evaluation/Assessment</h4>
-<div class="outline-text-4" id="text-org036d285">
+<div id="outline-container-orgd9dc321" class="outline-4">
+<h4 id="orgd9dc321">Judgment/Evaluation/Assessment</h4>
+<div class="outline-text-4" id="text-orgd9dc321">
 <blockquote>
 <p>
 “Never trust anyone who doesn’t have skin in the game. Without it, fools and crooks will benefit, and their mistakes will never come back to haunt them.” - Nassim Nicholas Taleb
@@ -742,38 +773,38 @@ Assessments in Unrival are elicited in a way that maximizes the faithfulness of 
 </div>
 
 
-<div id="outline-container-orgffb01d6" class="outline-4">
-<h4 id="orgffb01d6">Promise</h4>
-<div class="outline-text-4" id="text-orgffb01d6">
+<div id="outline-container-org5b97c67" class="outline-4">
+<h4 id="org5b97c67">Promise</h4>
+<div class="outline-text-4" id="text-org5b97c67">
 <p>
 Of course, there are many ways to think about promises, some of them requiring no formalism or technology.  Our approach is meant to make promises applicable in many circumstances, and it starts with breaking promises into their component parts and making them interfaceable.  We call the component parts of a promise <i>objects</i>.  These are anything and everything that could be relevant to the management of promises.  In order to use them the way we want, as representations of complex human relationships, we have some criteria:    
 </p>
 </div>
 </div>
-<div id="outline-container-org4c3cda0" class="outline-4">
-<h4 id="org4c3cda0">Goal</h4>
+<div id="outline-container-org6d76484" class="outline-4">
+<h4 id="org6d76484">Goal</h4>
 </div>
-<div id="outline-container-orgf6fca5a" class="outline-4">
-<h4 id="orgf6fca5a">Interface</h4>
-<div class="outline-text-4" id="text-orgf6fca5a">
+<div id="outline-container-orgd56460f" class="outline-4">
+<h4 id="orgd56460f">Interface</h4>
+<div class="outline-text-4" id="text-orgd56460f">
 <p>
 An <b>interface</b> is a composition of a set of actions performable by some user(s).  For example, an interface may look like the following:
 </p>
 <div class="org-src-container">
-<pre class="src src-json"><span style="color: #4f97d7;">[</span>
-    <span style="color: #bc6ec5;">{</span>
-        <span style="color: #4f97d7; font-weight: bold;">"type"</span>: <span style="color: #2d9574;">"interface"</span>,
-        <span style="color: #4f97d7; font-weight: bold;">"name"</span>: <span style="color: #2d9574;">"prototype"</span>
-    <span style="color: #bc6ec5;">}</span>,
-    <span style="color: #bc6ec5;">{</span>
-        <span style="color: #4f97d7; font-weight: bold;">"type"</span>: <span style="color: #2d9574;">"action"</span>,
-        <span style="color: #4f97d7; font-weight: bold;">"name"</span>: <span style="color: #2d9574;">"pay bill"</span>,
-    <span style="color: #bc6ec5;">}</span>,      
-    <span style="color: #bc6ec5;">{</span>
-        <span style="color: #4f97d7; font-weight: bold;">"type"</span>: <span style="color: #2d9574;">"action"</span>,
-        <span style="color: #4f97d7; font-weight: bold;">"name"</span>: <span style="color: #2d9574;">"check bill"</span>,
-    <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">]</span>
+<pre class="src src-json"><span style="color: #8c8c8c;">[</span>
+    <span style="color: #93a8c6;">{</span>
+        <span style="color: #b48ead;">"type"</span>: <span style="color: #a3be8c;">"interface"</span>,
+        <span style="color: #b48ead;">"name"</span>: <span style="color: #a3be8c;">"prototype"</span>
+    <span style="color: #93a8c6;">}</span>,
+    <span style="color: #93a8c6;">{</span>
+        <span style="color: #b48ead;">"type"</span>: <span style="color: #a3be8c;">"action"</span>,
+        <span style="color: #b48ead;">"name"</span>: <span style="color: #a3be8c;">"pay bill"</span>,
+    <span style="color: #93a8c6;">}</span>,      
+    <span style="color: #93a8c6;">{</span>
+        <span style="color: #b48ead;">"type"</span>: <span style="color: #a3be8c;">"action"</span>,
+        <span style="color: #b48ead;">"name"</span>: <span style="color: #a3be8c;">"check bill"</span>,
+    <span style="color: #93a8c6;">}</span>
+<span style="color: #8c8c8c;">]</span>
 </pre>
 </div>
 <p>
@@ -781,27 +812,27 @@ This information alone is sufficient to define an interface in Unrival.
 </p>
 </div>
 </div>
-<div id="outline-container-org18f0249" class="outline-4">
-<h4 id="org18f0249">Action</h4>
-<div class="outline-text-4" id="text-org18f0249">
+<div id="outline-container-org6905c0c" class="outline-4">
+<h4 id="org6905c0c">Action</h4>
+<div class="outline-text-4" id="text-org6905c0c">
 <p>
 An <b>action</b> should be performable in order to produce a desired outcome, without error.  Because actions are tied to <i>ends</i> and not <i>means</i>, there may be several alternate ways to perform actions.  This is why <i>actions aggregate adapters and providers</i>.  
 </p>
 <div class="org-src-container">
-<pre class="src src-json"><span style="color: #4f97d7;">[</span>
-    <span style="color: #bc6ec5;">{</span>
-        <span style="color: #4f97d7; font-weight: bold;">"type"</span>: <span style="color: #2d9574;">"action"</span>,
-        <span style="color: #4f97d7; font-weight: bold;">"name"</span>: <span style="color: #2d9574;">"prototype"</span>
-    <span style="color: #bc6ec5;">}</span>,
-    <span style="color: #bc6ec5;">{</span>
-        <span style="color: #4f97d7; font-weight: bold;">"type"</span>: <span style="color: #2d9574;">"provider"</span>,
-        <span style="color: #4f97d7; font-weight: bold;">"name"</span>: <span style="color: #2d9574;">"pay bill"</span>,
-    <span style="color: #bc6ec5;">}</span>,      
-    <span style="color: #bc6ec5;">{</span>
-        <span style="color: #4f97d7; font-weight: bold;">"type"</span>: <span style="color: #2d9574;">"provider"</span>,
-        <span style="color: #4f97d7; font-weight: bold;">"name"</span>: <span style="color: #2d9574;">"check bill"</span>,
-    <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">]</span>
+<pre class="src src-json"><span style="color: #8c8c8c;">[</span>
+    <span style="color: #93a8c6;">{</span>
+        <span style="color: #b48ead;">"type"</span>: <span style="color: #a3be8c;">"action"</span>,
+        <span style="color: #b48ead;">"name"</span>: <span style="color: #a3be8c;">"prototype"</span>
+    <span style="color: #93a8c6;">}</span>,
+    <span style="color: #93a8c6;">{</span>
+        <span style="color: #b48ead;">"type"</span>: <span style="color: #a3be8c;">"provider"</span>,
+        <span style="color: #b48ead;">"name"</span>: <span style="color: #a3be8c;">"pay bill"</span>,
+    <span style="color: #93a8c6;">}</span>,      
+    <span style="color: #93a8c6;">{</span>
+        <span style="color: #b48ead;">"type"</span>: <span style="color: #a3be8c;">"provider"</span>,
+        <span style="color: #b48ead;">"name"</span>: <span style="color: #a3be8c;">"check bill"</span>,
+    <span style="color: #93a8c6;">}</span>
+<span style="color: #8c8c8c;">]</span>
 </pre>
 </div>
 <p>
@@ -809,13 +840,13 @@ may contain an aggregate of adapters representing these diverse means.  Means, a
 </p>
 </div>
 </div>
-<div id="outline-container-orgd3cff1c" class="outline-4">
-<h4 id="orgd3cff1c">Adapter</h4>
+<div id="outline-container-org69addf0" class="outline-4">
+<h4 id="org69addf0">Adapter</h4>
 </div>
 
-<div id="outline-container-org655b287" class="outline-4">
-<h4 id="org655b287">Universe</h4>
-<div class="outline-text-4" id="text-org655b287">
+<div id="outline-container-org0065870" class="outline-4">
+<h4 id="org0065870">Universe</h4>
+<div class="outline-text-4" id="text-org0065870">
 <p>
 Every unrival object that is created has a universe in which it was created as one of its parts.  This reference to a universe's content based address shows a client whether or not an object that doesn't belong to their universe can be merged.
 </p>
@@ -831,24 +862,24 @@ A universe is like a filesystem that maps names and name hierarchies to data.
 A <b>universe</b> determines how concepts are defined for their inhabitants (i.e. users).  The purpose of a universe is to assign a hierarchical order to namespaces.  For example:
 </p>
 <div class="org-src-container">
-<pre class="src src-json"><span style="color: #4f97d7;">[</span>
-    <span style="color: #bc6ec5;">{</span>
-        <span style="color: #4f97d7; font-weight: bold;">"type"</span>: <span style="color: #2d9574;">"namespace"</span>,
-        <span style="color: #4f97d7; font-weight: bold;">"address"</span>: <span style="color: #2d9574;">"@#q23kflj2fkl3jrkl23j23kf"</span>,
-        <span style="color: #4f97d7; font-weight: bold;">"children"</span>: <span style="color: #2d9574;">[</span>
-            <span style="color: #67b11d;">{</span>
-                <span style="color: #4f97d7; font-weight: bold;">"type"</span>: <span style="color: #2d9574;">"namespace"</span>,
-                <span style="color: #4f97d7; font-weight: bold;">"address"</span>: <span style="color: #2d9574;">""</span>,
-                <span style="color: #4f97d7; font-weight: bold;">"children"</span>: <span style="color: #b1951d;">[</span>
-                    <span style="color: #4f97d7;">{</span>
-                        <span style="color: #4f97d7; font-weight: bold;">"type"</span>: <span style="color: #2d9574;">"namespace"</span>,
-                        <span style="color: #4f97d7; font-weight: bold;">"address"</span>: <span style="color: #2d9574;">""</span>
-                    <span style="color: #4f97d7;">}</span>
-                <span style="color: #b1951d;">]</span>
-            <span style="color: #67b11d;">}</span>
-        <span style="color: #e0211d; text-decoration: overline;">}</span>
-    <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">]</span>  
+<pre class="src src-json"><span style="color: #8c8c8c;">[</span>
+    <span style="color: #93a8c6;">{</span>
+        <span style="color: #b48ead;">"type"</span>: <span style="color: #a3be8c;">"namespace"</span>,
+        <span style="color: #b48ead;">"address"</span>: <span style="color: #a3be8c;">"@#q23kflj2fkl3jrkl23j23kf"</span>,
+        <span style="color: #b48ead;">"children"</span>: <span style="color: #b0b1a3;">[</span>
+            <span style="color: #97b098;">{</span>
+                <span style="color: #b48ead;">"type"</span>: <span style="color: #a3be8c;">"namespace"</span>,
+                <span style="color: #b48ead;">"address"</span>: <span style="color: #a3be8c;">""</span>,
+                <span style="color: #b48ead;">"children"</span>: <span style="color: #aebed8;">[</span>
+                    <span style="color: #b0b0b3;">{</span>
+                        <span style="color: #b48ead;">"type"</span>: <span style="color: #a3be8c;">"namespace"</span>,
+                        <span style="color: #b48ead;">"address"</span>: <span style="color: #a3be8c;">""</span>
+                    <span style="color: #b0b0b3;">}</span>
+                <span style="color: #aebed8;">]</span>
+            <span style="color: #97b098;">}</span>
+        <span style="color: #88090B;">}</span>
+    <span style="color: #93a8c6;">}</span>
+<span style="color: #8c8c8c;">]</span>  
 </pre>
 </div>
 <p>
@@ -860,49 +891,49 @@ As such, it is an exceedingly simple universe where everything revolves around a
 </div>
 </div>
 
-<div id="outline-container-orge717e21" class="outline-3">
-<h3 id="orge717e21">More Complex Objects</h3>
-<div class="outline-text-3" id="text-orge717e21">
+<div id="outline-container-org71e009a" class="outline-3">
+<h3 id="org71e009a">More Complex Objects</h3>
+<div class="outline-text-3" id="text-org71e009a">
 </div>
-<div id="outline-container-orgb3aa33c" class="outline-4">
-<h4 id="orgb3aa33c">Location</h4>
+<div id="outline-container-org135f9c0" class="outline-4">
+<h4 id="org135f9c0">Location</h4>
 </div>
-<div id="outline-container-org297d84c" class="outline-4">
-<h4 id="org297d84c">Resource</h4>
+<div id="outline-container-org4b4c676" class="outline-4">
+<h4 id="org4b4c676">Resource</h4>
 </div>
-<div id="outline-container-org8d4ff32" class="outline-4">
-<h4 id="org8d4ff32">Role</h4>
+<div id="outline-container-org21f0fd7" class="outline-4">
+<h4 id="org21f0fd7">Role</h4>
 </div>
-<div id="outline-container-orgb8ff5f6" class="outline-4">
-<h4 id="orgb8ff5f6">Provider</h4>
+<div id="outline-container-org3141206" class="outline-4">
+<h4 id="org3141206">Provider</h4>
 </div>
-<div id="outline-container-orgb0713de" class="outline-4">
-<h4 id="orgb0713de">Model</h4>
-<div class="outline-text-4" id="text-orgb0713de">
+<div id="outline-container-org9a09493" class="outline-4">
+<h4 id="org9a09493">Model</h4>
+<div class="outline-text-4" id="text-org9a09493">
 <p>
 A model is a statement about a state of affairs.
 </p>
 </div>
 </div>
-<div id="outline-container-orgbc1796c" class="outline-4">
-<h4 id="orgbc1796c">Todo</h4>
+<div id="outline-container-org82cf78e" class="outline-4">
+<h4 id="org82cf78e">Todo</h4>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgbee3c83" class="outline-2">
-<h2 id="orgbee3c83">Workflows</h2>
-<div class="outline-text-2" id="text-orgbee3c83">
+<div id="outline-container-org0a766e7" class="outline-2">
+<h2 id="org0a766e7">Workflows</h2>
+<div class="outline-text-2" id="text-org0a766e7">
 </div>
-<div id="outline-container-org93dd5a4" class="outline-3">
-<h3 id="org93dd5a4">Start a Business</h3>
+<div id="outline-container-org0b86594" class="outline-3">
+<h3 id="org0b86594">Start a Business</h3>
 </div>
-<div id="outline-container-org41152eb" class="outline-3">
-<h3 id="org41152eb">Sell Your Car</h3>
+<div id="outline-container-org77a8b00" class="outline-3">
+<h3 id="org77a8b00">Sell Your Car</h3>
 </div>
-<div id="outline-container-org19a85a8" class="outline-3">
-<h3 id="org19a85a8">Get Insurance</h3>
-<div class="outline-text-3" id="text-org19a85a8">
+<div id="outline-container-org0c19a3e" class="outline-3">
+<h3 id="org0c19a3e">Get Insurance</h3>
+<div class="outline-text-3" id="text-org0c19a3e">
 <ul class="org-ul">
 <li>due to asymmetric information being solved, insurance consts less</li>
 <li></li>
@@ -911,19 +942,19 @@ A model is a statement about a state of affairs.
 </div>
 </div>
 
-<div id="outline-container-org24b9c46" class="outline-2">
-<h2 id="org24b9c46">Implementation</h2>
-<div class="outline-text-2" id="text-org24b9c46">
+<div id="outline-container-orgb4e14fb" class="outline-2">
+<h2 id="orgb4e14fb">Implementation</h2>
+<div class="outline-text-2" id="text-orgb4e14fb">
 </div>
-<div id="outline-container-org825ae10" class="outline-3">
-<h3 id="org825ae10">Python Module</h3>
+<div id="outline-container-orga3833da" class="outline-3">
+<h3 id="orga3833da">Python Module</h3>
 </div>
-<div id="outline-container-orgbf26519" class="outline-3">
-<h3 id="orgbf26519">Server</h3>
+<div id="outline-container-org4458ee1" class="outline-3">
+<h3 id="org4458ee1">Server</h3>
 </div>
-<div id="outline-container-orga0e0c26" class="outline-3">
-<h3 id="orga0e0c26">Client</h3>
-<div class="outline-text-3" id="text-orga0e0c26">
+<div id="outline-container-org14193e0" class="outline-3">
+<h3 id="org14193e0">Client</h3>
+<div class="outline-text-3" id="text-org14193e0">
 <p>
 The purpose of the client is to map Unrival objects to interfaceable components, for example in a web application.
 </p>
@@ -932,23 +963,23 @@ The purpose of the client is to map Unrival objects to interfaceable components,
 One function of the client is to help users visualize relations between objects.  The Unrival Client has two views:
 </p>
 </div>
-<div id="outline-container-org7f8841b" class="outline-4">
-<h4 id="org7f8841b">Router</h4>
-<div class="outline-text-4" id="text-org7f8841b">
+<div id="outline-container-org4a64531" class="outline-4">
+<h4 id="org4a64531">Router</h4>
+<div class="outline-text-4" id="text-org4a64531">
 <p>
 A router maps a namespace to a web component.      
 </p>
 </div>
 </div>
-<div id="outline-container-org18eb106" class="outline-4">
-<h4 id="org18eb106">WebComponent</h4>
+<div id="outline-container-org166e65d" class="outline-4">
+<h4 id="org166e65d">WebComponent</h4>
 </div>
 
-<div id="outline-container-org40993e2" class="outline-4">
-<h4 id="org40993e2">Visualization</h4>
-<div class="outline-text-4" id="text-org40993e2">
+<div id="outline-container-org77c5770" class="outline-4">
+<h4 id="org77c5770">Visualization</h4>
+<div class="outline-text-4" id="text-org77c5770">
 
-<div id="org57e652f" class="figure">
+<div id="orgfe891a9" class="figure">
 <p><object type="image/svg+xml" data="static/images/node-shapes.svg" class="org-svg">
 Sorry, your browser does not support SVG.</object>
 </p>
@@ -956,21 +987,21 @@ Sorry, your browser does not support SVG.</object>
 </div>
 </div>
 
-<div id="outline-container-org55db645" class="outline-4">
-<h4 id="org55db645">Detail View</h4>
+<div id="outline-container-orga635b8f" class="outline-4">
+<h4 id="orga635b8f">Detail View</h4>
 </div>
-<div id="outline-container-orgbf63884" class="outline-4">
-<h4 id="orgbf63884">Relation View</h4>
+<div id="outline-container-org2afcc21" class="outline-4">
+<h4 id="org2afcc21">Relation View</h4>
 </div>
-<div id="outline-container-org3dc1d15" class="outline-4">
-<h4 id="org3dc1d15">Search View</h4>
+<div id="outline-container-org396a48f" class="outline-4">
+<h4 id="org396a48f">Search View</h4>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: David Joseph</p>
-<p class="date">Created: 2021-08-20 Fri 12:20</p>
+<p class="date">Created: 2021-08-22 Sun 10:39</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

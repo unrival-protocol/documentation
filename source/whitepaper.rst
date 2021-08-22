@@ -9,11 +9,27 @@ Whitepaper
 Abstract
 --------
 
-Unrival is a protocol that enables its users (agents) to cooperate more effectively on accomplishing common goals.  Agents communicate their intentions via a set of shared objects, which constitute composable, bottom-up building blocks for maintaining complex social and economic relationships founded on mutual understanding and accountability.
+Unrival is a protocol that enables its users (agents) to cooperate more effectively on accomplishing common goals, or to become aware of them when surface-level conflict appears more imminent.  Agents communicate their intentions via a set of shared objects, which constitute composable, bottom-up building blocks for maintaining complex social and economic relationships founded on mutual understanding and accountability.  In addition, these objects are not just mental constructs - they have a physical existence as data that agents interface with.
 
-Any thing whose existence or validity can be confirmed or denied by third parties is an eligible Unrival object.  This may leaves out some things, like agents' internal states, or inherentily unfalsifiable claims, but most things are included.  In particular, those things with compromised credibility as of late, upon which many people may nonetheless come to depend -- like political parties, medicines, cryptocurrencies, advertisements, etc. -- are eligible objects.  Thus, the credibility of these things can be asserted by their proponents, and confirmed or denied by the agents who experience them.
+Any thing whose existence or validity can be confirmed or denied by third parties (including computer programs) is an eligible Unrival object.  This may leave out some things, such as first-person experiences, inherently unfalsifiable claims, and so on, but most things are included;  in particular, those things with compromisedy credibility as of late, upon which many people may nonetheless come to depend, like:
 
-The protocol itself can be stated as `a set of guidelines <protocol.html>`_ that are open to interpretation as far as technological implementation goes.  An implementation seeking to mitigate the failure modes associated with some technological modalities will be described in the following, but it is by no means the only possible interpretation.
+- political parties
+
+- medicines
+
+- cryptocurrencies
+
+- advertisements
+
+- religious doctrines claiming practical benefit
+
+- lawyers
+
+- etc.
+
+are all eligible objects.  The credibility of these things can be asserted by their proponents, and confirmed or denied by the agents who experience them first hand.  Furthermore, these claims and the corresponding assessments thereof are accessible to all agents.  
+
+The protocol itself can be stated as `a set of guidelines <protocol.html>`_, which are open to interpretation as far as technological implementation goes.  One implementation will be described in this document, but it is by no means definitive.
 
 Overview
 --------
@@ -21,11 +37,11 @@ Overview
 Introduction
 ~~~~~~~~~~~~
 
-Unrival seeks to pave a road to cooperation when defection seems, in the realest sense, like the more rational choice for self-interested agents.  As it is meant to be realistic and not fanciful, it does so without appealing to the moral inclinations of its subjects - but instead by re-framing self-interest and laying bare latent incentives to cooperate.
+Unrival seeks to pave a road to cooperation when defection seems to be, in the realest sense, the more rational choice for self-interested agents.  As it is meant to be realistic and not fantastic, it does so without appealing to the moral inclinations of its subjects - but instead by re-framing self-interest and laying bare latent incentives to cooperate.
 
-But, where agents stand to benefit maximally by cooperating, shouldn't they be doing so already?  This may seem paradoxical, but not always.  Think of Mutually Assured Destruction: although individual nations may prefer all-around nuclear disarmament, they'd be crazy (by this calculus) to adopt this strategy - doing so would only give other nations a leg up in the struggle for international dominance, and would be very unlikely to bring about the optimaly outcome.  Thus, in a nuclear-armed world, nations are trapped in a *race to the bottom*.
+But, where agents stand to benefit maximally by cooperating, shouldn't they be doing so already?  This may seem paradoxical, but not always.  Think of Mutually Assured Destruction: although individual nations may prefer all-around nuclear disarmament, they'd be crazy (by this calculus) to adopt this strategy - doing so would only give other nations a leg up in the struggle for international dominance, and would be very unlikely to bring about the optimal outcome.  Thus, in a nuclear-armed world, nations are trapped in a *race to the bottom*.
 
-In short, our problem boils down to: *how can we cooperate when we are stuck in rivalrous equilibria*?  Unrival is an attempt at a technological answer to this question.  Our answer starts with a set of shared concepts, the use of which lowers the coordination costs (e.g. the requisite energy, the inherent risk, and so on) associated with cooperating.  This has the effect of putting maximally beneficial outcomes within agents' reach.  Thus, agents using Unrival outcompete those that don't.  Although selfish individuals beat non-selfish individuals, non-selfish groups beat selfish groups, according to `multi-level selection theory <https://en.wikipedia.org/wiki/Group_selection#Multilevel_selection_theory>`_.
+In short, our problem boils down to: *how can we cooperate when we are stuck in rivalrous equilibria*?  Unrival is an attempt at a technological answer to this question.  Our answer starts with a set of shared concepts, the use of which lowers the coordination costs (e.g. the requisite energy, the inherent risk, and so on) associated with cooperation.  This has the effect of putting maximally beneficial outcomes within agents' reach.  Hence our claim that *agents using Unrival outcompete those that don't*.  Although selfish individuals beat non-selfish individuals, non-selfish groups beat selfish groups, according to `multi-level selection theory <https://en.wikipedia.org/wiki/Group_selection#Multilevel_selection_theory>`_.  In brief: **Unrival is a technology for creating non-selfish groups**.
 
 The Stag Hunt
 ~~~~~~~~~~~~~
@@ -46,49 +62,78 @@ This leads to a paradoxical situation in which *acting rationally* means *settli
 
 - Should agents attempt to cooperate, they are confronted by some difficulties:     
 
-  - Communication may be impossible or so costly that, should it lead to optimal outcomes, nonetheless offsets the benefit such that agents choose not to communicate.  Besides the costs of physical media, like smoke signals and fiber optics, this costliness may materialize in:
+  - Communication may be impossible, impractical, or so costly that, even if it should it lead to optimal outcomes in the short-term, nonetheless offsets the benefit gained therefrom in the long-term.  Besides the costs of physical media, like smoke signals and fiber optics, this costliness may materialize in:
 
   - The ability of agents to deceive one another, whereby they forego an ideal outcome but gain the upper hand over their rivals.
 
-Thus, there are no simple solutions to coordination problems, as proposed solutions (e.g. better, faster communication channels) often enable more efficient deception for any added benefit.  Unrival introduces a meta-game for overcoming these difficulties.
+Thus, there are no simple solutions to coordination problems, as proposed solutions (e.g. better, faster communication channels) often enable more efficient deception for any added benefit.  Unrival strives to be a meta-game for finding solutions that are immune to this type of weaponization.
 
 The Meta-Game
 ~~~~~~~~~~~~~
 
-One thing is certain: it really is the most rational choice for hunters to hunt for hares - *within the confines of the staghunt game*.  But games aren't real life; their rules don't necessarily reflect the full range of choices available to agents.  It may also be possible to play a meta-game that can improve outcomes within the given game.
+One thing is certain: it really is the most rational choice for hunters to hunt for hares - *within the confines of the staghunt game*.  But games aren't real life; their rules don't necessarily reflect the full range of choices available to agents.  It may also be possible to play a meta-game that can improve outcomes within any given game.
 
 The subject of this paper is a group protocol for playing meta-games.  Such a protocol should confer enough benefit on its users to outweigh any associated costs associated with its use.
-
-The original problem wouldn't be solved if only the hunters had access to cell phones.  There can still be an incentive to distort data.  
-
-So the group method is as follows:
-
-- Make signals between agents easy to send
-
-- Make it easy for agents to interpret these signals based on evidence
-
-- For example, if an agent has many broken promises on Unrival, this may make you less likely to rely on them.
 
 The Meta-Crisis
 ~~~~~~~~~~~~~~~
 
-The growing threat of disasters in the world due to climate change should be cause for serious concern.  It is obvious we are not properly preparing.  Even when we know something bad is about to happen, we aren't able to avert the worst of it by prudent planning; instead, we suffer needlessly in many cases.
+If we accept that a meta-game is possible that would enable us to improve outcomes beyond the arbitrary limits of a given game, we must also be prepared to consider the costs of losing.  We who are playing (i.e. everyone, aware or not of the fact) are, for all intents and purposes, not fairing well so far, and this is cause for concern.
 
-storm-warning systems, for one, haven't been very successful in getting people to evacuate areas.  Why is that?
+For starters, take any impending crisis requiring mass cooperative effort to avert.  E.g.:
 
-It is ever more the case that there is no central source of truth.  Which warnings should we heed?  Which threats are mere exaggerations?  If the 'official wisdom' is that I should flee an area due to a storm warning, should I or not?
+- climate change
 
-Narratives can be concocted to support any sort of conclusion - this is becoming apparent.  
+- global pandemics
 
-But nevertheless, sometimes there are times when all narratives break down.
+- proliferation of WMDs
 
+(*Sadly, the decision to include/exclude certain issues in/from this list will be considered a political statement by some. This gets at the root of what we call the meta-crisis.*)
 
-Also, public goods are underfunded.  This is a problem of incentives.  When there isn't much benefit in offering a public good, things that are inherently non-rival and non-exclusive are rarer than they need to be (like reliable information).  (There is no lack of incentive to distribute unreliable information.  There's not a lot of money in telling the truth, but telling lies can make you rich).  Part of this has to do with the fact that our information ecology is as polluted as our planetary ecology.  But when we realize our environment is becoming unlivable, how should we respond?  Just as people are starting to wake up to the level of havoc that the climate crisis can potentially unleash, it's also becoming clear that unreliable information, and lots of it, creates another type of crisis - a `meaning crisis <https://www.youtube.com/watch?v=54l8_ewcOlY&list=PLND1JCRq8Vuh3f0P5qjrSdb5eC1ZfZwWJ>`_.
+Each of the above crises (indeed, any crisis) is undergirded by a crisis of another order, which thwarts our attempts to sensemake and respond rationally.  We call this the **meta-crisis**.  Just as the effects of global warming are apparent to anyone willing to look at the data, the effects of this crisis are also apparent in our global inability to respond adequately to the most pressing challenges.  
 
-The Internet of X
-~~~~~~~~~~~~~~~~~
+The Internet of Goals
+~~~~~~~~~~~~~~~~~~~~~
 
-**ywhere *X* is {goals, ideas, theories, ...}**       
+We'll now shift our focus from problems to some historical attempts at solutions, and Unrival's place among them.
+
+- The internet turned computing from a *monologue* to a *dialogue* (or a whole host of dialogues).
+
+- The web did the same for content creation, and can be considered the *internet of HTML websites*.
+
+- We sometimes refer to new technologies as the *internet of X*, where X purportedly does for some subject what the internet did for computing - that is, democratize, interconnect, and so on.
+
+- For example, Bitcoin has been called the `the Internet of Money <https://theinternetofmoney.info/>`_, and has been claimed to do for money what the web did for humanly-digestible text.
+
+- The subjects of such claims (and the claims themselves) are eligible to be Unrival objects.
+
+- The competitive advantage of Unrival use may confer attempts at creating *internets of X*, where X is an arbitrary object, with growth via network effects.  Turning monologues into dialogues is only possible when the conversation is compelling enough to attract a host of participants.
+
+- Naturally, not all objects have the potential to inspire dialogue with significant growth factor.
+
+- One object in particular that may have this potential is the `Goal`_.  This is because:
+
+  - Clarity regarding goals is a missing element of many group endeavors, and an easy way to achieve this would be readily adopted by many.
+
+  - Goals, whether their subscribers are conscious of them or not, already underlie every action we perform.  Many subpar group action-performances are due to the inability of group members to unite under the same goal, such that their individual efforts may be combined, instead of dissipating in directionlessness.
+
+To make this last point more concrete, imagine what the *Internet of TODO lists* might look like.  First of all, the act of TODO list creation has been turned from monologue to dialogue, so a mechanism for group decision making is a necessary pre-requisite (and simulataneously a side-effect, which is common in complex systems).
+
+It may be necessary to provide some motivation for such a curious use of networking technology.  If we start with the end-result, it's conceivable that this sort of thing could be quite advantageous.  A single, top-level TODO list could exist for a group of agents of arbitrary size, and it could represent these agents' common goals.  TODO items could be nested TODO lists themselves.  All lists and items could be curated through a combination of meritocratic and democratic selection processes.  Given such an application, and enough users involved in curation, it's conceivable that the inadequate responses to which we alluded in `The Meta-Crisis`_ could be the exception rather than the rule.
+
+But how do we get there?  How are TODO items to be prioritized?  Who can interact with them?  All of these rules can be enforced by `Proof`_.  To illustrate:
+*(The following is written in natural language for sake of comprehensibility, but code examples are readily available)*.
+
+.. code:: org-mode
+
+    * A todo list is associated with an interpretation.
+    * A todo list may have at most 10 todo items.
+    * The 10 todo items listed in a todo list are the TODO items with the highest rating attached to this interpretation.
+    * Each todo item may also be a todo list.
+    * A todo item has an interface that allows it to be created, edited, or deleted.
+    * Only agents subscribing to the interpretation with which it is associated by perform these actions.
+
+These conditions describe properties of data that client applications are able to consume.  
 
 One concept central to Unrivyal is the **goal**, which helps agents decide which actions to take, as well as ensure that individual efforts can be effectively combined into a group effort more potent than the sum of its parts.
 
@@ -103,17 +148,17 @@ Suppose a developer is passionate about *todo lists*, and wants to make a way fo
 The Goal Engine
 ~~~~~~~~~~~~~~~
 
-1. enables access to non-rivalrous resources
-
-Universal Feedback
-~~~~~~~~~~~~~~~~~~
-
 Objects
 -------
 
 As mentioned, Unrival is based on concepts that improve the ability of agents to cooperate.  It accomplishes this by giving agents a language for finding common ground with others.  Underlying this is the assumption that agents may err or deceive while communicating about objects (as certain auto mechanics are won't to do when informing customers which repairs their cars will need, or used car dealers as they unload their lemons on the unsuspecting.  Most industries are full of examples).  Therefore, common ground must be built on trust, and objects must have this baked into them.
 
-Unrival can be seen as a way of making sure objects are what they say they are.  In order to accomplish this, we make any objects amenable to verification.  Objects reference *proofs* and/or *claims*, either directly or indirectly, and these must be falsifiable.  A **proof** is a computer program that checks whether some object has certain properties.  A **claim** is like a proof that requires input from human agents, usually because the satisfiability criteria are subjective.  For example, a proof may require some integer stored at address X to be divisible by 3, while a claim can be made that this integer is a lucky number.
+Unrival can be seen as a way of making sure objects are what they say they are.  In order to accomplish this, we make objects amenable to verification.  Objects reference *proofs* and/or *claims*, either directly or indirectly, and these must be falsifiable.  A **proof** is a computer program that checks whether some object has certain properties.  A **claim** is like a proof that requires input from human agents, usually because the satisfiability criteria are subjective.  For example, a proof may require some integer stored at a certain address to be divisible by 3, while a claim can be made regarding this number's auspiciousness.
+
+There are two types of objects: simple and complex.
+
+Simple Objects
+~~~~~~~~~~~~~~
 
 Proof
 ^^^^^
@@ -134,10 +179,14 @@ In Unrival, anything that exists does so because of its having been proved in so
 
 - Formalising Subjectively executed proofs, also called **assessments**, are part of a possible protocol that has a curated set of concepts for reflecting a satisfying intersubjective **universe**
 
-Object
-^^^^^^
+Name
+^^^^
 
-An object is just any whole that has parts.  In order to be an unrival object, something needs to have a content-addressed representation of these parts.  
+Interpretation
+^^^^^^^^^^^^^^
+
+Complex Objects
+~~~~~~~~~~~~~~~
 
 Criteria
 ::::::::
@@ -191,9 +240,6 @@ Currently there is only need for one type of simple object - a *name*.  A **name
             "language_code": "EN"
         }
     ]
-
-Image
-^^^^^
 
 Proofs
 ~~~~~~
@@ -342,6 +388,8 @@ Of course, there are many ways to think about promises, some of them requiring n
 
 Goal
 ^^^^
+
+The goal is what it is.
 
 Interface
 ^^^^^^^^^
