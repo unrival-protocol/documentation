@@ -9,9 +9,9 @@ Whitepaper
 Abstract
 --------
 
-Unrival is a protocol that enables its users (agents) to cooperate more effectively on accomplishing common goals, or to become aware of them when surface-level conflicts appear more imminent.  Agents communicate their intentions via a set of shared objects, which constitute composable, bottom-up building blocks for maintaining complex social and economic relationships founded on mutual understanding and accountability.  In addition, these objects are not just mental constructs - they have a physical existence as data that agents may interface with via client applications.
+Unrival is a protocol that enables its users (agents) to cooperate more effectively on accomplishing common goals, or to become aware of them when surface-level conflicts appear more imminent.  Agents communicate their intentions via a set of shared objects that constitute bottom-up, composable building blocks for maintaining complex social and economic relationships founded on mutual understanding and accountability.  In addition, these objects are not just mental constructs - they have a physical existence as data that agents may interface with via client applications.
 
-Any thing whose existence or validity can be confirmed or denied by third parties (including computer programs) is an eligible Unrival object.  This may leave out some things, such as first-person experiences, inherently unfalsifiable claims, and so on, but most things are included;  in particular, those things with compromised credibility as of late, upon which many people may nonetheless come to depend, like:
+Any thing about which certain properties can be confirmed or denied by third parties (including computer programs) is an eligible Unrival object.  This may leave out some things, such as first-person experiences, inherently unfalsifiable claims, and so on, but most things are included;  in particular, those things with compromised credibility as of late, upon which many people may nonetheless come to depend, like:
 
 - political parties
 
@@ -27,9 +27,11 @@ Any thing whose existence or validity can be confirmed or denied by third partie
 
 - etc.
 
-are all eligible objects.  The credibility of these things can be asserted by their proponents, and confirmed or denied by the agents who experience them first hand.  Furthermore, these claims and the corresponding assessments thereof are accessible to all agents.  
+are all eligible objects.  The credibility of these things can be asserted by their proponents, and confirmed or denied by the agents who experience them first hand.  Furthermore, these claims and the corresponding assessments thereof are accessible to all agents.  Of course, if the problem of eliciting honest feedback can be solved for objects like the above, the solution will also apply to the conventional subjects of rating systems, like books, films, restaurants, etc.
 
-The protocol itself can be stated as `a set of guidelines <protocol.html>`_, which are open to interpretation as far as technological implementation goes.  One implementation will be described in this document, but it is by no means definitive.
+Properties that can be validated or checked are not limited to credibility scores.  More broadly, Unrival can be seen as a way of ensuring that data located at certain addresses within a network will satisfy certain conditions.  
+
+The protocol itself can be stated as `a set of guidelines <protocol.html>`_, which are open to interpretation as far as technological implementation goes.  We describe one implementation in this document, but it is by no means definitive.
 
 Overview
 --------
@@ -41,7 +43,7 @@ Unrival seeks to pave a road to cooperation when defection seems to be, in the r
 
 But, where agents stand to benefit maximally by cooperating, shouldn't they be doing so already?  This may seem paradoxical, but not always.  Think of Mutually Assured Destruction: although individual nations may prefer all-around nuclear disarmament, they'd be crazy (by this calculus) to adopt this strategy - doing so would only give other nations a leg up in the struggle for international dominance, and would be very unlikely to bring about the optimal outcome.  Thus, in a nuclear-armed world, nations are trapped in a *race to the bottom*.
 
-In short, our problem boils down to: *how can we cooperate when we are stuck in rivalrous equilibria*?  Unrival is an attempt at a technological answer to this question.  Our answer starts with a set of shared concepts, the use of which lowers the coordination costs (e.g. the requisite energy, the inherent risk, and so on) associated with cooperation.  This has the effect of putting maximally beneficial outcomes within agents' reach.  Hence our claim that *agents using Unrival outcompete those that don't*.  Although selfish individuals beat non-selfish individuals, non-selfish groups beat selfish groups, according to `multi-level selection theory <https://en.wikipedia.org/wiki/Group_selection#Multilevel_selection_theory>`_.  In brief: **Unrival is a technology for creating non-selfish groups**.
+In short, our problem boils down to: *how can we cooperate when we are stuck in rivalrous equilibria*?  Unrival is an attempt at a technological answer to this question.  Our answer starts with a set of shared concepts, the use of which lowers the coordination costs (e.g. the requisite energy, the inherent risk, and so on) associated with cooperation.  This has the effect of putting maximally beneficial outcomes within agents' reach.  Hence our claim that *agents using Unrival outcompete those that don't*.  This can be understood from the point of view of evolutionary biology: although selfish individuals beat non-selfish individuals, non-selfish groups beat selfish groups, according to `multi-level selection theory <https://en.wikipedia.org/wiki/Group_selection#Multilevel_selection_theory>`_.  In brief: **Unrival is a technology for creating non-selfish groups**.  Unlike other attempts to do the same (e.g. religions, ethical philosophies, etc), it is autopoetic and organic, meaning that its success does not depend on coercion but rather on wilful compliance of participants.
 
 The Stag Hunt
 ~~~~~~~~~~~~~
@@ -105,24 +107,24 @@ We'll now shift our focus from problems to some historical attempts at solutions
 
 - For example, Bitcoin has been called the `the Internet of Money <https://theinternetofmoney.info/>`_, and has been claimed to do for money what the web did for humanly-digestible text.
 
-- The subjects of such claims (and the claims themselves) can be turned into Unrival objects; the competitive advantage gained thereby being the possibility for effective content curation.  Turning monologues into dialogues is only possible when the conversation is compelling enough to attract a host of participants.
+- The subjects of such claims (and the claims themselves) can be turned into Unrival objects, the competitive advantage gained thereby being the possibility for advanced content curation only possible through *ratings capable of arbitrary precision*.  Turning monologues into dialogues is only possible when the conversation is compelling enough to attract a host of participants.
 
 - Naturally, not all objects have the potential to inspire dialogue with significant growth factor.  One particular object that may is the `Goal`_.  This is because:
 
+  - Individuals, especially those raised on social media, have a difficult time connecting with others in non-superficial ways.  This is largely a result of the media on which they coalesce; if platforms adopt the strategy of `limbic hijacking <https://www.fastcompany.com/1836569/hijacking-emotion-key-engaging-your-audience>`_ (which they must, in order to stay competitive), then their users' screen time will tend to increase at the detriment of their mental health.  Because humans have social needs, despite their social quarantining by social media, creating the illusion of social interaction is a significant value proposition for platforms.  Customers are all too willing to outsource heretofore instinctual social bonding capacity to these platforms.  A way to express and cultivate desires deeper than seeing the next Marvel movie is much needed in this meaning vacuum.  Thinking in terms of goals necessitates cognizance of desires or needs deeper to the surface-level behaviors they motivate.  Thus, an internet of goals could serve as a medium of more meaningful social bonding.  To summarize: would you rather connect with others who share the same goals as you, or with others who took the same clickbait?
+
   - Clarity regarding goals is a missing element of many group endeavors, and an easy way to achieve this would be readily adopted by many.
 
-  - Goals, whether their subscribers are conscious of them or not, already underlie every action we perform.  Many subpar group action-performances are due to the inability of group members to unite under the same goal, such that their individual efforts may be combined, instead of dissipating in directionlessness.
+  - Goals, whether their subscribers are conscious of them or not, already underlie every action we perform.  Many subpar group performances are due to the inability of group members to unite under the same goal, such that their individual efforts may be combined, instead of dissipating in directionlessness.
+
 
 To make this last point more concrete, imagine what the *Internet of TODO lists* might look like:
 
-The act of TODO list creation will have been turned from monologue to dialogue, for which a mechanism for group decision making is both a pre-requisite and a side-effect (which is a feature common to complex systems, and not a contradiction as it may seem).
+The act of TODO list creation will have been turned from monologue to dialogue, for which a group decision making mechanism is both a pre-requisite and an end result (which is a property common to complex systems, and not a contradiction in terms as it may seem).
 
-First, It may be necessary to provide some motivation for such a curious use of networking technology.  If we start with the end-result, it's conceivable that this sort of thing could be quite advantageous.  A single, top-level TODO list could exist for a group of agents of arbitrary size, and it could represent these agents' common goals.  TODO items could be nested TODO lists themselves.  All lists and items could be curated through a combination of meritocratic and democratic selection processes.  Given such an application, and enough users involved in curation, it's conceivable that the inadequate responses to which we alluded in `The Meta-Crisis`_ could be the exception rather than the rule.
+But first, It may be necessary to provide some motivation for such a curious use of networking technology.  If we start with the end-result, it's conceivable that this sort of thing could have its advantages.  A single, top-level TODO list could exist for a group of agents of arbitrary size, and it could represent these agents' common goals.  TODO items requiring more deliberation could be nested TODO lists themselves.  All lists and items could be curated through a combination of meritocratic and democratic selection processes.  Given such an application, and enough users involved in curation, it's conceivable that the inadequate responses alluded to in `The Meta-Crisis`_ could be the exception rather than the rule.
 
-But how do we get there?  How are TODO items to be prioritized?  Who can interact with them?  All of these rules can be enforced by `Proof`_.  To illustrate:
-
-
-*(The following is written in natural language for sake of comprehensibility, but code examples are readily available)*.
+How do we get there?  How are TODO items to be prioritized?  Who can interact with them?  All of these rules may be enforced by `Proof`_.  The following illustrates conditions that data consumable by client applications must satisfy:
 
 .. code:: org-mode
 
@@ -133,17 +135,9 @@ But how do we get there?  How are TODO items to be prioritized?  Who can interac
     * A todo item has an interface that allows it to be created, edited, or deleted.
     * Only agents subscribing to the interpretation with which it is associated by perform these actions.
 
-These conditions describe properties of data consumable by client applications.
+*(Note: The above is written in natural language for sake of comprehensibility, but code examples are readily available)*.
 
-One concept central to Unrivyal is the **goal**, which helps agents decide which actions to take, as well as ensure that individual efforts can be effectively combined into a group effort more potent than the sum of its parts.
-
-Also was mentioned the fact that new concepts can be added to the Unrival arsenal.  It's an extendable protocol with no central authority (though there is no guarantee new concepts will become widely adopted).  So let's add a concept:
-
-Suppose a developer is passionate about *todo lists*, and wants to make a way for users to interact with them.  They do the following:
-
-- create a todo list type, from which instances of todo lists can be made
-
-- make this type *claimable* - i.e.
+We will develop this notion further using *goals*, which can subsume the TODO item and offer more advanced functionality pertaining to collaboration and responsibilities.  First we'll consider the consequences of such an internet, should it take hold.
 
 The Goal Engine
 ~~~~~~~~~~~~~~~
