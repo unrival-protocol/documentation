@@ -1,0 +1,29 @@
+* TODOs
+
+** IN PROGRESS arrive at consistent ontology by which any sort of object can be created
+
+** TODO create mermaid visualization library
+
+** TODO create basic client interface that links interpretations to performable actions/object views
+
+** TODO seed with data illustrating several workflows
+
+** TODO output 
+
+** TODO connected zettelkasten:
+
+*** TODO users can upload org-roam graphs
+
+*** TODO connect with [[https://anagora.org/node/agora][agora]]
+
+** TODO share with first reviewers
+
+*** TODO mrSqaure
+
+*** TODO Matt
+    
+*** TODO Flancian
+
+*** TODO Kai
+   
+ 

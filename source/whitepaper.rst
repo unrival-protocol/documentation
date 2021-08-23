@@ -9,9 +9,9 @@ Whitepaper
 Abstract
 --------
 
-Unrival is a protocol that enables its users (agents) to cooperate more effectively on accomplishing common goals, or to become aware of them when surface-level conflicts appear more imminent.  Agents communicate their intentions via a set of shared objects that constitute bottom-up, composable building blocks for maintaining complex social and economic relationships founded on mutual understanding and accountability.  In addition, these objects are not just mental constructs - they have a physical existence as data that agents may interface with via client applications.
+Unrival is a protocol that enables its users (agents) to cooperate more effectively on accomplishing common goals, or to become aware of them when surface-level conflicts appear more imminent.  Agents communicate their intentions via a set of shared objects that constitute bottom-up, composable building blocks for maintaining complex social and economic relationships founded on mutual understanding and accountability.  These objects are not mere mental constructs - they have a physical existence as data that agents may interface with via client applications.
 
-Any thing about which certain properties can be confirmed or denied by third parties (including computer programs) is an eligible Unrival object.  This may leave out some things, such as first-person experiences, inherently unfalsifiable claims, and so on, but most things are included;  in particular, those things with compromised credibility as of late, upon which many people may nonetheless come to depend, like:
+Any thing about which certain properties can be confirmed or denied by third parties (be they humans or computer programs) is an eligible Unrival object.  This may leave out some things, such as first-person experiences, inherently unfalsifiable claims, and so on, but most things are included;  in particular, those things with compromised credibility as of late, upon which many people may nonetheless come to depend, like:
 
 - political parties
 
