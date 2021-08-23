@@ -37,7 +37,7 @@ The following scenario was introduced by Rousseau in his [[https://en.wikipedia.
 #+END_QUOTE
 This leads to a paradoxical situation in which /acting rationally/ means /settling for a sub-optimal outcome/.  Although both hunters would rather come home with a stag, they are forced to hunt for hares - otherwise they could be left with nothing.
 
-v[[./static/images/stag_hunt.png]]
+[[static/images/stag_hunt.png]]
 
 *Key Takeaways*
 - There exist paradoxical situations in which self-interested agents choose strategies leading to suboptimal outcomes.

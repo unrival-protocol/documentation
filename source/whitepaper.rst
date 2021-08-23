@@ -56,7 +56,7 @@ The following scenario was introduced by Rousseau in his `Discourse on Inequalit
 
 This leads to a paradoxical situation in which *acting rationally* means *settling for a sub-optimal outcome*.  Although both hunters would rather come home with a stag, they are forced to hunt for hares - otherwise they could be left with nothing.
 
-v.. image:: ./static/images/stag_hunt.png
+.. image:: ./static/images/stag_hunt.png
 
 **Key Takeaways**
 
