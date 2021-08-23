@@ -9,9 +9,9 @@ Whitepaper
 Abstract
 --------
 
-Unrival is a protocol that enables its users (agents) to cooperate more effectively on accomplishing common goals, or to become aware of them when surface-level conflict appears more imminent.  Agents communicate their intentions via a set of shared objects, which constitute composable, bottom-up building blocks for maintaining complex social and economic relationships founded on mutual understanding and accountability.  In addition, these objects are not just mental constructs - they have a physical existence as data that agents interface with.
+Unrival is a protocol that enables its users (agents) to cooperate more effectively on accomplishing common goals, or to become aware of them when surface-level conflicts appear more imminent.  Agents communicate their intentions via a set of shared objects, which constitute composable, bottom-up building blocks for maintaining complex social and economic relationships founded on mutual understanding and accountability.  In addition, these objects are not just mental constructs - they have a physical existence as data that agents may interface with via client applications.
 
-Any thing whose existence or validity can be confirmed or denied by third parties (including computer programs) is an eligible Unrival object.  This may leave out some things, such as first-person experiences, inherently unfalsifiable claims, and so on, but most things are included;  in particular, those things with compromisedy credibility as of late, upon which many people may nonetheless come to depend, like:
+Any thing whose existence or validity can be confirmed or denied by third parties (including computer programs) is an eligible Unrival object.  This may leave out some things, such as first-person experiences, inherently unfalsifiable claims, and so on, but most things are included;  in particular, those things with compromised credibility as of late, upon which many people may nonetheless come to depend, like:
 
 - political parties
 
@@ -54,7 +54,7 @@ The following scenario was introduced by Rousseau in his `Discourse on Inequalit
 
 This leads to a paradoxical situation in which *acting rationally* means *settling for a sub-optimal outcome*.  Although both hunters would rather come home with a stag, they are forced to hunt for hares - otherwise they could be left with nothing.
 
-.. image:: ./static/images/stag_hunt.png
+v.. image:: ./static/images/stag_hunt.png
 
 **Key Takeaways**
 
@@ -95,23 +95,19 @@ Each of the above crises (indeed, any crisis) is undergirded by a crisis of anot
 The Internet of Goals
 ~~~~~~~~~~~~~~~~~~~~~
 
-We'll now shift our focus from problems to some historical attempts at solutions, and Unrival's place among them.
+We'll now shift our focus from problems to some historical attempts at solutions, and how Unrival intends to fit among them.
 
 - The internet turned computing from a *monologue* to a *dialogue* (or a whole host of dialogues).
 
-- The web did the same for content creation, and can be considered the *internet of HTML websites*.
+- The web did the same for content creation and can be considered the *internet of HTML websites*.
 
 - We sometimes refer to new technologies as the *internet of X*, where X purportedly does for some subject what the internet did for computing - that is, democratize, interconnect, and so on.
 
 - For example, Bitcoin has been called the `the Internet of Money <https://theinternetofmoney.info/>`_, and has been claimed to do for money what the web did for humanly-digestible text.
 
-- The subjects of such claims (and the claims themselves) are eligible to be Unrival objects.
+- The subjects of such claims (and the claims themselves) can be turned into Unrival objects; the competitive advantage gained thereby being the possibility for effective content curation.  Turning monologues into dialogues is only possible when the conversation is compelling enough to attract a host of participants.
 
-- The competitive advantage of Unrival use may confer attempts at creating *internets of X*, where X is an arbitrary object, with growth via network effects.  Turning monologues into dialogues is only possible when the conversation is compelling enough to attract a host of participants.
-
-- Naturally, not all objects have the potential to inspire dialogue with significant growth factor.
-
-- One object in particular that may have this potential is the `Goal`_.  This is because:
+- Naturally, not all objects have the potential to inspire dialogue with significant growth factor.  One particular object that may is the `Goal`_.  This is because:
 
   - Clarity regarding goals is a missing element of many group endeavors, and an easy way to achieve this would be readily adopted by many.
 
@@ -137,7 +133,7 @@ But how do we get there?  How are TODO items to be prioritized?  Who can interac
     * A todo item has an interface that allows it to be created, edited, or deleted.
     * Only agents subscribing to the interpretation with which it is associated by perform these actions.
 
-These conditions describe properties of data that client applications are able to consume.  
+These conditions describe properties of data consumable by client applications.
 
 One concept central to Unrivyal is the **goal**, which helps agents decide which actions to take, as well as ensure that individual efforts can be effectively combined into a group effort more potent than the sum of its parts.
 
