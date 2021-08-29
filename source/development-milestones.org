@@ -1,7 +1,7 @@
 #+TITLE: Development Milestones
 #+OPTIONS: toc:nil
 
-* TODO Proofs of Concept: Protocol, Server, Client
+* IN PROGRESS Proofs of Concept: Protocol, Server, Client
 Ensure that theoretical aspects of Unrival are implementable
 ** DONE Proof of Concept: Procotol
 commit: 0613e8b61d2f0096a634f4e47af2916796997b52   
