@@ -13,8 +13,9 @@ Unrival Protocol
    whitepaper
    protocol
    gherkin
+   development-milestones
    modules
-   step_glossary
+
    
 
 .. autosummary::
