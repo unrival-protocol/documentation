@@ -86,7 +86,7 @@ For starters, take any impending crisis requiring mass cooperative effort to ave
 
 (*Sadly, what to include in this list will be considered a political statement by some. This gets at the root of what we call the meta-crisis...*)
 
-Each of the above crises (indeed, any crisis) is undergirded by a crisis of another order, thwarting our attempts to sensemake and respond rationally to the crisis at hand.  We call this the **meta-crisis**.  Just as the effects of global warming are apparent to anyone willing to look at the data, the effects of this crisis are also apparent in our global inability to respond adequately to the most pressing challenges.  To respond adequately, we regain the capacity to engage in civil dialogue with one another.  Yet, even as the physical environment gets warmer, the social environment `gets cooler <https://www.socialcooling.com/>`_.
+Each of the above crises (indeed, any crisis) is undergirded by a crisis of another order, thwarting our attempts to sensemake and respond rationally to the crisis at hand.  We call this the **meta-crisis**.  Just as the effects of global warming are apparent to anyone willing to look at the data, the effects of this crisis are also apparent in our global inability to respond adequately to the most pressing challenges.  And in order to respond adequately, we must regain the capacity to engage in civil dialogue with one another.  Yet, even as the physical environment gets warmer, the social environment `gets cooler <https://www.socialcooling.com/>`_.
 
 The Internet of Goals
 ~~~~~~~~~~~~~~~~~~~~~
@@ -167,11 +167,9 @@ If we stumble upon a tutorial connected to a goal in this way, we can already ta
 **MADE SYMMETRIC**
 
 One of the greatest strengths of the web -- its enabling of anyone, just about anywhere, to create content -- may also be its Achilles' Heel.  
-
-::
-
-    "A lie can travel around the world and back again while the truth is lacing up its boots." - Mark Twain
-
+#+begin\ :sub:`quote`\
+"A lie can travel around the world and back again while the truth is lacing up its boots." - Mark Twain
+y#+end\ :sub:`quote`\
 ...and this is especially apparent in our current media environment.  Even so, this institutional view is only half the problem: it's also all too easy for individuals to misrepresent/deceive.  This takes various forms: from book reviewers leaving dishonest reviews for personal gain to fake social media profiles used for phishing, it's seems nothing is beyond exploitation.
 
 We are talking about information asymmetry, or one side of a communication knowing less than the other side, and this being used against them.  Conventional answers to this problem are such things as "likes",  consumer advocate periodicals, and other means of signalling.  Unfortunately, these are not able to ensure that those signalling truly have skin in the game.  What is needed are subjective and objective ways of evaluating the integrity of signals, such that the signaller benefits or is penalized proportionally.  This is fulfilled by Unrival's `Claim`_ object, which creates a public feedback receptacle that converges on accurate representations of real opinions.
@@ -301,7 +299,25 @@ Root Proof
 
 The properties of proofs described above are determined by a single proof, called an **archetypal proof**.  This is part of an **archetypal object**, which is an object all complex objects in Unrival have as an ancestor.
 
-A Python implementation (relying on the `unrival\ :sub:`py`\ package <https://github.com/unrival-protocol/unrival_py>`_) is provided below:
+A Python implementation relying on the `unrival\ :sub:`py`\ package <https://github.com/unrival-protocol/unrival_py>`_ is provided below:
+
+.. code:: python
+
+    #!/usr/bin/env python3
+    import sys
+    from unrival_py import *
+
+    # address of object to be proved
+    object_address = sys.argv[1]
+
+    print('Executing root proof...')
+
+    proofs = get_proofs(object_address)
+    print(proofs)
+
+    for proof_address in proofs:
+        # apply each proof to the original object address
+        prove(object_address, None, proof_address)
 
 Complex Objects
 ~~~~~~~~~~~~~~~
@@ -431,16 +447,15 @@ An **interface** is a composition of a set of actions performable by some user(s
 
     [
         {
-            "interpretation": "interface",
-            "name": "prototype"
+            "interpretation": "/interface",
         },
         {
-            "interpretation": "action",
-            "name": "pay bill",
+            "interpretation": "/action",
+            "label": "pay bill",
         },      
         {
-            "interpretation": "action",
-            "name": "check bill",
+            "interpretation": "/action",
+            "label": "check bill",
         }
     ]
 
@@ -455,16 +470,16 @@ An **action** should be performable in order to produce a desired outcome, witho
 
     [
         {
-            "interpretation": "action",
-            "name": "prototype"
+            "interpretation": "/action",
+            "label": "prototype"
         },
         {
-            "interpretation": "provider",
-            "name": "pay bill",
+            "interpretation": "/provider",
+            "label": "pay bill",
         },      
         {
-            "interpretation": "provider",
-            "name": "check bill",
+            "interpretation": "/provider",
+            "label": "check bill",
         }
     ]
 
