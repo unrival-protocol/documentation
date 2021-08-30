@@ -131,7 +131,7 @@ If we stumble upon a tutorial connected to a goal in this way, we can already ta
 One of the greatest strengths of the web -- its enabling of anyone, just about anywhere, to create content -- may also be its Achilles' Heel.  
 #+begin_quote
 "A lie can travel around the world and back again while the truth is lacing up its boots." - Mark Twain
-y#+end_quote
+#+end_quote
 ...and this is especially apparent in our current media environment.  Even so, this institutional view is only half the problem: it's also all too easy for individuals to misrepresent/deceive.  This takes various forms: from book reviewers leaving dishonest reviews for personal gain to fake social media profiles used for phishing, it's seems nothing is beyond exploitation.
 
 We are talking about information asymmetry, or one side of a communication knowing less than the other side, and this being used against them.  Conventional answers to this problem are such things as "likes",  consumer advocate periodicals, and other means of signalling.  Unfortunately, these are not able to ensure that those signalling truly have skin in the game.  What is needed are subjective and objective ways of evaluating the integrity of signals, such that the signaller benefits or is penalized proportionally.  This is fulfilled by Unrival's [[*Claim][claim]] object, which creates a public feedback receptacle that converges on accurate representations of real opinions.
