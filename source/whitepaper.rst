@@ -165,12 +165,12 @@ the most natural result would be a goal object including references related to t
 
     The exact phrasing of these goals is unimportant; with the `Namespace`_, we can define names that are functionally equivalent, and provide support for multiple languages.
 
-If we stumble upon a tutorial connected to a goal in this way, we may already take advantage of functionality that a typical search engine can't provide: thanks to Unrival objects' ability to inherit properties from ancestors (which we'll cover in the section on `Indirect Proof`_), it's easy to make explicit that one goal is dependent upon another.  So, unfortunately, you may be required to learn algebra before calculus.  *But at least this will be obvious to you!*  
+If we stumble upon a tutorial connected to a goal in this way, we can already take advantage of Unrival objects' ability to explicitly inherit from ancestors (which we'll cover in the section on `Indirect Proof`_).  In this case, it's easy to make clear that one goal is dependent upon another.  So, unfortunately, you may be required to learn algebra before.  *But at least this will be obvious to you!*  The dependency graphs 
 
 Objects
 -------
 
-As mentioned, Unrival is based on objects that improve the ability of agents to cooperate.  It accomplishes this by giving agents a language for finding common ground with others.  Underlying this is the assumption that agents may err or deceive while communicating about these objects.  Trust is paramount to effectual communication, and Unrival objects have this baked into them in the way in the way vaults have security baked in.
+As mentioned, Unrival is based on objects that improve the ability of agents to cooperate.  It accomplishes this by giving agents a language for finding common ground with others.  Underlying this is the assumption that agents may err or deceive while communicating about these objects.  Since trust is a prerequisite to effectual communication (and solving coordination problems), Unrival objects have this baked into them as vaults do security.
 
 Put simply, Unrival is a way of making sure objects are what they say they are.  In order to accomplish this, we make objects amenable to verification.  Objects reference *proofs*, either directly or indirectly, and these must be falsifiable.  A **proof** is a computer program that checks whether some object has certain properties.  A **claim** is like a proof that requires input from human agents, usually because the satisfiability criteria are subjective.  For example, a proof may require some integer stored at a certain address to be divisible by 3, while a claim can be made regarding this number's auspiciousness.  Since proofs can be arbitrarily complex, they can serve as the basis for inheritance and also for differentiating objects.
 
