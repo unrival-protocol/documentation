@@ -1,6 +1,9 @@
 ==========
 Whitepaper
 ==========
+-----------------------------
+A Complementary Social Fabric
+-----------------------------
 
     :Author: David Joseph
 
@@ -9,7 +12,7 @@ Whitepaper
 Abstract
 --------
 
-Unrival is a protocol that enables its users (agents) to cooperate more effectively on accomplishing common goals, or to become aware of them when surface-level conflicts appear more imminent.  Agents communicate their intentions via a set of shared objects that constitute bottom-up, composable building blocks for maintaining complex social and economic relationships founded on mutual understanding and accountability.  These objects are not mere mental or social constructs - they have a physical existence as data that agents can interface with via client applications.  
+Unrival is a protocol that enables agents to cooperate more effectively on accomplishing common goals, or to become aware of them when surface-level conflicts appear more imminent.  Agents communicate their intentions via a set of shared objects that constitute bottom-up, composable building blocks for maintaining complex social and economic relationships founded on mutual understanding and accountability.  These objects are not mere mental or social constructs - they have a physical existence as data that agents can interface with via client applications.  
 
 **UNIVERSAL FEEDBACK**
 
@@ -281,6 +284,8 @@ Root Proof
 
 The properties of proofs described above are determined by a single proof, called an **archetypal proof**.  This is part of an **archetypal object**, which is an object all complex objects in Unrival have as an ancestor.
 
+A Python implementation (relying on the `unrival\ :sub:`py`\ package <https://github.com/unrival-protocol/unrival_py>`_) is provided below:
+
 Complex Objects
 ~~~~~~~~~~~~~~~
 
@@ -479,12 +484,17 @@ Implementation
 Package
 ~~~~~~~
 
+`link to Python package <https://github.com/unrival-protocol/unrival_py>`_
+
 Server
 ~~~~~~
+
+`link to the server <https://github.com/unrival-protocol/unrival_server>`_
 
 Client
 ~~~~~~
 
+`link to the client <https://github.com/unrival-protocol/unrival_client>`_   
 The purpose of the client is to map Unrival objects to interfaceable components, for example in a web application.
 
 One function of the client is to help users visualize relations between objects.  The Unrival Client has two views:
