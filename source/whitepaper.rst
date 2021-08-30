@@ -510,8 +510,6 @@ WebComponent
 Visualization
 ^^^^^^^^^^^^^
 
-.. image:: static/images/node-shapes.svg
-
 Detail View
 ^^^^^^^^^^^
 

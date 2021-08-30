@@ -421,14 +421,7 @@ One function of the client is to help users visualize relations between objects.
 *** Router
 A router maps a namespace to a web component.      
 *** WebComponent    
-
 *** Visualization
-#+begin_src mermaid :css-file ./mermaid-styles.css  :file static/images/node-shapes.svg
-graph LR
-    id1((This represents an object))
-    id2[This represents a proof]
-    id1 --> id2
-#+end_src
 *** Detail View
 *** Relation View
 *** Search View     
