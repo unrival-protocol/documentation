@@ -1,9 +1,6 @@
 ==========
 Whitepaper
 ==========
------------------------------
-A Complementary Social Fabric
------------------------------
 
     :Author: David Joseph
 
@@ -165,7 +162,25 @@ the most natural result would be a goal object including references related to t
 
     The exact phrasing of these goals is unimportant; with the `Namespace`_, we can define names that are functionally equivalent, and provide support for multiple languages.
 
-If we stumble upon a tutorial connected to a goal in this way, we can already take advantage of Unrival objects' ability to explicitly inherit from ancestors (which we'll cover in the section on `Indirect Proof`_).  In this case, it's easy to make clear that one goal is dependent upon another.  So, unfortunately, you may be required to learn algebra before.  *But at least this will be obvious to you!*  The dependency graphs 
+If we stumble upon a tutorial connected to a goal in this way, we can already take advantage of Unrival objects' ability to explicitly inherit from ancestors (which we'll cover in the section on `Indirect Proof`_).  In this case, it's easy to make clear that one goal is dependent upon another.  So, unfortunately, you may be required to learn algebra before.  *But at least this will be obvious to you!*  
+
+**MADE SYMMETRIC**
+One of the greatest strengths of the web -- its enabling of anyone, just about anywhere, to create content -- may also be its Achilles' Heel.  As Mark Twain said,
+
+::
+
+    A lie can travel around the world and back again while the truth is lacing up its boots.
+
+...and this is especially apparent in our current media environment.  Even so, this institutional view is only half the problem: it's also all too easy for individuals to misrepresent/deceive.  This takes various forms: from book reviewers leaving dishonest reviews for personal gain to fake social media profiles used for phishing, it's seems nothing is beyond exploitation.
+
+We are talking about information asymmetry, or one side of a communication knowing less than the other side, and this being used against them.  Conventional answers to this problem are such things as "likes",  consumer advocate periodicals, and other means of signalling.  Unfortunately, these are not able to ensure that those signalling truly have skin in the game.  What is needed are subjective and objective ways of evaluating the integrity of signals, such that the signaller benefits or is penalized proportionally.  This is fulfilled by Unrival's `Claim`_ object, which creates a public feedback receptacle that converges on accurate representations of real opinions.
+
+There is much work to be done in designing mechanisms for incentivizing honesty, but we believe the infrastructure for doing so should start with the explication of claims and assessments, made possible by Unrival.
+
+**SUPER APPS**
+So called "super apps" are growing in prevalence.  These implicitly encourage users to give up the struggle of choosing their own apps and services, and give in a single platform that purportedly does everything.  Obviously this is cause for concern: we know by now that the corporations vying for our dependence have goals in mind that don't respect our rights.  But we also see this trend as more or less inevitable.  An everything-platform is nothing if not convenient, and resisting this change may not accomplish anything.  Maybe there's a middle way: *to create a super app based on elevating users' goals*.
+
+We've established some competitive advantages of the Unrival Protocol above, and we want to make it clear in the course of this paper that anything a user might accomplish via a super app is also doable in an Unrival client - in a way that respects users' sovereignty.  
 
 Objects
 -------
