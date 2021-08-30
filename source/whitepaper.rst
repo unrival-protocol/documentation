@@ -141,7 +141,7 @@ The Goal Engine
 
 **UNMET NEEDS**
 
-Search engines are so inextricable from the typical experience of the web that it's becoming difficult to tell how well they are accomplishing their goals, let alone what these goals might be.  The naive view wouldn't ascribe any goals beyond delivering relevant results to the searcher.  Perhaps 20 years ago, this may have been a defensible position - but nowadays, few would call search results unbiased.  After all, search engines are maintained by private companies with various motives tangential to or in conflict with the image of neutrality they'd like to assume (e.g. cultural relevance, political influence, financial gain, and so on; search engines censor search results, bow to the demands of dictators, and profit from private data).  Conflicts of interest are built in to the business model.  An informed view of the goals of search engines, therefore, would conclude that delivering relevant, accurate search results is only a subgoal, and only important insofar as it advances bthese primary goals.
+Search engines are so inextricable from the typical web experience, it's becoming difficult to tell how well they are accomplishing their goals, let alone what these goals might be.  The naive view wouldn't ascribe any goals beyond delivering relevant results to the searcher.  Perhaps 20 years ago, this may have been a defensible position - but nowadays, few would call search results unbiased.  After all, search engines are maintained by private companies with various motives tangential to or in conflict with the image of neutrality they'd like to assume (e.g. cultural relevance, political influence, financial gain, and so on; search engines censor search results, bow to the demands of dictators, and profit from private data).  Conflicts of interest are built in to the business model.  An informed view of the goals of search engines, therefore, would conclude that delivering relevant, accurate search results is only a subgoal, and only important insofar as it advances bthese primary goals.
 
 **MADE EXPLICIT**
 
@@ -149,7 +149,7 @@ We've been building up the case -- and the infrastructure -- for another sort of
 
 Moreover, we may already have the basis for such an affordance, given the goal object introduced above.  We know that users have implicit goals that turn them on to search engines; the question we'll now address is *whether making these goals explicit would be a more human-centric design that empowers users as intended*.  This would call for a slightly different search experience.
 
-For starters, the text input field may be expecting the completion of the sentence **"I want ..."**, rather than being a self-invitation to clickbait.  And what sort of resources would the user then be connected to?  For the goal:
+For starters, the text input field may be expecting the completion of the sentence **"I want ..."**, rather than being a self-invitation (on the part of search providers) to inundate with clickbait.  And what sort of resources would the user then be connected to?  For the goal:
 
 .. code:: org-mode
 
