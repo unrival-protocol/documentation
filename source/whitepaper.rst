@@ -13,7 +13,7 @@ Unrival is a protocol that enables agents to cooperate more effectively on accom
 
 **UNIVERSAL FEEDBACK**
 
-Any thing about which certain properties can be confirmed or denied by third parties (be they humans or computer programs) is an eligible Unrival object.  This may leave out some things, such as first-person experiences or inherently unfalsifiable claims, but most things are included;  in particular, those things with compromised credibility as of late, upon which many people may nonetheless come to depend, such as political parties, medicines, lawyers, etc.  These are things for which honest, accurate feedback is both imperative to and hard to come by.  Thus, the Unrival protocol is addressing an important, unmet need.
+Any thing about which certain properties can be confirmed or denied by third parties (be they humans or computer programs) is an eligible Unrival object.  This may leave out some things, such as first-person experiences or inherently unfalsifiable claims, but most things are included;  in particular, those things with compromised credibility as of late, upon which many people may nonetheless come to depend, such as political parties, medicines, lawyers, etc.  These are things for which honest, accurate feedback is both necessary and hard to come by.  Thus, the Unrival protocol is addressing an important, unmet need.
 
 The credibility of these things can be asserted by their proponents, and confirmed or denied by the agents who experience them first hand.  Furthermore, these claims and the corresponding assessments thereof are accessible to all agents.  Of course, if the problem of eliciting and hosting honest feedback can be solved for objects like the above, the solution will also apply to the conventional subjects of rating systems, like books, films, restaurants, etc.
 
@@ -479,7 +479,7 @@ An **action** should be performable in order to produce a desired outcome, witho
         },      
         {
             "interpretation": "/provider",
-            "label": "check bill",
+            "labely": "check bill",
         }
     ]
 
