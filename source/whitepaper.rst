@@ -13,14 +13,14 @@ Unrival is a protocol that enables its users (agents) to cooperate more effectiv
 
 **UNIVERSAL FEEDBACK**
 
-Any thing about which certain properties can be confirmed or denied by third parties (be they humans or computer programs) is an eligible Unrival object.  This may leave out some things, such as first-person experiences or inherently unfalsifiable claims, but most things are included;  in particular, those things with compromised credibility as of late, upon which many people may nonetheless come to depend, such as political parties, medicines, lawyers, etc (in short, things for which honest, accurate feedback is both important and hard to come by).
+Any thing about which certain properties can be confirmed or denied by third parties (be they humans or computer programs) is an eligible Unrival object.  This may leave out some things, such as first-person experiences or inherently unfalsifiable claims, but most things are included;  in particular, those things with compromised credibility as of late, upon which many people may nonetheless come to depend, such as political parties, medicines, lawyers, etc.  These are things for which honest, accurate feedback is both imperative to and hard to come by.  Thus, the Unrival protocol is addressing an important, unmet need.
 
 The credibility of these things can be asserted by their proponents, and confirmed or denied by the agents who experience them first hand.  Furthermore, these claims and the corresponding assessments thereof are accessible to all agents.  Of course, if the problem of eliciting and hosting honest feedback can be solved for objects like the above, the solution will also apply to the conventional subjects of rating systems, like books, films, restaurants, etc.
 
 **RECTIFICATION OF NAMES**
 
 
-Properties that can be validated or checked are not limited to credibility scores.  More broadly, Unrival can be seen as a way of ensuring that data located at distinct addresses within a network will satisfy certain conditions.  It also includes a namespace system for binding natural language references to these addresses.  This is intended to ensure that natural language, which has more potential for abuse than constricted/constructed language, can also benefit from built in validation.  (Incidentally, this can also be seen as a technological strategy for `rectifying names <https://en.wikipedia.org/wiki/Rectification_of_names>`_ à la Confucius).
+Properties that can be validated or checked are not limited to credibility scores.  More broadly, Unrival can be seen as a way of ensuring that data located at distinct addresses within a network will satisfy certain conditions.  It also includes a namespace system for binding natural language references to these addresses.  This is intended to ensure that natural language, which has more potential for misuse than constricted/constructed language, can also benefit from built in validation.  (Incidentally, this can also be seen as a technological strategy for `rectifying names <https://en.wikipedia.org/wiki/Rectification_of_names>`_ à la Confucius).
 
 
 **IMPLEMENTATION**
@@ -37,7 +37,7 @@ Unrival seeks to pave a road to cooperation when defection seems to be, in the r
 
 But, where agents stand to benefit maximally by cooperating, shouldn't they be doing so already?  This may seem paradoxical, but not always.  Think of Mutually Assured Destruction: although individual nations may prefer all-around nuclear disarmament, they'd be crazy (by this calculus) to adopt this strategy - doing so would only give other nations a leg up in the struggle for international dominance, and would be very unlikely to bring about the optimal outcome.  Thus, in a nuclear-armed world, nations are trapped in a *race to the bottom*.
 
-In short, our problem boils down to: *how can we cooperate when we are stuck in rivalrous equilibria*?  Unrival is an attempt at a technological answer to this question.  Our answer starts with a set of shared concepts, the use of which lowers the coordination costs (e.g. the requisite energy, the inherent risk, and so on) associated with cooperation.  This has the effect of putting maximally beneficial outcomes within agents' reach.  Hence our claim that *agents using Unrival outcompete those that don't*.  This can be understood from the point of view of evolutionary biology: although selfish individuals beat non-selfish individuals, non-selfish groups beat selfish groups, according to `multi-level selection theory <https://en.wikipedia.org/wiki/Group_selection#Multilevel_selection_theory>`_.  In brief: **Unrival is a technology for creating non-selfish groups**.  
+In short, our problem boils down to: *how can we cooperate when we are stuck in rivalrous equilibria*?  Unrival is an attempt at a technological answer to this question.  Our answer starts with a set of shared concepts, the use of which lowers the coordination costs (e.g. the requisite energy, the inherent risk, and so on) associated with cooperation.  This has the effect of putting maximally beneficial outcomes within agents' reach.  Hence our claim that *agents using Unrival outcompete those that don't*.  Seen from the point of view of evolutionary biology (specifically,  `multi-level selection theory <https://en.wikipedia.org/wiki/Group_selection#Multilevel_selection_theory>`_): *although selfish individuals beat non-selfish individuals, non-selfish groups beat selfish groups*.  In brief: **Unrival is a technology for creating non-selfish groups**.
 
 The Stag Hunt
 ~~~~~~~~~~~~~
@@ -84,9 +84,9 @@ For starters, take any impending crisis requiring mass cooperative effort to ave
 
 - proliferation of WMDs
 
-(*Sadly, what to include or exclude in this list will be considered a political statement by some. This gets at the root of what we call the meta-crisis...*)
+(*Sadly, what to include in this list will be considered a political statement by some. This gets at the root of what we call the meta-crisis...*)
 
-Each of the above crises (indeed, any crisis) is undergirded by a crisis of another order, thwarting our attempts to sensemake and respond rationally to the crisis at hand.  We call this the **meta-crisis**.  Just as the effects of global warming are apparent to anyone willing to look at the data, the effects of this crisis are also apparent in our global inability to respond adequately to the most pressing challenges.  *Even as the physical environment gets warmer, the social environment `gets cooler <https://www.socialcooling.com/>`_*.
+Each of the above crises (indeed, any crisis) is undergirded by a crisis of another order, thwarting our attempts to sensemake and respond rationally to the crisis at hand.  We call this the **meta-crisis**.  Just as the effects of global warming are apparent to anyone willing to look at the data, the effects of this crisis are also apparent in our global inability to respond adequately to the most pressing challenges.  To respond adequately, we regain the capacity to engage in civil dialogue with one another.  Yet, even as the physical environment gets warmer, the social environment `gets cooler <https://www.socialcooling.com/>`_.
 
 The Internet of Goals
 ~~~~~~~~~~~~~~~~~~~~~
@@ -118,7 +118,7 @@ The act of TODO list creation will have been turned from monologue to dialogue, 
 
 But first, It may be necessary to provide some motivation for such a curious use of networking technology.  A single, top-level TODO list could exist for a group of agents of arbitrary size, representing these agents' common goals.  TODO items requiring more deliberation could be nested TODO lists themselves.  All lists and items could be curated through a combination of meritocratic and democratic selection processes.  Now, please suspend your skepticism for a moment and allow yourself to imagine a top-level reflecting the needs of all of humanity (condensed to 10 items), each being nested to a degree proportional to the depth of the problem to be solved.  It may have the appearance of a top-down list of orders, but in actuality consist of organically-grown units of wilful compliance, coming together through consensus.  It could benefit from the advantages of centalization (e.g. clarity of purpose and direction) and decentralization alike.  Given the ability to create such lists, *and enough users involved in its creation*, it's conceivable that an adequate response to `The Meta-Crisis`_ could be realized.  
 
-How do we get there?  How are TODO items to be prioritized?  Who can interact with them?  All of these rules may be enforced by `Proof`_.  The following illustrates conditions that data consumable by client applications must satisfy:
+How do we get there?  How are TODO items to be prioritized?  Who can interact with them?  All of these rules may be enforced by `Proof`_.  The following illustrates some conditions that may be required of data consumable by client applications:
 
 .. code:: org-mode
 
@@ -136,114 +136,88 @@ We will develop this notion further using *goals*, which can subsume the TODO it
 The Goal Engine
 ~~~~~~~~~~~~~~~
 
-A 
+**UNMET NEEDS**
+
+Search engines are so inextricable from the typical experience of the web that it's becoming difficult to tell how well they are accomplishing their goals, let alone what these goals might be.  The naive view wouldn't ascribe any goals beyond delivering relevant results to the searcher.  Perhaps 20 years ago, this may have been a defensible position - but nowadays, few would call search results unbiased.  After all, search engines are maintained by private companies with various motives tangential to or in conflict with the image of neutrality they'd like to assume (e.g. cultural relevance, political influence, financial gain, and so on; search engines censor search results, bow to the demands of dictators, and profit from private data).  Conflicts of interest are built in to the business model.  An informed view of the goals of search engines, therefore, would conclude that delivering relevant, accurate search results is only a subgoal, and only important insofar as it advances bthese primary goals.
+
+**MADE EXPLICIT**
+
+We've been building up the case -- and the infrastructure -- for another sort of 'engine', the goal of which would be *connecting agents with the means of accomplishing their own goals* - not those of the faux unbiased.
+
+Moreover, we may already have the basis for such an affordance, given the goal object introduced above.  We know that users have implicit goals that turn them on to search engines; the question we'll now address is *whether making these goals explicit would be a more human-centric design that empowers users as intended*.  This would call for a slightly different search experience.
+
+For starters, the text input field may be expecting the completion of the sentence **"I want ..."**, rather than being a self-invitation to clickbait.  And what sort of resources would the user then be connected to?  For the goal:
+
+.. code:: org-mode
+
+    I want to learn calculus
+
+the most natural result would be a goal object including references related to the accomplishment of this goal (e.g. tutorials, courses, tutors, etc).  Furthermore, this goal, being a complex object, may inherit from other goals:
+
+.. code:: org-mode
+
+    I want to learn algebra
+
+.. note::
+
+    The exact phrasing of these goals is unimportant; with the `Namespace`_, we can define names that are functionally equivalent, and provide support for multiple languages.
+
+If we stumble upon a tutorial connected to a goal in this way, we may already take advantage of functionality that a typical search engine can't provide: thanks to Unrival objects' ability to inherit properties from ancestors (which we'll cover in the section on `Indirect Proof`_), it's easy to make explicit that one goal is dependent upon another.  So, unfortunately, you may be required to learn algebra before calculus.  *But at least this will be obvious to you!*  
 
 Objects
 -------
 
-As mentioned, Unrival is based on concepts that improve the ability of agents to cooperate.  It accomplishes this by giving agents a language for finding common ground with others.  Underlying this is the assumption that agents may err or deceive while communicating about objects (as certain auto mechanics are won't to do when informing customers which repairs their cars will need, or used car dealers as they unload their lemons on the unsuspecting.  Most industries are full of examples).  Therefore, common ground must be built on trust, and objects must have this baked into them.
+As mentioned, Unrival is based on objects that improve the ability of agents to cooperate.  It accomplishes this by giving agents a language for finding common ground with others.  Underlying this is the assumption that agents may err or deceive while communicating about these objects.  Trust is paramount to effectual communication, and Unrival objects have this baked into them in the way in the way vaults have security baked in.
 
-Unrival can be seen as a way of making sure objects are what they say they are.  In order to accomplish this, we make objects amenable to verification.  Objects reference *proofs* and/or *claims*, either directly or indirectly, and these must be falsifiable.  A **proof** is a computer program that checks whether some object has certain properties.  A **claim** is like a proof that requires input from human agents, usually because the satisfiability criteria are subjective.  For example, a proof may require some integer stored at a certain address to be divisible by 3, while a claim can be made regarding this number's auspiciousness.
+Put simply, Unrival is a way of making sure objects are what they say they are.  In order to accomplish this, we make objects amenable to verification.  Objects reference *proofs*, either directly or indirectly, and these must be falsifiable.  A **proof** is a computer program that checks whether some object has certain properties.  A **claim** is like a proof that requires input from human agents, usually because the satisfiability criteria are subjective.  For example, a proof may require some integer stored at a certain address to be divisible by 3, while a claim can be made regarding this number's auspiciousness.  Since proofs can be arbitrarily complex, they can serve as the basis for inheritance and also for differentiating objects.
 
 There are two types of objects: simple and complex.
 
 Simple Objects
 ~~~~~~~~~~~~~~
 
-Proof
-^^^^^
-
-In Unrival, anything that exists does so because of its having been proved in some way.
-
-- Proof can have **subjectively** or **objectively** defined criteria for satisfiability.
-
-- A subjectively defined proof requires agents to assess the validity of the proof.
-
-  - there are two ways for agents to give feedback on validity
-
-    - when an object is created, it is done so with subjective defined criteria for success
-
-    - at random intervals, objects are checked for validity (i.e. their proofs are run).  if invalid, they are pruned.
-
-    -
-
-- Formalising Subjectively executed proofs, also called **assessments**, are part of a possible protocol that has a curated set of concepts for reflecting a satisfying intersubjective **context**
-
-Name
-^^^^
-
-Interpretation
-^^^^^^^^^^^^^^
-
-Complex Objects
-~~~~~~~~~~~~~~~
-
-Criteria
-::::::::
-
-- any object that comes into existence must meet certain proof criteria
-
-- objects must meet both subjective and objective proof criteria
-
-- objects may meet objective proof criteria that don't belong to them specifically, but rather belong to class to which they belong (proof criteria can be inherited)
-
-- 
-
-
-It is difficult to query for subjective opinions about things that matter and get faithful results.
-
-Simple Objects
-~~~~~~~~~~~~~~
-
-Objects are content-addressed arrays of **parts**.  For example, the following object has two parts:
-
-.. code:: json
-
-    [
-      {
-        "label": "breed",
-        "value": "Dalmation"
-      },
-      {
-        "label": "name",
-        "value": "Daisy"
-      }  
-    ]
-
 A process called hashing can be used to create a signature from data that will always look the same, given the same input data.
 
 Hashing the above data using IPFS produces the content-based address ``QmeDWRWMc3YoRKyueRAmqmJ3bVwD1oc74eVoEATtfdYJJh``.  This is similar to an IP address in that it can be used to fetch data, but it also comes with certain advantages owing to the direct relationship between the content of the data and the address itself.
+
+1. It's not bound to a specific location, so it can increase routing efficiency if identical target data exists closer to the requester
+
+2. It's immutable, so its integrity can be counted on
 
 Simple objects are objects that do not contain other objects embedded in them.  Since neither of the above object's parts are content-addressed objects, it is a simple object.
 
 Name
 ^^^^
 
-Currently there is only need for one type of simple object - a *name*.  A **name** acts as a mnemonic label attached to (i.e. part of) other objects.  Names can have attributes (like "language\ :sub:`code`\" in the following example), which can be useful in various client applications:
+A name is a simple object and a possibly non-unique, humanly-readable way of referring to other objects.
 
-.. code:: json
+*Name:*
 
-    [
-        {
-            "type": "name",
-            "value": "dog",
-            "language_code": "EN"
-        }
-    ]
+.. code:: org
 
-Proofs
-~~~~~~
+    dog
 
-A **proof** is a program that is fed an address as its input and terminates in either success or failure, usually dependent upon the attributes of the data at said address.  
+*Address (distinct):*
 
-There are two types of proofs: subjective and objective.  
-An object has been proved **objectively** if passing the proof was a mathematical certainty, given the address.      
-An object has been proved **subjectively** if it reflects the opinions of faithful observers.
+.. code:: org
 
-Objective
-^^^^^^^^^
+    QmXQKbAA75HTxiGQz3JJzzLgn2PJc7nRVM2jXPRJGGwK3Y
 
-Most of Unrival's advanced functionality is due to the ability of complex objects to be *proved*, either directly or indirectly.  Objects that are proved directly have a proof part, while objects proved indirectly have a prototypal parent with a proof they must also satisfy:
+Interpretation
+^^^^^^^^^^^^^^
+
+An interpretation is a simple object and a hierarchical ordering of names, where levels are conventionally separated by slashes (/) and the bottom level comes last.
+
+.. code:: org
+
+    /animal/mammal/dog
+
+Proof
+^^^^^
+
+A proof is a simple object which, given another object and in some `Context`_, is either satisfied by or not satisfied by this other object (represented by 1 or 0, respectively).
+
+Most of Unrival's advanced functionality is due to the ability of `Complex Objects`_ to be *proved*.  Objects that are proved directly have a *proof* part, while objects proved indirectly have a parent (and possibly other ancestors) with a number of proofs they must also satisfy:
 
 .. image:: static/images/proofs.svg
 
@@ -271,7 +245,7 @@ Once we hash the above and add it as a part to our original set, we have the fol
 
     [
       {
-        "type": "proof",
+        "interpretation": "/proof",
         "address": "QmV7HTZJqd81DWo12MVmB6BtkS8V28JNU3587HPsJj1rv6"
       },
       {
@@ -286,34 +260,92 @@ Once we hash the above and add it as a part to our original set, we have the fol
 
 One more hash gives us the result: ``QmWJwaDMcKgysTwC2qktH27eqYHHauNXHryhzTzNN8szub`` - which is a content-based address that can be fed to a proof.  The object at this address is claiming to be a Dalmation (rightfully so, based on the rather easily-satisfied proof above that it includes as one of its parts).
 
-*When an object's content address is fed to a a proof that is contained as one of its parts, it is proved directly.*
+*When an object's content address is fed to a proof that is contained as one of its parts, it is proved directly.*
 
 Indirect Proof
 ::::::::::::::
 
-Some objects do not contain explicit references to proofs.  Instead, they contain references to prototypes, whose proofs they must satisify.  
+Some objects do not contain explicit references to proofs.  Instead, they contain indirect references to other objects whose proofs they must satisfy.  
 
 .. image:: static/images/indirect-proof-1.svg
 
-This means that in order to come into existence, "some dalmation" must satisfy both the life form proof and the mammal proof, besides its namesake proof:
+This means that in order to come into existence, "dog" must satisfy both the animal proof and the mammal proof (in this case, it doesn't have its own proof, which means it is not progenerative):
 
 .. image:: static/images/indirect-proof-2.svg
 
 Multiple Inheritance
 ::::::::::::::::::::
 
-Archetypal Proof
-::::::::::::::::
+Root Proof
+::::::::::
 
 The properties of proofs described above are determined by a single proof, called an **archetypal proof**.  This is part of an **archetypal object**, which is an object all complex objects in Unrival have as an ancestor.
 
-Subjective
-^^^^^^^^^^
-
-Subjective Proofs are required for each and every Unrival object.  Not every object
-
 Complex Objects
 ~~~~~~~~~~~~~~~
+
+Complex objects are content-addressed arrays of **parts**.  For example, the following object has two parts:
+
+.. code:: json
+
+    [
+      {
+        "label": "breed",
+        "value": "Dalmation"
+      },
+      {
+        "label": "name",
+        "value": "Daisy"
+      }  
+    ]
+
+Context
+^^^^^^^
+
+A context is a complex object and a mapping from interpretations to addresses of other objects (referred to as their meanings).   
+
+e.g.
+
+.. code:: json
+
+    [
+        {
+            "interpretation": "/interpretation",
+            "address": "QmWDd8Fc3hXevickhyxZqo5UhLJutWiJraNxjx4YCqnJ3m",
+            "meaning": "<address_of_another_object>"
+        }
+    ]
+
+The simplest possible context is the empty context:
+
+.. code:: json
+
+    [
+        {
+            "interpretation": "/context",
+            "address": null
+        }
+    ]
+
+
+With the exception of the empty context, every complex object (including non-empty contexts) must contain a single context, referred to as the parent context.  This context determines how other objects referenced by the object in question should be interpreted.  To *interpret an object* means to look up the value assigned to a certain interpretation within a context.
+
+.. note::
+
+    Certain fields of an object, like address in the following, may be left out of examples when they are irrelevant.
+
+.. code:: json
+
+    [
+        {
+            "interpretation": "/interpretation",
+            "address": "QmWDd8Fc3hXevickhyxZqo5UhLJutWiJraNxjx4YCqnJ3m",
+            "meaning": "<address_of_another_object>"
+        },
+        {
+            "interpretation": "/context"
+        }      
+    ]
 
 Namespace
 ^^^^^^^^^
@@ -322,37 +354,23 @@ A **namespace** is a collection of names that can be considered equivalent for s
 
 .. image:: static/images/namespace.svg
 
-In Unrival there are two kinds of names:
+Agent
+^^^^^
 
-Authoritative
-:::::::::::::
-
-Also called an object's *type*, this is an indication to prefer one name over others -- when there are multiple name variants referring to the same object -- for the purpose of simplicity.
-
-Non-Authoritative
-:::::::::::::::::
-
-Non-authoritative names are variants of an authoritative name.
-
-For example, Unrival Clients and Servers (if they implement Context \_\_) can also refer to objects of type *agent* as *actors*.  The former is authoritative and the latter is a non-authoritative variant.
-
-Agent/Actor/User
-^^^^^^^^^^^^^^^^
-
-Outcome/Event
-^^^^^^^^^^^^^
+Outcome
+^^^^^^^
 
 An outcome is a claim that is a subjective event.      
 
-Claim (Subjective Proof Criteria)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Claim
+^^^^^
 
 A claim is just a subjective proof that hasn't been validated.
 
 Every object must start with a claim, and this claim, after having been proved, allows the object to exist.
 
-Judgment/Evaluation/Assessment
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Assessment
+^^^^^^^^^^
 
 ::
 
@@ -390,15 +408,15 @@ An **interface** is a composition of a set of actions performable by some user(s
 
     [
         {
-            "type": "interface",
+            "interpretation": "interface",
             "name": "prototype"
         },
         {
-            "type": "action",
+            "interpretation": "action",
             "name": "pay bill",
         },      
         {
-            "type": "action",
+            "interpretation": "action",
             "name": "check bill",
         }
     ]
@@ -414,15 +432,15 @@ An **action** should be performable in order to produce a desired outcome, witho
 
     [
         {
-            "type": "action",
+            "interpretation": "action",
             "name": "prototype"
         },
         {
-            "type": "provider",
+            "interpretation": "provider",
             "name": "pay bill",
         },      
         {
-            "type": "provider",
+            "interpretation": "provider",
             "name": "check bill",
         }
     ]
@@ -431,43 +449,6 @@ may contain an aggregate of adapters representing these diverse means.  Means, a
 
 Adapter
 ^^^^^^^
-
-Context
-^^^^^^^
-
-Every unrival object that is created has a context in which it was created as one of its parts.  This reference to a context's content based address shows a client whether or not an object that doesn't belong to their context can be merged.
-
-
-
-
-A context is like a filesystem that maps names and name hierarchies to data.  
-
-A **context** determines how concepts are defined for their inhabitants (i.e. users).  The purpose of a context is to assign a hierarchical order to namespaces.  For example:
-
-.. code:: json
-
-    [
-        {
-            "type": "namespace",
-            "address": "@#q23kflj2fkl3jrkl23j23kf",
-            "children": [
-                {
-                    "type": "namespace",
-                    "address": "",
-                    "children": [
-                        {
-                            "type": "namespace",
-                            "address": ""
-                        }
-                    ]
-                }
-            }
-        }
-    ]  
-
-The above addresses correspond to the following goal objects:
-"solve climate change" --> "reduce carbon emissions" --> "pass a cap and trade law"
-As such, it is an exceedingly simple context where everything revolves around a cap and trade law getting passed. 
 
 More Complex Objects
 ~~~~~~~~~~~~~~~~~~~~
@@ -492,27 +473,11 @@ A model is a statement about a state of affairs.
 Todo
 ^^^^
 
-Workflows
----------
-
-Start a Business
-~~~~~~~~~~~~~~~~
-
-Sell Your Car
-~~~~~~~~~~~~~
-
-Get Insurance
-~~~~~~~~~~~~~
-
-- due to asymmetric information being solved, insurance consts less
-
-- 
-
 Implementation
 --------------
 
-Python Module
-~~~~~~~~~~~~~
+Package
+~~~~~~~
 
 Server
 ~~~~~~
@@ -545,3 +510,14 @@ Relation View
 
 Search View
 ^^^^^^^^^^^
+
+An Example: The DACP
+--------------------
+
+Problem
+~~~~~~~
+
+Existing platforms offer regular consumers a chance to become producers and create value for themselves and others, but these platforms are run like any other large organizations under the hood.  For example, they fight to keep wages low and not to provide health insurance.  Thus, there are misaligned incentives between the platform offerer and prosumers.  A platform could be designed that cuts out the middleman -- i.e. the stakeholders whose demand for profit keeps wages low for those doing most of the physical labor -- by directly connecting the builders of the platform (designers, programmers, etc) with the users of the platform.  This has only become possible relatively recently with the advent of programmable money and decentralized, autonomous organizations (e.g. Ethereum, Aragon) - but the potential of this technology to revolutionize platform ecosystems hasn't yet been felt in service industries.  Unrival aims to change this by giving platform builders and platform users a channel for direct channel for value exchange.   
+
+Solution
+~~~~~~~~

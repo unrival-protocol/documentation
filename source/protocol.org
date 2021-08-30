@@ -76,7 +76,7 @@ e.g.
 
 
 
-*6) A proof is a simple object which, given another object and in the context of some context, is either satisfied by or not satisfied by this other object (represented by 1 or 0, respectively).*
+*6) A proof is a simple object which, given another object and in some context, is either satisfied by or not satisfied by this other object (represented by 1 or 0, respectively).*
 
 6.1) If an object references a proof, it must satisfy this proof.
 
