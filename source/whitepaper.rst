@@ -322,6 +322,7 @@ Complex objects are content-addressed arrays of **parts**.  For example, the fol
 Context
 ^^^^^^^
 
+y
 A context is a complex object and a mapping from interpretations to addresses of other objects (referred to as their meanings).   
 
 e.g.
