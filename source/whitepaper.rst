@@ -13,7 +13,7 @@ Unrival is a protocol that enables agents to cooperate more effectively on accom
 
 **UNIVERSAL FEEDBACK**
 
-Any thing about which certain properties can be confirmed or denied by third parties (be they humans or computer programs) is an eligible Unrival object.  This may leave out some things, such as first-person experiences or inherently unfalsifiable claims, but most things are included;  in particular, those things with compromised credibility as of late, upon which many people may nonetheless come to depend, such as political parties, medicines, lawyers, etc.  These are things for which honest, accurate feedback is both necessary and hard to come by.  Thus, the Unrival protocol is addressing an important, unmet need.
+Any thing about which certain properties can be confirmed or denied by third parties (be they humans or computer programs) is an eligible Unrival object.  This may leave out some things, such as first-person experiences or inherently unfalsifiable claims, but most things are included;  in particular, those things with compromised credibility as of late, upon which many people may nonetheless come to depend, such as political parties, medicines, lawyers, and so on - *things for which honest, accurate feedback is both necessary and hard to come by*.  Thus, the Unrival protocol is addressing an important, unmet need.
 
 The credibility of these things can be asserted by their proponents, and confirmed or denied by the agents who experience them first hand.  Furthermore, these claims and the corresponding assessments thereof are accessible to all agents.  Of course, if the problem of eliciting and hosting honest feedback can be solved for objects like the above, the solution will also apply to the conventional subjects of rating systems, like books, films, restaurants, etc.
 
@@ -33,7 +33,7 @@ Overview
 Introduction
 ~~~~~~~~~~~~
 
-Unrival seeks to pave a road to cooperation when defection seems to be, in the realest sense, the more rational choice for self-interested agents.  As it is meant to be realistic and not fantastic, it does so without appealing to the moral inclinations of its subjects - but instead by re-framing self-interest and laying bare latent incentives to cooperate.
+Unrival seeks to pave a road to cooperation when defection seems to be, iny the realest sense, the more rational choice for self-interested agents.  As it is meant to be realistic and not fantastic, it does so without appealing to the moral inclinations of its subjects - but instead by re-framing self-interest and laying bare latent incentives to cooperate.
 
 But, where agents stand to benefit maximally by cooperating, shouldn't they be doing so already?  This may seem paradoxical, but not always.  Think of Mutually Assured Destruction: although individual nations may prefer all-around nuclear disarmament, they'd be crazy (by this calculus) to adopt this strategy - doing so would only give other nations a leg up in the struggle for international dominance, and would be very unlikely to bring about the optimal outcome.  Thus, in a nuclear-armed world, nations are trapped in a *race to the bottom*.
 
@@ -101,7 +101,7 @@ We'll now shift our focus from problems to some historical attempts at solutions
 
 - For example, Bitcoin has been called the `the Internet of Money <https://theinternetofmoney.info/>`_, and has been claimed to do for money what the web did for humanly-digestible text.
 
-- The subjects of such claims (and the claims themselves) can be turned into Unrival objects, opening a channel of meaningful feedback pertaining to these claims.  For agents, the strategic advantage gained thereby would be the ability to know whether these claims have been substantiated.
+- The subjects of such claims (and the claims themselves) can be turned into Unrival objects, opening a feedback channel where none previously existed.  For agents, the strategic advantage gained thereby would be the ability to know whether these claims have been substantiated.
 
 - Naturally, not all objects have the potential to inspire dialogue with significant growth factor.  One particular object that may is the `Goal`_.  This is because:
 
