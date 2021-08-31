@@ -2,7 +2,7 @@
 Whitepaper
 ==========
 
-    :Author: David Joseph
+    :Author: dvdgdnjsph@gmail.com
 
 
 

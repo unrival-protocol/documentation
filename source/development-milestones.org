@@ -17,23 +17,26 @@ commit: 0613e8b61d2f0096a634f4e47af2916796997b52
 ** TODO Proof of Concept: Client Application
 *** TODO Create Vue components for displaying Interface objects
 *** TODO Prove basic interaction with (insecure) Interface objects
-**** TODO 
-* TODO Documentation and Presentation
+* TODO Documentation
 ** IN PROGRESS write whitepaper
 ** IN PROGRESS create website
 ** IN PROGRESS write tutorials
 *** IN PROGRESS for developers
-* TODO Milestone: Define Claim Object
+* TODO Website
+* TODO Milestone: Create Claim Object
 ** TODO subjective opinion can be used as a basis for inheritance
 * TODO Milestone: Context Merging
 ** IN PROGRESS define requirements for context merging
 ** TODO write algorithm for context merging
-* TODO Milestone: Minimum Viable Product: Collaborative Zettelkasten
+* TODO Milestone: Create Process Object
+* TODO Milestone: MVP: Create [[https://egp.community/][Ephemeral Group Process]] Object
+* TODO Milestone: MVP: Create [[https://www.prosocial.world/the-science][ARC Process]] Object
+* TODO Milestone: MVP Collaborative Zettelkasten
 Zettelkasten is note taking software used by individuals for making connections between diverse topics through the constructions of knowledge graphs.  The Unrival Protocol will enable groups to maintain collaborative knowledge graphs by giving them a curation mechanism (i.e. democratically deciding how to define nodes in the graph).  This is a perfect real-world test to develop Unrival's potential as a tool for collective intelligence elicitation.
 ** TODO using the client interface, users can create knowledge graphs by uploading markdown directories
 ** TODO connect with [[https://anagora.org/node/agora][agora]]
 ** TODO enable download/export for backwards compatibility with org-roam
-* TODO Milestone: Promise Object   
+* TODO Milestone: Promise Object
 * TODO Milestone: Implement Credit Commons Protocol as Unrival Objects
 To be used as a basis for connecting different payment methods over Unrival clients
 * TODO Milestone: Goal Objet

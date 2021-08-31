@@ -1,5 +1,5 @@
 #+TITLE: Whitepaper
-#+AUTHOR: David Joseph
+#+AUTHOR: dvdgdnjsph@gmail.com
 #+OPTIONS: toc:nil
 
 * Abstract
