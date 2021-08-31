@@ -144,7 +144,7 @@ There is much work to be done in designing mechanisms for incentivizing honesty,
 
 *SUPER APPS*
 
-So called "super apps" are growing in prevalence.  These apps implicitly encourage users to give up the struggle of choosing their own services, and give in to a single platform purportedly capable of everything.  Obviously this is cause for concern: we know by now that the corporations vying for our dependence have incentives misaligned with our own.  But we also see this trend as more or less inevitable.  An everything-platform is nothing if not convenient, and resistance may be futile.  Maybe there's a middle way: /to create a super app that elevates users' goals/.
+So called "super apps" are growing in prevalence.  These apps encourage users to give up the struggle of choosing their own services by offering a single platform purportedly capable of everything.  Obviously this is cause for concern: we know by now that the corporations vying for our dependence have incentives misaligned with our own.  But we also see this trend as more or less inevitable.  An everything-platform is nothing if not convenient, and resistance may be futile.  Maybe there's a middle way: /to create a super app that elevates users' goals/.
 
 We've already established some competitive advantages in using the Unrival Protocol.  We want to make it clear in the course of this paper that anything a user might accomplish with a super app is also doable on an Unrival client.  But most importantly, we feel it is imperative that such an app is produced so that the next generation of internet users won't have to choose between convenience and personal sovereignty.
 
