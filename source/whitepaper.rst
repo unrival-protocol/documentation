@@ -129,7 +129,9 @@ How do we get there?  How are TODO items to be prioritized?  Who can interact wi
     * A todo item has an interface that allows it to be created, edited, or deleted.
     * Only agents subscribing to the interpretation with which it is associated by perform these actions.
 
-*(Note: The above is written in natural language for sake of comprehensibility, but code examples are readily available)*.
+.. note::
+
+    The above is written in natural language for sake of comprehensibility, but code examples are readily available
 
 We will develop this notion further using *goals*, which can subsume the TODO item and offer more advanced functionality pertaining to collaboration and responsibilities.  First we'll consider the consequences of such an internet, should it take hold.
 
@@ -138,7 +140,7 @@ The Goal Engine
 
 **UNMET NEEDS**
 
-Search engines are so inextricable from the typical web experience, it's becoming difficult to tell how well they are accomplishing their goals, let alone what these goals might be.  The naive view wouldn't ascribe any goals beyond delivering relevant results to the searcher.  Perhaps 20 years ago, this may have been a defensible position - but nowadays, few would call search results unbiased.  After all, search engines are maintained by private companies with various motives tangential to or in conflict with the image of neutrality they'd like to assume (e.g. cultural relevance, political influence, financial gain, and so on; search engines censor search results, bow to the demands of dictators, and profit from private data).  Conflicts of interest are built in to the business model.  An informed view of the goals of search engines, therefore, would conclude that delivering relevant, accurate search results is only a subgoal, and only important insofar as it advances bthese primary goals.
+Search engines are so inextricable from the typical web experience, it's becoming difficult to tell how well they are accomplishing their goals, let alone what these goals might be.  The naive view wouldn't ascribe any goals beyond delivering relevant results to the searcher.  Perhaps 20 years ago, this would have been a defensible position - but nowadays, few would call search results unbiased.  After all, search engines are maintained by private companies with various motives tangential to or in conflict with the image of neutrality they'd like to assume (e.g. cultural relevance, political influence, financial gain, and so on; search engines censor search results, bow to the demands of dictators, and profit from private data).  Conflicts of interest are built in to the business model.  An informed view of the goals of search engines, therefore, would conclude that delivering relevant, accurate search results is only a subgoal, and only important insofar as it advances bthese primary goals.
 
 **MADE EXPLICIT**
 
@@ -166,7 +168,7 @@ If we stumble upon a tutorial connected to a goal in this way, we can already ta
 
 **MADE SYMMETRIC**
 
-One of the greatest strengths of the web -- its enabling of anyone, just about anywhere, to create content -- may also be its Achilles' Heel.  
+One of the greatest strengths of the web -- its enabling of anyone, just about anywhere, to create content -- may also be its Achilles' Heel.
 
 ::
 
@@ -180,9 +182,9 @@ There is much work to be done in designing mechanisms for incentivizing honesty,
 
 **SUPER APPS**
 
-So called "super apps" are growing in prevalence.  These implicitly encourage users to give up the struggle of choosing their own apps and services, and give in a single platform that purportedly does everything.  Obviously this is cause for concern: we know by now that the corporations vying for our dependence have goals in mind that don't respect our rights.  But we also see this trend as more or less inevitable.  An everything-platform is nothing if not convenient, and resisting this change may not accomplish anything.  Maybe there's a middle way: *to create a super app based on elevating users' goals*.
+So called "super apps" are growing in prevalence.  These apps implicitly encourage users to give up the struggle of choosing their own services, and give in to a single platform purportedly capable of everything.  Obviously this is cause for concern: we know by now that the corporations vying for our dependence have incentives misaligned with our own.  But we also see this trend as more or less inevitable.  An everything-platform is nothing if not convenient, and resistance may be futile.  Maybe there's a middle way: *to create a super app that elevates users' goals*.
 
-We've established some competitive advantages of the Unrival Protocol above, and we want to make it clear in the course of this paper that anything a user might accomplish via a super app is also doable in an Unrival client - in a way that respects users' sovereignty.  
+We've already established some competitive advantages in using the Unrival Protocol.  We want to make it clear in the course of this paper that anything a user might accomplish with a super app is also doable on an Unrival client.  But most importantly, we feel it is imperative that such an app is produced so that the next generation of internet users won't have to choose between convenience and personal sovereignty.
 
 Objects
 -------

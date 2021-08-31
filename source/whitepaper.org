@@ -98,14 +98,16 @@ How do we get there?  How are TODO items to be prioritized?  Who can interact wi
 ,* A todo item has an interface that allows it to be created, edited, or deleted.
 ,* Only agents subscribing to the interpretation with which it is associated by perform these actions.
 #+end_src
-/(Note: The above is written in natural language for sake of comprehensibility, but code examples are readily available)/.
+#+begin_note
+The above is written in natural language for sake of comprehensibility, but code examples are readily available
+#+end_note
 
 We will develop this notion further using /goals/, which can subsume the TODO item and offer more advanced functionality pertaining to collaboration and responsibilities.  First we'll consider the consequences of such an internet, should it take hold.
 
 ** The Goal Engine
 *UNMET NEEDS*
 
-Search engines are so inextricable from the typical web experience, it's becoming difficult to tell how well they are accomplishing their goals, let alone what these goals might be.  The naive view wouldn't ascribe any goals beyond delivering relevant results to the searcher.  Perhaps 20 years ago, this may have been a defensible position - but nowadays, few would call search results unbiased.  After all, search engines are maintained by private companies with various motives tangential to or in conflict with the image of neutrality they'd like to assume (e.g. cultural relevance, political influence, financial gain, and so on; search engines censor search results, bow to the demands of dictators, and profit from private data).  Conflicts of interest are built in to the business model.  An informed view of the goals of search engines, therefore, would conclude that delivering relevant, accurate search results is only a subgoal, and only important insofar as it advances bthese primary goals.
+Search engines are so inextricable from the typical web experience, it's becoming difficult to tell how well they are accomplishing their goals, let alone what these goals might be.  The naive view wouldn't ascribe any goals beyond delivering relevant results to the searcher.  Perhaps 20 years ago, this would have been a defensible position - but nowadays, few would call search results unbiased.  After all, search engines are maintained by private companies with various motives tangential to or in conflict with the image of neutrality they'd like to assume (e.g. cultural relevance, political influence, financial gain, and so on; search engines censor search results, bow to the demands of dictators, and profit from private data).  Conflicts of interest are built in to the business model.  An informed view of the goals of search engines, therefore, would conclude that delivering relevant, accurate search results is only a subgoal, and only important insofar as it advances bthese primary goals.
 
 *MADE EXPLICIT*
 
@@ -128,10 +130,12 @@ If we stumble upon a tutorial connected to a goal in this way, we can already ta
 
 *MADE SYMMETRIC*
 
-One of the greatest strengths of the web -- its enabling of anyone, just about anywhere, to create content -- may also be its Achilles' Heel.  
+One of the greatest strengths of the web -- its enabling of anyone, just about anywhere, to create content -- may also be its Achilles' Heel.
+
 #+begin_quote
 "A lie can travel around the world and back again while the truth is lacing up its boots." - Mark Twain
 #+end_quote
+
 ...and this is especially apparent in our current media environment.  Even so, this institutional view is only half the problem: it's also all too easy for individuals to misrepresent/deceive.  This takes various forms: from book reviewers leaving dishonest reviews for personal gain to fake social media profiles used for phishing, it's seems nothing is beyond exploitation.
 
 We are talking about information asymmetry, or one side of a communication knowing less than the other side, and this being used against them.  Conventional answers to this problem are such things as "likes",  consumer advocate periodicals, and other means of signalling.  Unfortunately, these are not able to ensure that those signalling truly have skin in the game.  What is needed are subjective and objective ways of evaluating the integrity of signals, such that the signaller benefits or is penalized proportionally.  This is fulfilled by Unrival's [[*Claim][claim]] object, which creates a public feedback receptacle that converges on accurate representations of real opinions.
@@ -140,9 +144,9 @@ There is much work to be done in designing mechanisms for incentivizing honesty,
 
 *SUPER APPS*
 
-So called "super apps" are growing in prevalence.  These implicitly encourage users to give up the struggle of choosing their own apps and services, and give in a single platform that purportedly does everything.  Obviously this is cause for concern: we know by now that the corporations vying for our dependence have goals in mind that don't respect our rights.  But we also see this trend as more or less inevitable.  An everything-platform is nothing if not convenient, and resisting this change may not accomplish anything.  Maybe there's a middle way: /to create a super app based on elevating users' goals/.
+So called "super apps" are growing in prevalence.  These apps implicitly encourage users to give up the struggle of choosing their own services, and give in to a single platform purportedly capable of everything.  Obviously this is cause for concern: we know by now that the corporations vying for our dependence have incentives misaligned with our own.  But we also see this trend as more or less inevitable.  An everything-platform is nothing if not convenient, and resistance may be futile.  Maybe there's a middle way: /to create a super app that elevates users' goals/.
 
-We've established some competitive advantages of the Unrival Protocol above, and we want to make it clear in the course of this paper that anything a user might accomplish via a super app is also doable in an Unrival client - in a way that respects users' sovereignty.  
+We've already established some competitive advantages in using the Unrival Protocol.  We want to make it clear in the course of this paper that anything a user might accomplish with a super app is also doable on an Unrival client.  But most importantly, we feel it is imperative that such an app is produced so that the next generation of internet users won't have to choose between convenience and personal sovereignty.
 
 * Objects
 As mentioned, Unrival is based on objects that improve the ability of agents to cooperate.  It accomplishes this by giving agents a language for finding common ground with others.  Underlying this is the assumption that agents may err or deceive while communicating about these objects.  Since trust is a prerequisite to effectual communication (and solving coordination problems), Unrival objects have this baked into them as vaults do security.
