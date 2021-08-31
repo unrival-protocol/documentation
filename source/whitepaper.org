@@ -3,7 +3,7 @@
 #+OPTIONS: toc:nil
 
 * Abstract
-Unrival is a protocol that enables agents to cooperate more effectively on accomplishing common goals, or to become aware of them when surface-level conflicts appear more imminent.  Agents communicate their intentions via a set of shared objects that constitute bottom-up, composable building blocks for maintaining complex social and economic relationships founded on mutual understanding and accountability.  These objects are not mere mental or social constructs - they have a physical existence as data that agents can interface with via client applications.  
+Unrival is a protocol that enables agents to cooperate more effectively on accomplishing common goals, or to become aware of these goals when surface-level conflicts appear more imminent.  Agents communicate their intentions via a set of shared objects that constitute bottom-up, composable building blocks for maintaining complex social and economic relationships founded on mutual understanding and accountability.  These objects are not mere mental or social constructs - they have a physical existence as data that agents can interface with via client applications.  
 
 *UNIVERSAL FEEDBACK*
 
@@ -155,14 +155,18 @@ Put simply, Unrival is a way of making sure objects are what they say they are. 
 
 There are two types of objects: simple and complex.
 ** Simple Objects
-
-A process called hashing can be used to create a signature from data that will always look the same, given the same input data.
+Simple objects are objects that are not composed of parts (i.e. references to further objects).  
+*** Addresses
+   
+A process called hashing can be used to create a unique signature from data that will always look the same, given the same input data.  We call this its *address*.
 
 Hashing the above data using IPFS produces the content-based address =QmeDWRWMc3YoRKyueRAmqmJ3bVwD1oc74eVoEATtfdYJJh=.  This is similar to an IP address in that it can be used to fetch data, but it also comes with certain advantages owing to the direct relationship between the content of the data and the address itself.
 1. It's not bound to a specific location, so it can increase routing efficiency if identical target data exists closer to the requester
 2. It's immutable, so its integrity can be counted on   
 
-Simple objects are objects that do not contain other objects embedded in them.  Since neither of the above object's parts are content-addressed objects, it is a simple object.
+
+
+
 *** Name
 A name is a simple object and a possibly non-unique, humanly-readable way of referring to other objects.
 

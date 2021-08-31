@@ -9,7 +9,7 @@ Whitepaper
 Abstract
 --------
 
-Unrival is a protocol that enables agents to cooperate more effectively on accomplishing common goals, or to become aware of them when surface-level conflicts appear more imminent.  Agents communicate their intentions via a set of shared objects that constitute bottom-up, composable building blocks for maintaining complex social and economic relationships founded on mutual understanding and accountability.  These objects are not mere mental or social constructs - they have a physical existence as data that agents can interface with via client applications.  
+Unrival is a protocol that enables agents to cooperate more effectively on accomplishing common goals, or to become aware of these goals when surface-level conflicts appear more imminent.  Agents communicate their intentions via a set of shared objects that constitute bottom-up, composable building blocks for maintaining complex social and economic relationships founded on mutual understanding and accountability.  These objects are not mere mental or social constructs - they have a physical existence as data that agents can interface with via client applications.  
 
 **UNIVERSAL FEEDBACK**
 
@@ -182,7 +182,7 @@ There is much work to be done in designing mechanisms for incentivizing honesty,
 
 **SUPER APPS**
 
-So called "super apps" are growing in prevalence.  These apps implicitly encourage users to give up the struggle of choosing their own services, and give in to a single platform purportedly capable of everything.  Obviously this is cause for concern: we know by now that the corporations vying for our dependence have incentives misaligned with our own.  But we also see this trend as more or less inevitable.  An everything-platform is nothing if not convenient, and resistance may be futile.  Maybe there's a middle way: *to create a super app that elevates users' goals*.
+So called "super apps" are growing in prevalence.  These apps encourage users to give up the struggle of choosing their own services by offering a single platform purportedly capable of everything.  Obviously this is cause for concern: we know by now that the corporations vying for our dependence have incentives misaligned with our own.  But we also see this trend as more or less inevitable.  An everything-platform is nothing if not convenient, and resistance may be futile.  Maybe there's a middle way: *to create a super app that elevates users' goals*.
 
 We've already established some competitive advantages in using the Unrival Protocol.  We want to make it clear in the course of this paper that anything a user might accomplish with a super app is also doable on an Unrival client.  But most importantly, we feel it is imperative that such an app is produced so that the next generation of internet users won't have to choose between convenience and personal sovereignty.
 
@@ -198,15 +198,18 @@ There are two types of objects: simple and complex.
 Simple Objects
 ~~~~~~~~~~~~~~
 
-A process called hashing can be used to create a signature from data that will always look the same, given the same input data.
+Simple objects are objects that are not composed of parts (i.e. references to further objects).  
+
+Addresses
+^^^^^^^^^
+
+A process called hashing can be used to create a unique signature from data that will always look the same, given the same input data.  We call this its **address**.
 
 Hashing the above data using IPFS produces the content-based address ``QmeDWRWMc3YoRKyueRAmqmJ3bVwD1oc74eVoEATtfdYJJh``.  This is similar to an IP address in that it can be used to fetch data, but it also comes with certain advantages owing to the direct relationship between the content of the data and the address itself.
 
 1. It's not bound to a specific location, so it can increase routing efficiency if identical target data exists closer to the requester
 
 2. It's immutable, so its integrity can be counted on
-
-Simple objects are objects that do not contain other objects embedded in them.  Since neither of the above object's parts are content-addressed objects, it is a simple object.
 
 Name
 ^^^^
