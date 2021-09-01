@@ -156,16 +156,14 @@ Put simply, Unrival is a way of making sure objects are what they say they are. 
 There are two types of objects: simple and complex.
 ** Simple Objects
 Simple objects are objects that are not composed of parts (i.e. references to further objects).  
-*** Addresses
+
+*Addresses*
    
 A process called hashing can be used to create a unique signature from data that will always look the same, given the same input data.  We call this its *address*.
 
 Hashing the above data using IPFS produces the content-based address =QmeDWRWMc3YoRKyueRAmqmJ3bVwD1oc74eVoEATtfdYJJh=.  This is similar to an IP address in that it can be used to fetch data, but it also comes with certain advantages owing to the direct relationship between the content of the data and the address itself.
-1. It's not bound to a specific location, so it can increase routing efficiency if identical target data exists closer to the requester
-2. It's immutable, so its integrity can be counted on   
-
-
-
+1. It's not bound to a specific location, so it can increase routing efficiency if identical target data exists closer to the requester.
+2. It's immutable, so its integrity can be counted on.
 
 *** Name
 A name is a simple object and a possibly non-unique, humanly-readable way of referring to other objects.

@@ -200,8 +200,7 @@ Simple Objects
 
 Simple objects are objects that are not composed of parts (i.e. references to further objects).  
 
-Addresses
-^^^^^^^^^
+**Addresses**
 
 A process called hashing can be used to create a unique signature from data that will always look the same, given the same input data.  We call this its **address**.
 
