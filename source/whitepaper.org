@@ -21,7 +21,7 @@ With this protocol, the credibility of such things can be asserted by their prop
 Unbiased feedback is hard to come by.  Typical approaches, such as "likes" or "stars", have two major weaknesses:
 
 1. *lack of precision*: A one star review can be left on a product and there is no way of telling what, exactly, is being reviewed. (Is it the delivery service?  The manufacturer?  Their political views?  The reviewer is free to decide on a whim).
-2. *lack of skin in the game*: there is little to no accountability for reviewers leaving dishonest or inaccurate reviews, which makes it possible to review unfairly.
+2. *lack of skin in the game*: there is little to no accountability for reviewers leaving dishonest or inaccurate reviews, which makes leaving unfair reviews very cheap.
 
 Unrival can make precise, accountable feedback mechanisms available where they are most needed (and their absence is most consequential).  It does this via /claims/ and /assessments/, which will be explained in the section on complex objects.
 
