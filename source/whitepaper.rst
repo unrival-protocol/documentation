@@ -120,7 +120,7 @@ But first, It may be necessary to provide some motivation for such a curious use
 
 How do we get there?  How are TODO items to be prioritized?  Who can interact with them?  All of these rules may be enforced by `Proof`_.  The following illustrates some conditions that may be required of data consumable by client applications:
 
-.. code:: org-mode
+.. code:: txt
 
     * A todo list is associated with an interpretation.
     * A todo list may have at most 10 todo items.
@@ -146,37 +146,41 @@ Search engines are so inextricable from the typical web experience, it's becomin
 
 We've been building up the case -- and the infrastructure -- for another sort of 'engine', the goal of which would be *connecting agents with the means of accomplishing their own goals* - not those of the faux unbiased.
 
-Moreover, we may already have the basis for such an affordance, given the goal object introduced above.  We know that users have implicit goals that turn them on to search engines; the question we'll now address is *whether making these goals explicit would be a more human-centric design that empowers users as intended*.  This would call for a slightly different search experience.
+Moreover, we may already have the basis for such an affordance, given the goal object introduced above.  We know that users have implicit goals that turn them on to search engines; the question we'll now address is *whether making these goals explicit would be a more human-centric design that empowers users as intended*.
 
-For starters, the text input field may be expecting the completion of the sentence **"I want ..."**, rather than being a self-invitation (on the part of search providers) to inundate with clickbait.  And what sort of resources would the user then be connected to?  For the goal:
+This would call for an upgraded search experience.  For starters, the text input field may be expecting the completion of the sentence **"I want ..."**, rather than being a self-invitation (on the part of search providers) to inundate with clickbait.  And what sort of resources would the user then be connected to?  For the goal:
 
-.. code:: org-mode
+.. code:: txt
 
-    I want to learn calculus
+    to learn calculus
 
-the most natural result would be a goal object including references related to the accomplishment of this goal (e.g. tutorials, courses, tutors, etc).  Furthermore, this goal, being a complex object, may inherit from other goals:
+the most natural result would be a goal object including references related to the accomplishment of this goal (e.g. tutorials, courses, tutors, etc).  Furthermore, this goal, being a complex object, may contain references to pre-requisite goals:
 
-.. code:: org-mode
+.. code:: txt
 
-    I want to learn algebra
+    to learn algebra
 
 .. note::
 
     The exact phrasing of these goals is unimportant; with the `Namespace`_, we can define names that are functionally equivalent, and provide support for multiple languages.
 
-If we stumble upon a tutorial connected to a goal in this way, we can already take advantage of Unrival objects' ability to explicitly inherit from ancestors (which we'll cover in the section on `Indirect Proof`_).  In this case, it's easy to make clear that one goal is dependent upon another.  So, unfortunately, you may be required to learn algebra before calculus.  *But at least this will be obvious to you!*  
+Unrival objects' expressiveness can help us figure out whether or not we're ready to take on the tutorial we just stumbled upon.  This relies on an easily definable relationship between the two goals.  Any sort of relationship can be defined between objects, which can be experienced by users as more versatile form of hyperlinks.
 
-**MADE SYMMETRIC**
+Overall, the point of making goals explicit is to flip the direction of the arrow in the following diagram:
 
-One of the greatest strengths of the web -- its enabling of anyone, just about anywhere, to create content -- may also be its Achilles' Heel.
+.. image:: static/images/serve.svg
+
+**MADE ACCOUNTABLE**
+
+One of the greatest strengths of the web -- its enabling of anyone, just about anywhere, to create content -- may also be its Achilles' Heel.  Once upon a time, it was the responsibility of news organizations to decide what ought to be discussed.  Many important viewpoints were dismissed, but so were overt falsehoods, for the most part.  At any rate, it was the intention of news media to appeal to the broadest possible audience.  But with the advent of the Web, other alternative views began creeping into the public discourse, and the media lost their monopoly on attention.  In order to compete, they needed to target select audiences and create the impression that there was always something terribly important happening.
+
+Fast forward a few decades, and the information ecology is polluted beyond recovery.
 
 ::
 
     "A lie can travel around the world and back again while the truth is lacing up its boots." - Mark Twain
 
-...and this is especially apparent in our current media environment.  Even so, this institutional view is only half the problem: it's also all too easy for individuals to misrepresent/deceive.  This takes various forms: from book reviewers leaving dishonest reviews for personal gain to fake social media profiles used for phishing, it's seems nothing is beyond exploitation.
-
-We are talking about information asymmetry, or one side of a communication knowing less than the other side, and this being used against them.  Conventional answers to this problem are such things as "likes",  consumer advocate periodicals, and other means of signalling.  Unfortunately, these are not able to ensure that those signalling truly have skin in the game.  What is needed are subjective and objective ways of evaluating the integrity of signals, such that the signaller benefits or is penalized proportionally.  This is fulfilled by Unrival's `Claim`_ object, which creates a public feedback receptacle that converges on accurate representations of real opinions.
+At a deeper level, these are problems associated with information asymmetry, or one side of a communication knowing less than the other side.  The current state-of-the-art for addressing such problems seems to be the "like".  Unfortunately, such a primitive feedback mechanism isn't up to the task of putting skin in the game.  What is needed are subjective and objective ways of evaluating the integrity of signals, such that the signaller benefits or is penalized proportionally.  This is fulfilled by Unrival's `Claim`_ object, which creates a public feedback receptacle that converges on accurate representations of real opinions.
 
 There is much work to be done in designing mechanisms for incentivizing honesty, but we believe the infrastructure for doing so should start with the explication of claims and assessments, made possible by Unrival.
 
@@ -202,13 +206,30 @@ Simple objects are objects that are not composed of parts (i.e. references to fu
 
 **Addresses**
 
-A process called hashing can be used to create a unique signature from data that will always look the same, given the same input data.  We call this its **address**.
+A process called hashing can be used to create a unique signature from data that will always look the same, given the same input data.  We call this its **address**, and every object has one.
 
-Hashing the above data using IPFS produces the content-based address ``QmeDWRWMc3YoRKyueRAmqmJ3bVwD1oc74eVoEATtfdYJJh``.  This is similar to an IP address in that it can be used to fetch data, but it also comes with certain advantages owing to the direct relationship between the content of the data and the address itself.
+For example, hashing the data below:
 
-1. It's not bound to a specific location, so it can increase routing efficiency if identical target data exists closer to the requester
+.. code:: json
 
-2. It's immutable, so its integrity can be counted on
+    [
+      {
+        "label": "breed",
+        "value": "Dalmation"
+      },
+      {
+        "label": "name",
+        "value": "Daisy"
+      }  
+    ]
+
+using IPFS (which in turn uses the sha-256 hashing algorithm) produces the content-based address ``QmeDWRWMc3YoRKyueRAmqmJ3bVwD1oc74eVoEATtfdYJJh``.
+
+This is similar to an IP address in that it can be used to fetch data, but it also comes with certain advantages:
+
+1. It's not bound to a specific location, so it can increase routing efficiency if identical target data exists closer to the requester.
+
+2. It's immutable, so its integrity can be counted on.
 
 Name
 ^^^^
@@ -217,13 +238,13 @@ A name is a simple object and a possibly non-unique, humanly-readable way of ref
 
 *Name:*
 
-.. code:: org
+.. code:: txt
 
     dog
 
 *Address (distinct):*
 
-.. code:: org
+.. code:: txt
 
     QmXQKbAA75HTxiGQz3JJzzLgn2PJc7nRVM2jXPRJGGwK3Y
 
@@ -232,7 +253,7 @@ Interpretation
 
 An interpretation is a simple object and a hierarchical ordering of names, where levels are conventionally separated by slashes (/) and the bottom level comes last.
 
-.. code:: org
+.. code:: txt
 
     /animal/mammal/dog
 
@@ -241,11 +262,11 @@ Proof
 
 A proof is a simple object which, given another object and in some `Context`_, is either satisfied by or not satisfied by this other object (represented by 1 or 0, respectively).
 
-Most of Unrival's advanced functionality is due to the ability of `Complex Objects`_ to be *proved*.  Objects that are proved directly have a *proof* part, while objects proved indirectly have a parent (and possibly other ancestors) with a number of proofs they must also satisfy:
+Most of Unrival's advanced functionality is due to the ability of `Complex Objects`_ to be *proved*.  Objects that are proved directly have their own proof part(s), while objects proved indirectly have a parent (and possibly other ancestors) with a number of proofs they must also satisfy:
 
 .. image:: static/images/proofs.svg
 
-To continue our example from above, if the following code is hashed and added as a part to the Dalmation object, it would make sure that the breed of dog is equal to ``'Dalmation'``.
+To continue our example from above, we could require a direct proof of the dalmation object by hashing the following code and adding a reference to it therein.  This code would makes sure that the breed of dog is equal to ``'Dalmation'``.
 
 .. code:: python
 
@@ -263,7 +284,7 @@ To continue our example from above, if the following code is hashed and added as
 Direct Proof
 ::::::::::::
 
-Once we hash the above and add it as a part to our original set, we have the following:
+Once we hash the above and add it as a part to the set of parts constituting our *dalmation*, we have the following:
 
 .. code:: json
 
@@ -284,14 +305,14 @@ Once we hash the above and add it as a part to our original set, we have the fol
 
 One more hash gives us the result: ``QmWJwaDMcKgysTwC2qktH27eqYHHauNXHryhzTzNN8szub`` - which is a content-based address that can be fed to a proof.  The object at this address is claiming to be a Dalmation (rightfully so, based on the rather easily-satisfied proof above that it includes as one of its parts).
 
-*When an object's content address is fed to a proof that is contained as one of its parts, it is proved directly.*
+*When an object's content address is fed to a proof that is contained as one of its parts, it being proved directly.*
 
 Indirect Proof
 ::::::::::::::
 
 Some objects do not contain explicit references to proofs.  Instead, they contain indirect references to other objects whose proofs they must satisfy.  
 
-.. image:: static/images/indirect-proof-1.svg
+.. image:: indirect-proof-1.svg
 
 This means that in order to come into existence, "dog" must satisfy both the animal proof and the mammal proof (in this case, it doesn't have its own proof, which means it is not progenerative):
 
@@ -303,9 +324,9 @@ Multiple Inheritance
 Root Proof
 ::::::::::
 
-The properties of proofs described above are determined by a single proof, called an **archetypal proof**.  This is part of an **archetypal object**, which is an object all complex objects in Unrival have as an ancestor.
+The properties of proofs described above are embodied in a single proof, called the **archetypal proof**.  
 
-A Python implementation relying on the `unrival\ :sub:`py`\ package <https://github.com/unrival-protocol/unrival_py>`_ is provided below:
+A Python implementation relying on the `unrival\ :sub:`py`\ <https://github.com/unrival-protocol/unrival_py>`_ package is provided below:
 
 .. code:: python
 
@@ -346,7 +367,6 @@ Complex objects are content-addressed arrays of **parts**.  For example, the fol
 Context
 ^^^^^^^
 
-y
 A context is a complex object and a mapping from interpretations to addresses of other objects (referred to as their meanings).   
 
 e.g.
@@ -373,7 +393,7 @@ The simplest possible context is the empty context:
     ]
 
 
-With the exception of the empty context, every complex object (including non-empty contexts) must contain a single context, referred to as the parent context.  This context determines how other objects referenced by the object in question should be interpreted.  To *interpret an object* means to look up the value assigned to a certain interpretation within a context.
+With the exception of the empty context, every complex object (including non-empty contexts) must reference a context, referred to as the parent context.  Context objects may reference multiple parents if they were created as the result of a merge.  Parent contexts determine how other objects referenced by the object in question should be interpreted.  To *interpret an object* means to look up the value assigned to a certain interpretation within a context.
 
 .. note::
 
@@ -405,14 +425,14 @@ Agent
 Outcome
 ^^^^^^^
 
-An outcome is a claim that is a subjective event.      
+TODO define outcome
+:::::::::::::::::::
 
 Claim
 ^^^^^
 
-A claim is just a subjective proof that hasn't been validated.
-
-Every object must start with a claim, and this claim, after having been proved, allows the object to exist.
+TODO define claim
+:::::::::::::::::
 
 Assessment
 ^^^^^^^^^^
@@ -421,31 +441,34 @@ Assessment
 
     “Never trust anyone who doesn’t have skin in the game. Without it, fools and crooks will benefit, and their mistakes will never come back to haunt them.” - Nassim Nicholas Taleb
 
+TODO define assessment
+::::::::::::::::::::::
 
-An evaluation is a verification attempt by a certain number of agents of a subjective proof.  Therefore it is an event - but it can be ongoing; current attempts at proof evaluation may still be relevant for agents.
+Iterator
+^^^^^^^^
 
-It is difficult to query for subjective opinions about things that matter and get faithful results.
-
-A judgment has value.  A very strong case can be made for it being the utility token par excellence.  Judgments are necessarily honest representations of mental states.  This is what is quite hard to get at through polling, surveys, or reviews of any sort.
-
-- Youtube's way of recommending tends to appeal to our lowest common denominators
-
-- Amazon's way of recommending is very gameable.  Nothing is stopping vendors from offering incentives to offer unfaithful ratings, which distorts the signal that users are looking for to help them make a decision.
-
-Assessments in Unrival are elicited in a way that maximizes the faithfulness of responses.  Whenever a claim is made, a namespace is also attached to this claim.  The subscribers to the namespace where the claim is made are the pool of possible judges.
+Interface
+^^^^^^^^^
 
 Promise
 ^^^^^^^
+
+TODO define promise
+:::::::::::::::::::
 
 Of course, there are many ways to think about promises, some of them requiring no formalism or technology.  Our approach is meant to make promises applicable in many circumstances, and it starts with breaking promises into their component parts and making them interfaceable.  We call the component parts of a promise *objects*.  These are anything and everything that could be relevant to the management of promises.  In order to use them the way we want, as representations of complex human relationships, we have some criteria:    
 
 Goal
 ^^^^
 
-The goal is what it is.
+TODO define goal
+::::::::::::::::
 
 Interface
 ^^^^^^^^^
+
+An **interface** is a complex object and a tree (nested set) of iterators.  
+
 
 An **interface** is a composition of a set of actions performable by some user(s).  For example, an interface may look like the following:
 
@@ -456,12 +479,10 @@ An **interface** is a composition of a set of actions performable by some user(s
             "interpretation": "/interface",
         },
         {
-            "interpretation": "/action",
-            "label": "pay bill",
+            "interpretation": "/iterator",
         },      
         {
-            "interpretation": "/action",
-            "label": "check bill",
+            "interpretation": "/iterator",
         }
     ]
 
@@ -497,25 +518,20 @@ Adapter
 More Complex Objects
 ~~~~~~~~~~~~~~~~~~~~
 
-Location
-^^^^^^^^
+Iterator/Resource
+^^^^^^^^^^^^^^^^^
 
-Resource
-^^^^^^^^
+Iterator/Role
+^^^^^^^^^^^^^
 
-Role
-^^^^
+Iterator/Action
+^^^^^^^^^^^^^^^
 
-Provider
-^^^^^^^^
+Iterator/Strategy
+^^^^^^^^^^^^^^^^^
 
-Model
-^^^^^
-
-A model is a statement about a state of affairs.
-
-Todo
-^^^^
+Iterator/Provider
+^^^^^^^^^^^^^^^^^
 
 Implementation
 --------------
