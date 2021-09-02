@@ -13,9 +13,34 @@ Unrival is a protocol that enables agents to cooperate more effectively on accom
 
 **UNIVERSAL FEEDBACK**
 
-Any thing about which certain properties can be confirmed or denied by third parties (be they humans or computer programs) is an eligible Unrival object.  This may leave out some things, such as first-person experiences or inherently unfalsifiable claims, but most things are included;  in particular, those things with compromised credibility as of late, upon which many people may nonetheless come to depend, such as political parties, medicines, lawyers, and so on -- *things for which honest, accurate feedback is both necessary and hard to come by* -- can be turned into Unrival objects.  This makes feedback mechanisms available where their absence is most inconvenient (and perhaps conspicuous).
+Any thing about which certain properties can be confirmed or denied by third parties (be they humans or computer programs) is an eligible Unrival object.  This may leave out some things, such as first-person experiences or inherently falsifiable claims, but most things are included.  For example:
 
-The credibility of these things can be asserted by their proponents, and confirmed or denied by the agents who experience them first hand.  Furthermore, these claims and the corresponding assessments thereof are accessible to all agents.  Of course, if the problem of eliciting and hosting honest feedback can be solved for objects like the above, the solution will also apply to the conventional subjects of rating systems, like books, films, restaurants, etc.
+- political parties
+
+- medicines
+
+- lawyers
+
+- methodologies
+
+- employers
+
+- etc
+
+With this protocol, the credibility of such things can be asserted by their proponents, and confirmed or denied by the agents who experience them first hand.  Furthermore, these claims and the corresponding assessments thereof are accessible to all agents.  Of course, if the problem of eliciting and hosting honest feedback can be solved for objects like the above, the solution will also apply to the conventional subjects of rating systems, like books, films, restaurants, etc.
+
+Unbiased feedback is hard to come by.  Typical approaches, such as "likes" or "stars", have two major weaknesses:
+
+1. lack of precision: a one star review can be left on a product on a website,
+
+2. lack of skin in the game: there is little to no accountability for reviewers leaving dishonest or inaccurate reviews, which makes it possible to:
+
+   - leave unduly positive reviews (for reference, see how many 5 star reviews are left on Amazon products, and
+
+   - leave unduly negative reviews (
+
+Unrival can make precise, accountable feedback mechanisms available where they are most needed (and their absence is most consequential).  It does this via *claims* and *assessments*, which will be explained in the section on complex objects.
+
 
 **RECTIFICATION OF NAMES**
 

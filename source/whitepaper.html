@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-09-02 Thu 15:20 -->
+<!-- 2021-09-02 Thu 15:44 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Whitepaper</title>
@@ -220,9 +220,9 @@
 <div id="content">
 <h1 class="title">Whitepaper</h1>
 
-<div id="outline-container-org5d4b9d7" class="outline-2">
-<h2 id="org5d4b9d7">Abstract</h2>
-<div class="outline-text-2" id="text-org5d4b9d7">
+<div id="outline-container-org6055434" class="outline-2">
+<h2 id="org6055434">Abstract</h2>
+<div class="outline-text-2" id="text-org6055434">
 <p>
 Unrival is a protocol that enables agents to cooperate more effectively on accomplishing common goals, or to become aware of these goals when surface-level conflicts appear more imminent.  Agents communicate their intentions via a set of shared objects that constitute bottom-up, composable building blocks for maintaining complex social and economic relationships founded on mutual understanding and accountability.  These objects are not mere mental or social constructs - they have a physical existence as data that agents can interface with via client applications.  
 </p>
@@ -232,12 +232,26 @@ Unrival is a protocol that enables agents to cooperate more effectively on accom
 </p>
 
 <p>
-Any thing about which certain properties can be confirmed or denied by third parties (be they humans or computer programs) is an eligible Unrival object.  This may leave out some things, such as first-person experiences or inherently unfalsifiable claims, but most things are included;  in particular, those things with compromised credibility as of late, upon which many people may nonetheless come to depend, such as political parties, medicines, lawyers, and so on - <i>things for which honest, accurate feedback is both necessary and hard to come by</i>.  Thus, the Unrival protocol is addressing an important, unmet need.
+Any thing about which certain properties can be confirmed or denied by third parties (be they humans or computer programs) is an eligible Unrival object.  This may leave out some things, such as first-person experiences or inherently unfalsifiable claims, but most things are included.  For example:
 </p>
+
+<ul class="org-ul">
+<li>political parties</li>
+<li>medicines</li>
+<li>lawyers</li>
+<li>methodologies</li>
+<li>employers</li>
+<li>etc</li>
+</ul>
 
 <p>
 The credibility of these things can be asserted by their proponents, and confirmed or denied by the agents who experience them first hand.  Furthermore, these claims and the corresponding assessments thereof are accessible to all agents.  Of course, if the problem of eliciting and hosting honest feedback can be solved for objects like the above, the solution will also apply to the conventional subjects of rating systems, like books, films, restaurants, etc.
 </p>
+
+<p>
+Unbiased feedback from those with firsthand experience of the above is hard to come by.  Unrival can make feedback mechanisms available where they are most needed (and their absence is most consequential).
+</p>
+
 
 <p>
 <b>RECTIFICATION OF NAMES</b>
@@ -259,13 +273,13 @@ The protocol itself can be stated as <a href="protocol.html">a set of guidelines
 </div>
 </div>
 
-<div id="outline-container-org90276da" class="outline-2">
-<h2 id="org90276da">Overview</h2>
-<div class="outline-text-2" id="text-org90276da">
+<div id="outline-container-org01bb33c" class="outline-2">
+<h2 id="org01bb33c">Overview</h2>
+<div class="outline-text-2" id="text-org01bb33c">
 </div>
-<div id="outline-container-orgc941a51" class="outline-3">
-<h3 id="orgc941a51">Introduction</h3>
-<div class="outline-text-3" id="text-orgc941a51">
+<div id="outline-container-org198ce4b" class="outline-3">
+<h3 id="org198ce4b">Introduction</h3>
+<div class="outline-text-3" id="text-org198ce4b">
 <p>
 Unrival seeks to pave a road to cooperation when defection seems to be, iny the realest sense, the more rational choice for self-interested agents.  As it is meant to be realistic and not fantastic, it does so without appealing to the moral inclinations of its subjects - but instead by re-framing self-interest and laying bare latent incentives to cooperate.
 </p>
@@ -280,9 +294,9 @@ In short, our problem boils down to: <i>how can we cooperate when we are stuck i
 </div>
 </div>
 
-<div id="outline-container-orge25c468" class="outline-3">
-<h3 id="orge25c468">The Stag Hunt</h3>
-<div class="outline-text-3" id="text-orge25c468">
+<div id="outline-container-org6c2b5ab" class="outline-3">
+<h3 id="org6c2b5ab">The Stag Hunt</h3>
+<div class="outline-text-3" id="text-org6c2b5ab">
 <p>
 <i>We'd like to take this opportunity to drive home the notion that greater benefit is sometimes theoretically possible, but is nonetheless passed over by self-interested agents.  Readers who are familiar with game theory may feel free to skip this section.</i>
 </p>
@@ -300,7 +314,7 @@ This leads to a paradoxical situation in which <i>acting rationally</i> means <i
 </p>
 
 
-<div id="org748353c" class="figure">
+<div id="org59f01c1" class="figure">
 <p><img src="./static/images/stag_hunt.png" alt="stag_hunt.png" />
 </p>
 </div>
@@ -323,9 +337,9 @@ Thus, there are no simple solutions to coordination problems, as proposed soluti
 </div>
 </div>
 
-<div id="outline-container-orgc7328d8" class="outline-3">
-<h3 id="orgc7328d8">The Meta-Game</h3>
-<div class="outline-text-3" id="text-orgc7328d8">
+<div id="outline-container-orgd667842" class="outline-3">
+<h3 id="orgd667842">The Meta-Game</h3>
+<div class="outline-text-3" id="text-orgd667842">
 <p>
 One thing is certain: it really is the most rational choice for hunters to hunt for hares - <i>within the confines of the staghunt game</i>.  But games aren't real life; their rules don't necessarily reflect the full range of choices available to agents.  It may also be possible to play a meta-game that can improve outcomes within any given game.
 </p>
@@ -336,9 +350,9 @@ The subject of this paper is a group protocol for playing meta-games.  Such a pr
 </div>
 </div>
 
-<div id="outline-container-orgc3beb22" class="outline-3">
-<h3 id="orgc3beb22">The Meta-Crisis</h3>
-<div class="outline-text-3" id="text-orgc3beb22">
+<div id="outline-container-orga6cc88c" class="outline-3">
+<h3 id="orga6cc88c">The Meta-Crisis</h3>
+<div class="outline-text-3" id="text-orga6cc88c">
 <p>
 If we accept that a meta-game is possible that would enable us to improve outcomes beyond the declared limits of a given game, we must also be prepared to consider the costs of losing.  We who are playing (i.e. everyone, aware or not of the fact) are, for all intents and purposes, not fairing well so far.
 </p>
@@ -363,9 +377,9 @@ Each of the above crises (indeed, any crisis) is undergirded by a crisis of anot
 </div>
 </div>
 
-<div id="outline-container-orgb5a2377" class="outline-3">
-<h3 id="orgb5a2377">The Internet of Goals</h3>
-<div class="outline-text-3" id="text-orgb5a2377">
+<div id="outline-container-org2f8120f" class="outline-3">
+<h3 id="org2f8120f">The Internet of Goals</h3>
+<div class="outline-text-3" id="text-org2f8120f">
 <p>
 We'll now shift our focus from problems to some historical attempts at solutions, and how Unrival intends to fit among them.
 </p>
@@ -376,7 +390,7 @@ We'll now shift our focus from problems to some historical attempts at solutions
 <li>We sometimes refer to new technologies as the <i>internet of X</i>, where X purportedly does for some subject what the internet did for computing - that is, democratize, interconnect, and so on.</li>
 <li>For example, Bitcoin has been called the <a href="https://theinternetofmoney.info/">the Internet of Money</a>, and has been claimed to do for money what the web did for humanly-digestible text.</li>
 <li>The subjects of such claims (and the claims themselves) can be turned into Unrival objects, opening a feedback channel where none previously existed.  For agents, the strategic advantage gained thereby would be the ability to know whether these claims have been substantiated.</li>
-<li>Naturally, not all objects have the potential to inspire dialogue with significant growth factor.  One particular object that may is the <a href="#orgb4a7f9f">goal</a>.  This is because:
+<li>Naturally, not all objects have the potential to inspire dialogue with significant growth factor.  One particular object that may is the <a href="#org28eb51b">goal</a>.  This is because:
 <ul class="org-ul">
 <li>Individuals, especially those raised on social media, have a difficult time connecting with others in non-superficial ways.  This is largely a result of the media on which they coalesce; if platforms adopt the strategy of <a href="https://www.fastcompany.com/1836569/hijacking-emotion-key-engaging-your-audience">limbic hijacking</a> (which they must, in order to stay competitive), then their users' screen time will tend to increase to the detriment of their mental health.  Because humans have social needs, despite their social quarantining by "social" media, creating the illusion of social interaction is a significant value proposition for platforms.  Customers are all too willing to outsource their heretofore instinctual social bonding capacity to these platforms.  A way to share desires deeper than seeing the next Marvel movie is much needed in this meaning vacuum.  Thinking in terms of goals necessitates cognizance of desires or needs deeper to the surface-level behaviors these goals motivate.  Thus, an a social network based on an internet of goals could serve as a medium of meaningful human bonding.  <i>Would you rather connect with others who share the same goals as you, or with others who took the same clickbait?</i>  Today's social media platforms produce the latter.</li>
 <li>Clarity regarding goals is a missing element of many group endeavors, and an easy way to achieve this would be readily adopted by many.</li>
@@ -394,11 +408,11 @@ The act of TODO list creation will have been turned from monologue to dialogue, 
 </p>
 
 <p>
-But first, It may be necessary to provide some motivation for such a curious use of networking technology.  A single, top-level TODO list could exist for a group of agents of arbitrary size, representing these agents' common goals.  TODO items requiring more deliberation could be nested TODO lists themselves.  All lists and items could be curated through a combination of meritocratic and democratic selection processes.  Now, please suspend your skepticism for a moment and allow yourself to imagine a top-level reflecting the needs of all of humanity (condensed to 10 items), each being nested to a degree proportional to the depth of the problem to be solved.  It may have the appearance of a top-down list of orders, but in actuality consist of organically-grown units of wilful compliance, coming together through consensus.  It could benefit from the advantages of centalization (e.g. clarity of purpose and direction) and decentralization alike.  Given the ability to create such lists, <i>and enough users involved in its creation</i>, it's conceivable that an adequate response to <a href="#orgc3beb22">the Meta-Crisis</a> could be realized.  
+But first, It may be necessary to provide some motivation for such a curious use of networking technology.  A single, top-level TODO list could exist for a group of agents of arbitrary size, representing these agents' common goals.  TODO items requiring more deliberation could be nested TODO lists themselves.  All lists and items could be curated through a combination of meritocratic and democratic selection processes.  Now, please suspend your skepticism for a moment and allow yourself to imagine a top-level reflecting the needs of all of humanity (condensed to 10 items), each being nested to a degree proportional to the depth of the problem to be solved.  It may have the appearance of a top-down list of orders, but in actuality consist of organically-grown units of wilful compliance, coming together through consensus.  It could benefit from the advantages of centalization (e.g. clarity of purpose and direction) and decentralization alike.  Given the ability to create such lists, <i>and enough users involved in its creation</i>, it's conceivable that an adequate response to <a href="#orga6cc88c">the Meta-Crisis</a> could be realized.  
 </p>
 
 <p>
-How do we get there?  How are TODO items to be prioritized?  Who can interact with them?  All of these rules may be enforced by <a href="#orgc626c22">proofs</a>.  The following illustrates some conditions that may be required of data consumable by client applications:
+How do we get there?  How are TODO items to be prioritized?  Who can interact with them?  All of these rules may be enforced by <a href="#org95ef976">proofs</a>.  The following illustrates some conditions that may be required of data consumable by client applications:
 </p>
 
 <div class="org-src-container">
@@ -410,7 +424,7 @@ How do we get there?  How are TODO items to be prioritized?  Who can interact wi
 * Only agents subscribing to the interpretation with which it is associated by perform these actions.
 </pre>
 </div>
-<div class="note" id="org35b5f24">
+<div class="note" id="orgfba60b3">
 <p>
 The above is written in natural language for sake of comprehensibility, but code examples are readily available
 </p>
@@ -423,9 +437,9 @@ We will develop this notion further using <i>goals</i>, which can subsume the TO
 </div>
 </div>
 
-<div id="outline-container-orge4175e4" class="outline-3">
-<h3 id="orge4175e4">The Goal Engine</h3>
-<div class="outline-text-3" id="text-orge4175e4">
+<div id="outline-container-org9aea13f" class="outline-3">
+<h3 id="org9aea13f">The Goal Engine</h3>
+<div class="outline-text-3" id="text-org9aea13f">
 <p>
 <b>UNMET NEEDS</b>
 </p>
@@ -460,9 +474,9 @@ the most natural result would be a goal object including references related to t
 <pre class="src src-txt">to learn algebra
 </pre>
 </div>
-<div class="note" id="orgf742604">
+<div class="note" id="org5526f9a">
 <p>
-The exact phrasing of these goals is unimportant; with the <a href="#orgf1da058">namespace</a>, we can define names that are functionally equivalent, and provide support for multiple languages.
+The exact phrasing of these goals is unimportant; with the <a href="#orgee21f45">namespace</a>, we can define names that are functionally equivalent, and provide support for multiple languages.
 </p>
 
 </div>
@@ -475,7 +489,7 @@ Overall, the point of making goals explicit is to flip the direction of the arro
 </p>
 
 
-<div id="org8f108b9" class="figure">
+<div id="orgc2b9600" class="figure">
 <p><object type="image/svg+xml" data="static/images/serve.svg" class="org-svg">
 Sorry, your browser does not support SVG.</object>
 </p>
@@ -500,7 +514,7 @@ Fast forward a few decades, and the information ecology is polluted beyond recov
 </blockquote>
 
 <p>
-At a deeper level, these are problems associated with information asymmetry, or one side of a communication knowing less than the other side.  The current state-of-the-art for addressing such problems seems to be the "like".  Unfortunately, such a primitive feedback mechanism isn't up to the task of putting skin in the game.  What is needed are subjective and objective ways of evaluating the integrity of signals, such that the signaller benefits or is penalized proportionally.  This is fulfilled by Unrival's <a href="#orgc1dde85">claim</a> object, which creates a public feedback receptacle that converges on accurate representations of real opinions.
+At a deeper level, these are problems associated with information asymmetry, or one side of a communication knowing less than the other side.  The current state-of-the-art for addressing such problems seems to be the "like".  Unfortunately, such a primitive feedback mechanism isn't up to the task of putting skin in the game.  What is needed are subjective and objective ways of evaluating the integrity of signals, such that the signaller benefits or is penalized proportionally.  This is fulfilled by Unrival's <a href="#orgeff536c">claim</a> object, which creates a public feedback receptacle that converges on accurate representations of real opinions.
 </p>
 
 <p>
@@ -522,9 +536,9 @@ We've already established some competitive advantages in using the Unrival Proto
 </div>
 </div>
 
-<div id="outline-container-org5493b98" class="outline-2">
-<h2 id="org5493b98">Objects</h2>
-<div class="outline-text-2" id="text-org5493b98">
+<div id="outline-container-orgf107c8b" class="outline-2">
+<h2 id="orgf107c8b">Objects</h2>
+<div class="outline-text-2" id="text-orgf107c8b">
 <p>
 As mentioned, Unrival is based on objects that improve the ability of agents to cooperate.  It accomplishes this by giving agents a language for finding common ground with others.  Underlying this is the assumption that agents may err or deceive while communicating about these objects.  Since trust is a prerequisite to effectual communication (and solving coordination problems), Unrival objects have this baked into them as vaults do security.
 </p>
@@ -537,9 +551,9 @@ Put simply, Unrival is a way of making sure objects are what they say they are. 
 There are two types of objects: simple and complex.
 </p>
 </div>
-<div id="outline-container-org618e769" class="outline-3">
-<h3 id="org618e769">Simple Objects</h3>
-<div class="outline-text-3" id="text-org618e769">
+<div id="outline-container-org3a1c6e8" class="outline-3">
+<h3 id="org3a1c6e8">Simple Objects</h3>
+<div class="outline-text-3" id="text-org3a1c6e8">
 <p>
 Simple objects are objects that are not composed of parts (i.e. references to further objects).  
 </p>
@@ -583,9 +597,9 @@ This is similar to an IP address in that it can be used to fetch data, but it al
 </ol>
 </div>
 
-<div id="outline-container-orgc9d8339" class="outline-4">
-<h4 id="orgc9d8339">Name</h4>
-<div class="outline-text-4" id="text-orgc9d8339">
+<div id="outline-container-org517011c" class="outline-4">
+<h4 id="org517011c">Name</h4>
+<div class="outline-text-4" id="text-org517011c">
 <p>
 A name is a simple object and a possibly non-unique, humanly-readable way of referring to other objects.
 </p>
@@ -610,9 +624,9 @@ A name is a simple object and a possibly non-unique, humanly-readable way of ref
 </div>
 </div>
 
-<div id="outline-container-org34e97a7" class="outline-4">
-<h4 id="org34e97a7">Interpretation</h4>
-<div class="outline-text-4" id="text-org34e97a7">
+<div id="outline-container-org6ae6c5f" class="outline-4">
+<h4 id="org6ae6c5f">Interpretation</h4>
+<div class="outline-text-4" id="text-org6ae6c5f">
 <p>
 An interpretation is a simple object and a hierarchical ordering of names, where levels are conventionally separated by slashes (/) and the bottom level comes last.
 </p>
@@ -623,19 +637,19 @@ An interpretation is a simple object and a hierarchical ordering of names, where
 </div>
 </div>
 
-<div id="outline-container-orgc626c22" class="outline-4">
-<h4 id="orgc626c22">Proof</h4>
-<div class="outline-text-4" id="text-orgc626c22">
+<div id="outline-container-org95ef976" class="outline-4">
+<h4 id="org95ef976">Proof</h4>
+<div class="outline-text-4" id="text-org95ef976">
 <p>
-A proof is a simple object which, given another object and in some <a href="#orgcd233c5">context</a>, is either satisfied by or not satisfied by this other object (represented by 1 or 0, respectively).
+A proof is a simple object which, given another object and in some <a href="#orgaaaca88">context</a>, is either satisfied by or not satisfied by this other object (represented by 1 or 0, respectively).
 </p>
 
 <p>
-Most of Unrival's advanced functionality is due to the ability of <a href="#orgce6e7c6">complex objects</a> to be <i>proved</i>.  Objects that are proved directly have their own proof part(s), while objects proved indirectly have a parent (and possibly other ancestors) with a number of proofs they must also satisfy:
+Most of Unrival's advanced functionality is due to the ability of <a href="#org353f8e2">complex objects</a> to be <i>proved</i>.  Objects that are proved directly have their own proof part(s), while objects proved indirectly have a parent (and possibly other ancestors) with a number of proofs they must also satisfy:
 </p>
 
 
-<div id="org44a1f59" class="figure">
+<div id="org89bd4f6" class="figure">
 <p><object type="image/svg+xml" data="static/images/proofs.svg" class="org-svg">
 Sorry, your browser does not support SVG.</object>
 </p>
@@ -660,8 +674,8 @@ To continue our example from above, we could require a direct proof of the dalma
 </div>
 </div>
 <ul class="org-ul">
-<li><a id="org356f4fe"></a>Direct Proof<br />
-<div class="outline-text-5" id="text-org356f4fe">
+<li><a id="org0fc03fe"></a>Direct Proof<br />
+<div class="outline-text-5" id="text-org0fc03fe">
 <p>
 Once we hash the above and add it as a part to the set of parts constituting our <i>dalmation</i>, we have the following:
 </p>
@@ -693,15 +707,15 @@ One more hash gives us the result: <code>QmWJwaDMcKgysTwC2qktH27eqYHHauNXHryhzTz
 </p>
 </div>
 </li>
-<li><a id="org86bf13c"></a>Indirect Proof<br />
-<div class="outline-text-5" id="text-org86bf13c">
+<li><a id="org732c314"></a>Indirect Proof<br />
+<div class="outline-text-5" id="text-org732c314">
 <p>
 Some objects do not contain explicit references to proofs.  Instead, they contain indirect references to other objects whose proofs they must satisfy.  
 </p>
 
 
-<div id="org13cc0bb" class="figure">
-<p><object type="image/svg+xml" data="indirect-proof-1.svg" class="org-svg">
+<div id="org62952d6" class="figure">
+<p><object type="image/svg+xml" data="static/images/indirect-proof-1.svg" class="org-svg">
 Sorry, your browser does not support SVG.</object>
 </p>
 </div>
@@ -710,7 +724,7 @@ Sorry, your browser does not support SVG.</object>
 This means that in order to come into existence, "dog" must satisfy both the animal proof and the mammal proof (in this case, it doesn't have its own proof, which means it is not progenerative):
 </p>
 
-<div id="orgd2990ad" class="figure">
+<div id="orga2b4b59" class="figure">
 <p><object type="image/svg+xml" data="static/images/indirect-proof-2.svg" class="org-svg">
 Sorry, your browser does not support SVG.</object>
 </p>
@@ -718,10 +732,10 @@ Sorry, your browser does not support SVG.</object>
 </div>
 </li>
 
-<li><a id="orgcbbd399"></a>Multiple Inheritance<br /></li>
+<li><a id="org27b51d1"></a>Multiple Inheritance<br /></li>
 
-<li><a id="orgd09ed55"></a>Root Proof<br />
-<div class="outline-text-5" id="text-orgd09ed55">
+<li><a id="org44f45e7"></a>Root Proof<br />
+<div class="outline-text-5" id="text-org44f45e7">
 <p>
 The properties of proofs described above are embodied in a single proof, called the <b>archetypal proof</b>.  
 </p>
@@ -755,9 +769,9 @@ A Python implementation relying on the <a href="https://github.com/unrival-proto
 </div>
 </div>
 
-<div id="outline-container-orgce6e7c6" class="outline-3">
-<h3 id="orgce6e7c6">Complex Objects</h3>
-<div class="outline-text-3" id="text-orgce6e7c6">
+<div id="outline-container-org353f8e2" class="outline-3">
+<h3 id="org353f8e2">Complex Objects</h3>
+<div class="outline-text-3" id="text-org353f8e2">
 <p>
 Complex objects are content-addressed arrays of <b>parts</b>.  For example, the following object has two parts:
 </p>
@@ -775,9 +789,9 @@ Complex objects are content-addressed arrays of <b>parts</b>.  For example, the 
 </pre>
 </div>
 </div>
-<div id="outline-container-orgcd233c5" class="outline-4">
-<h4 id="orgcd233c5">Context</h4>
-<div class="outline-text-4" id="text-orgcd233c5">
+<div id="outline-container-orgaaaca88" class="outline-4">
+<h4 id="orgaaaca88">Context</h4>
+<div class="outline-text-4" id="text-orgaaaca88">
 <p>
 A context is a complex object and a mapping from interpretations to addresses of other objects (referred to as their meanings).   
 </p>
@@ -816,7 +830,7 @@ The simplest possible context is the empty context:
 With the exception of the empty context, every complex object (including non-empty contexts) must reference a context, referred to as the parent context.  Context objects may reference multiple parents if they were created as the result of a merge.  Parent contexts determine how other objects referenced by the object in question should be interpreted.  To <i>interpret an object</i> means to look up the value assigned to a certain interpretation within a context.
 </p>
 
-<div class="note" id="orgf2eabd0">
+<div class="note" id="org365c42d">
 <p>
 Certain fields of an object, like address in the following, may be left out of examples when they are irrelevant.
 </p>
@@ -843,15 +857,15 @@ Certain fields of an object, like address in the following, may be left out of e
 
 
 
-<div id="outline-container-orgf1da058" class="outline-4">
-<h4 id="orgf1da058">Namespace</h4>
-<div class="outline-text-4" id="text-orgf1da058">
+<div id="outline-container-orgee21f45" class="outline-4">
+<h4 id="orgee21f45">Namespace</h4>
+<div class="outline-text-4" id="text-orgee21f45">
 <p>
 A <b>namespace</b> is a collection of names that can be considered equivalent for some purpose.  
 </p>
 
 
-<div id="orgf2a890a" class="figure">
+<div id="org51a9e2a" class="figure">
 <p><object type="image/svg+xml" data="static/images/namespace.svg" class="org-svg">
 Sorry, your browser does not support SVG.</object>
 </p>
@@ -859,28 +873,28 @@ Sorry, your browser does not support SVG.</object>
 </div>
 </div>
 
-<div id="outline-container-orgb598b76" class="outline-4">
-<h4 id="orgb598b76">Agent</h4>
+<div id="outline-container-org891c9ab" class="outline-4">
+<h4 id="org891c9ab">Agent</h4>
 </div>
-<div id="outline-container-orgd219f02" class="outline-4">
-<h4 id="orgd219f02">Outcome</h4>
-<div class="outline-text-4" id="text-orgd219f02">
-</div>
-<ul class="org-ul">
-<li><a id="org4bfcb36"></a><span class="todo TODO">TODO</span> define outcome<br /></li>
-</ul>
-</div>
-<div id="outline-container-orgc1dde85" class="outline-4">
-<h4 id="orgc1dde85">Claim</h4>
-<div class="outline-text-4" id="text-orgc1dde85">
+<div id="outline-container-org58fd17c" class="outline-4">
+<h4 id="org58fd17c">Outcome</h4>
+<div class="outline-text-4" id="text-org58fd17c">
 </div>
 <ul class="org-ul">
-<li><a id="org7ea0a8d"></a><span class="todo TODO">TODO</span> define claim<br /></li>
+<li><a id="org407286d"></a><span class="todo TODO">TODO</span> define outcome<br /></li>
 </ul>
 </div>
-<div id="outline-container-org1f6624c" class="outline-4">
-<h4 id="org1f6624c">Assessment</h4>
-<div class="outline-text-4" id="text-org1f6624c">
+<div id="outline-container-orgeff536c" class="outline-4">
+<h4 id="orgeff536c">Claim</h4>
+<div class="outline-text-4" id="text-orgeff536c">
+</div>
+<ul class="org-ul">
+<li><a id="org03b71d3"></a><span class="todo TODO">TODO</span> define claim<br /></li>
+</ul>
+</div>
+<div id="outline-container-orgec107f6" class="outline-4">
+<h4 id="orgec107f6">Assessment</h4>
+<div class="outline-text-4" id="text-orgec107f6">
 <blockquote>
 <p>
 “Never trust anyone who doesn’t have skin in the game. Without it, fools and crooks will benefit, and their mistakes will never come back to haunt them.” - Nassim Nicholas Taleb
@@ -888,22 +902,22 @@ Sorry, your browser does not support SVG.</object>
 </blockquote>
 </div>
 <ul class="org-ul">
-<li><a id="org7875cda"></a><span class="todo TODO">TODO</span> define assessment<br /></li>
+<li><a id="org223f2ec"></a><span class="todo TODO">TODO</span> define assessment<br /></li>
 </ul>
 </div>
-<div id="outline-container-org28cc298" class="outline-4">
-<h4 id="org28cc298">Iterator</h4>
+<div id="outline-container-org2dc5069" class="outline-4">
+<h4 id="org2dc5069">Iterator</h4>
 </div>
-<div id="outline-container-orgf730362" class="outline-4">
-<h4 id="orgf730362">Interface</h4>
+<div id="outline-container-orga7aa745" class="outline-4">
+<h4 id="orga7aa745">Interface</h4>
 </div>
-<div id="outline-container-org922ca99" class="outline-4">
-<h4 id="org922ca99">Promise</h4>
-<div class="outline-text-4" id="text-org922ca99">
+<div id="outline-container-org01c63df" class="outline-4">
+<h4 id="org01c63df">Promise</h4>
+<div class="outline-text-4" id="text-org01c63df">
 </div>
 <ul class="org-ul">
-<li><a id="org84d8218"></a><span class="todo TODO">TODO</span> define promise<br />
-<div class="outline-text-5" id="text-org84d8218">
+<li><a id="org45f2b0c"></a><span class="todo TODO">TODO</span> define promise<br />
+<div class="outline-text-5" id="text-org45f2b0c">
 <p>
 Of course, there are many ways to think about promises, some of them requiring no formalism or technology.  Our approach is meant to make promises applicable in many circumstances, and it starts with breaking promises into their component parts and making them interfaceable.  We call the component parts of a promise <i>objects</i>.  These are anything and everything that could be relevant to the management of promises.  In order to use them the way we want, as representations of complex human relationships, we have some criteria:    
 </p>
@@ -911,17 +925,17 @@ Of course, there are many ways to think about promises, some of them requiring n
 </li>
 </ul>
 </div>
-<div id="outline-container-orgb4a7f9f" class="outline-4">
-<h4 id="orgb4a7f9f">Goal</h4>
-<div class="outline-text-4" id="text-orgb4a7f9f">
+<div id="outline-container-org28eb51b" class="outline-4">
+<h4 id="org28eb51b">Goal</h4>
+<div class="outline-text-4" id="text-org28eb51b">
 </div>
 <ul class="org-ul">
-<li><a id="org2692fab"></a><span class="todo TODO">TODO</span> define goal<br /></li>
+<li><a id="org89a133f"></a><span class="todo TODO">TODO</span> define goal<br /></li>
 </ul>
 </div>
-<div id="outline-container-org113c7fa" class="outline-4">
-<h4 id="org113c7fa">Interface</h4>
-<div class="outline-text-4" id="text-org113c7fa">
+<div id="outline-container-orgfe65877" class="outline-4">
+<h4 id="orgfe65877">Interface</h4>
+<div class="outline-text-4" id="text-orgfe65877">
 <p>
 An <b>interface</b> is a complex object and a tree (nested set) of iterators.  
 </p>
@@ -949,9 +963,9 @@ This information alone is sufficient to define an interface in Unrival.
 </p>
 </div>
 </div>
-<div id="outline-container-org201230c" class="outline-4">
-<h4 id="org201230c">Action</h4>
-<div class="outline-text-4" id="text-org201230c">
+<div id="outline-container-org18f3562" class="outline-4">
+<h4 id="org18f3562">Action</h4>
+<div class="outline-text-4" id="text-org18f3562">
 <p>
 An <b>action</b> should be performable in order to produce a desired outcome, without error.  Because actions are tied to <i>ends</i> and not <i>means</i>, there may be several alternate ways to perform actions.  This is why <i>actions aggregate adapters and providers</i>.  
 </p>
@@ -977,57 +991,57 @@ may contain an aggregate of adapters representing these diverse means.  Means, a
 </p>
 </div>
 </div>
-<div id="outline-container-org2a54419" class="outline-4">
-<h4 id="org2a54419">Adapter</h4>
+<div id="outline-container-orgaed2307" class="outline-4">
+<h4 id="orgaed2307">Adapter</h4>
 </div>
 </div>
 
 
-<div id="outline-container-org5e1cded" class="outline-3">
-<h3 id="org5e1cded">More Complex Objects</h3>
-<div class="outline-text-3" id="text-org5e1cded">
+<div id="outline-container-org50cbf42" class="outline-3">
+<h3 id="org50cbf42">More Complex Objects</h3>
+<div class="outline-text-3" id="text-org50cbf42">
 </div>
-<div id="outline-container-org3410602" class="outline-4">
-<h4 id="org3410602">Iterator/Resource</h4>
+<div id="outline-container-org63ba034" class="outline-4">
+<h4 id="org63ba034">Iterator/Resource</h4>
 </div>
-<div id="outline-container-orgd48a9a2" class="outline-4">
-<h4 id="orgd48a9a2">Iterator/Role</h4>
+<div id="outline-container-orgcc80974" class="outline-4">
+<h4 id="orgcc80974">Iterator/Role</h4>
 </div>
-<div id="outline-container-orgcef5794" class="outline-4">
-<h4 id="orgcef5794">Iterator/Action</h4>
+<div id="outline-container-orgcb810c7" class="outline-4">
+<h4 id="orgcb810c7">Iterator/Action</h4>
 </div>
-<div id="outline-container-org2abb7d2" class="outline-4">
-<h4 id="org2abb7d2">Iterator/Strategy</h4>
+<div id="outline-container-orgec92d20" class="outline-4">
+<h4 id="orgec92d20">Iterator/Strategy</h4>
 </div>
-<div id="outline-container-org310bcfb" class="outline-4">
-<h4 id="org310bcfb">Iterator/Provider</h4>
+<div id="outline-container-orgbb1580a" class="outline-4">
+<h4 id="orgbb1580a">Iterator/Provider</h4>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org9c996e3" class="outline-2">
-<h2 id="org9c996e3">Implementation</h2>
-<div class="outline-text-2" id="text-org9c996e3">
+<div id="outline-container-org2b32d46" class="outline-2">
+<h2 id="org2b32d46">Implementation</h2>
+<div class="outline-text-2" id="text-org2b32d46">
 </div>
-<div id="outline-container-orgc53599b" class="outline-3">
-<h3 id="orgc53599b">Package</h3>
-<div class="outline-text-3" id="text-orgc53599b">
+<div id="outline-container-org09a13db" class="outline-3">
+<h3 id="org09a13db">Package</h3>
+<div class="outline-text-3" id="text-org09a13db">
 <p>
 <a href="https://github.com/unrival-protocol/unrival_py">link to Python package</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgc76f127" class="outline-3">
-<h3 id="orgc76f127">Server</h3>
-<div class="outline-text-3" id="text-orgc76f127">
+<div id="outline-container-orgd60b4df" class="outline-3">
+<h3 id="orgd60b4df">Server</h3>
+<div class="outline-text-3" id="text-orgd60b4df">
 <p>
 <a href="https://github.com/unrival-protocol/unrival_server">link to the server</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgea453a2" class="outline-3">
-<h3 id="orgea453a2">Client</h3>
-<div class="outline-text-3" id="text-orgea453a2">
+<div id="outline-container-org3ec8e33" class="outline-3">
+<h3 id="org3ec8e33">Client</h3>
+<div class="outline-text-3" id="text-org3ec8e33">
 <p>
 <a href="https://github.com/unrival-protocol/unrival_client">link to the client</a>   
 The purpose of the client is to map Unrival objects to interfaceable components, for example in a web application.
@@ -1037,51 +1051,51 @@ The purpose of the client is to map Unrival objects to interfaceable components,
 One function of the client is to help users visualize relations between objects.  The Unrival Client has two views:
 </p>
 </div>
-<div id="outline-container-org0092801" class="outline-4">
-<h4 id="org0092801">Router</h4>
-<div class="outline-text-4" id="text-org0092801">
+<div id="outline-container-org5dfd137" class="outline-4">
+<h4 id="org5dfd137">Router</h4>
+<div class="outline-text-4" id="text-org5dfd137">
 <p>
 A router maps a namespace to a web component.      
 </p>
 </div>
 </div>
-<div id="outline-container-org74dd7a3" class="outline-4">
-<h4 id="org74dd7a3">WebComponent</h4>
+<div id="outline-container-orgf7a0bb1" class="outline-4">
+<h4 id="orgf7a0bb1">WebComponent</h4>
 </div>
-<div id="outline-container-org3394a4f" class="outline-4">
-<h4 id="org3394a4f">Visualization</h4>
+<div id="outline-container-org2f6f6f3" class="outline-4">
+<h4 id="org2f6f6f3">Visualization</h4>
 </div>
-<div id="outline-container-org6e4341b" class="outline-4">
-<h4 id="org6e4341b">Detail View</h4>
+<div id="outline-container-org1aff09e" class="outline-4">
+<h4 id="org1aff09e">Detail View</h4>
 </div>
-<div id="outline-container-orge945b3e" class="outline-4">
-<h4 id="orge945b3e">Relation View</h4>
+<div id="outline-container-orgf832d59" class="outline-4">
+<h4 id="orgf832d59">Relation View</h4>
 </div>
-<div id="outline-container-org823a822" class="outline-4">
-<h4 id="org823a822">Search View</h4>
+<div id="outline-container-org794e7ed" class="outline-4">
+<h4 id="org794e7ed">Search View</h4>
 </div>
 </div>
 </div>
-<div id="outline-container-orge57a137" class="outline-2">
-<h2 id="orge57a137">An Example: The DACP</h2>
-<div class="outline-text-2" id="text-orge57a137">
+<div id="outline-container-orgae277dc" class="outline-2">
+<h2 id="orgae277dc">An Example: The DACP</h2>
+<div class="outline-text-2" id="text-orgae277dc">
 </div>
-<div id="outline-container-org0df3e6f" class="outline-3">
-<h3 id="org0df3e6f">Problem</h3>
-<div class="outline-text-3" id="text-org0df3e6f">
+<div id="outline-container-orgf34ebdf" class="outline-3">
+<h3 id="orgf34ebdf">Problem</h3>
+<div class="outline-text-3" id="text-orgf34ebdf">
 <p>
 Existing platforms offer regular consumers a chance to become producers and create value for themselves and others, but these platforms are run like any other large organizations under the hood.  For example, they fight to keep wages low and not to provide health insurance.  Thus, there are misaligned incentives between the platform offerer and prosumers.  A platform could be designed that cuts out the middleman &#x2013; i.e. the stakeholders whose demand for profit keeps wages low for those doing most of the physical labor &#x2013; by directly connecting the builders of the platform (designers, programmers, etc) with the users of the platform.  This has only become possible relatively recently with the advent of programmable money and decentralized, autonomous organizations (e.g. Ethereum, Aragon) - but the potential of this technology to revolutionize platform ecosystems hasn't yet been felt in service industries.  Unrival aims to change this by giving platform builders and platform users a channel for direct channel for value exchange.   
 </p>
 </div>
 </div>
-<div id="outline-container-org1ff27bc" class="outline-3">
-<h3 id="org1ff27bc">Solution</h3>
+<div id="outline-container-org829a82b" class="outline-3">
+<h3 id="org829a82b">Solution</h3>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: dvdgdnjsph@gmail.com</p>
-<p class="date">Created: 2021-09-02 Thu 15:20</p>
+<p class="date">Created: 2021-09-02 Thu 15:44</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
