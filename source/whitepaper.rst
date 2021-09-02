@@ -13,7 +13,7 @@ Unrival is a protocol that enables agents to cooperate more effectively on accom
 
 **UNIVERSAL FEEDBACK**
 
-Any thing about which certain properties can be confirmed or denied by third parties (be they humans or computer programs) is an eligible Unrival object.  This may leave out some things, such as first-person experiences or inherently falsifiable claims, but most things are included.  For example:
+Any thing about which certain properties can be confirmed or denied by third parties (be they humans or computer programs) is an eligible Unrival object.  This may leave out some things, such as first-person experiences or inherently falsifiable claims, but most things are included (including some things that are typically beyond the scope of doubt):
 
 - political parties
 
