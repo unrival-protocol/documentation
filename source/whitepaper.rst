@@ -105,7 +105,7 @@ For starters, take any impending crisis requiring mass cooperative effort to ave
 
 - proliferation of WMDs
 
-(*Sadly, what to include in this list will be considered a political statement by some. This gets at the root of what we call the meta-crisis...*)
+(*Sadly, what to include in this list will be considered a political statement by some. This illustrates our point.*)
 
 Each of the above crises (indeed, any crisis) is undergirded by a crisis of another order, thwarting our attempts to sensemake and respond rationally to the crisis at hand.  We call this the **meta-crisis**.  Just as the effects of global warming are apparent to anyone willing to look at the data, the effects of this crisis are also apparent in our global inability to respond adequately to the most pressing challenges.  And in order to respond adequately, we must regain the capacity to engage in civil dialogue with one another.  Yet, even as the physical environment gets warmer, the social environment `gets cooler <https://www.socialcooling.com/>`_.
 
@@ -132,6 +132,8 @@ We'll now shift our focus from problems to some historical attempts at solutions
 
   - Goals, whether their subscribers are conscious of them or not, already underlie every action we perform.  Many subpar group performances are due to the inability of group members to unite under the same goal, such that their individual efforts may be combined, instead of dissipating in directionlessness.
 
+
+**BUT FIRST, AN INTERNET OF TODO LISTS...**
 
 To make this last point more concrete, imagine what an *Internet of TODO lists* might look like:
 
@@ -207,7 +209,7 @@ There is much work to be done in designing mechanisms for incentivizing honesty,
 
 **SUPER APPS**
 
-So called "super apps" are growing in prevalence.  These apps encourage users to give up the struggle of choosing their own services by offering a single platform purportedly capable of everything.  Obviously this is cause for concern: we know by now that the corporations vying for our dependence have incentives misaligned with our own.  But we also see this trend as more or less inevitable.  An everything-platform is nothing if not convenient, and resistance may be futile.  Maybe there's a middle way: *to create a super app that elevates users' goals*.
+So called "super apps" are growing in prevalence.  These apps encourage users to give up the struggle of choosing their own services by offering a single platform capable of everything.  Obviously this is cause for concern: we know by now that the corporations vying for our dependence have incentives misaligned with our own.  But we also see this trend as more or less inevitable.  An everything-platform is nothing if not convenient, and resistance may be futile.  Maybe there's a middle way: *to create a super app that elevates users' goals*.
 
 We've already established some competitive advantages in using the Unrival Protocol.  We want to make it clear in the course of this paper that anything a user might accomplish with a super app is also doable on an Unrival client.  But most importantly, we feel it is imperative that such an app is produced so that the next generation of internet users won't have to choose between convenience and personal sovereignty.
 
@@ -493,8 +495,8 @@ Iterator/Promise
 TODO define assessment
 ::::::::::::::::::::::
 
-Goal
-^^^^
+Iterator/Goal
+^^^^^^^^^^^^^
 
 TODO define goal
 ::::::::::::::::
@@ -531,37 +533,8 @@ Client
 ~~~~~~
 
 `link to the client <https://github.com/unrival-protocol/unrival_client>`_   
-The purpose of the client is to map Unrival objects to interfaceable components, for example in a web application.
 
-One function of the client is to help users visualize relations between objects.  The Unrival Client has two views:
-
-Router
-^^^^^^
-
-A router maps a namespace to a web component.      
-
-WebComponent
-^^^^^^^^^^^^
-
-Visualization
-^^^^^^^^^^^^^
-
-Detail View
-^^^^^^^^^^^
-
-Relation View
-^^^^^^^^^^^^^
-
-Search View
-^^^^^^^^^^^
+The purpose of the client is to map Unrival objects to interfaceable web components.
 
 An Example: The DACP
 --------------------
-
-Problem
-~~~~~~~
-
-Existing platforms offer regular consumers a chance to become producers and create value for themselves and others, but these platforms are run like any other large organizations under the hood.  For example, they fight to keep wages low and not to provide health insurance.  Thus, there are misaligned incentives between the platform offerer and prosumers.  A platform could be designed that cuts out the middleman -- i.e. the stakeholders whose demand for profit keeps wages low for those doing most of the physical labor -- by directly connecting the builders of the platform (designers, programmers, etc) with the users of the platform.  This has only become possible relatively recently with the advent of programmable money and decentralized, autonomous organizations (e.g. Ethereum, Aragon) - but the potential of this technology to revolutionize platform ecosystems hasn't yet been felt in service industries.  Unrival aims to change this by giving platform builders and platform users a channel for direct channel for value exchange.   
-
-Solution
-~~~~~~~~
