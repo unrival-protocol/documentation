@@ -456,15 +456,16 @@ A **namespace** is a collection of names that can be considered equivalent for s
 Iterator
 ^^^^^^^^
 
-An **iterator** is a complex object containing at least one part with a ``next`` key pointing to an address.
+An **iterator** is a complex object containing at least one part with either:
+
+1. a ``next`` key pointing to the address of another iterator.
+
+2. a ``done`` key set to ``true`` to indicate that there are no further iterators.
 
 Interface
 ^^^^^^^^^
 
 An **interface** is a complex object and a tree (nested set) of iterators.
-
-
-An **interface** is a composition of a set of actions performable by some user(s).  For example, an interface may look like the following:
 
 .. code:: json
 
@@ -492,14 +493,8 @@ Iterator/Promise
 
     “Never trust anyone who doesn’t have skin in the game. Without it, fools and crooks will benefit, and their mistakes will never come back to haunt them.” - Nassim Nicholas Taleb
 
-TODO define assessment
-::::::::::::::::::::::
-
 Iterator/Goal
 ^^^^^^^^^^^^^
-
-TODO define goal
-::::::::::::::::
 
 Iterator/Resource
 ^^^^^^^^^^^^^^^^^
@@ -535,6 +530,3 @@ Client
 `link to the client <https://github.com/unrival-protocol/unrival_client>`_   
 
 The purpose of the client is to map Unrival objects to interfaceable web components.
-
-An Example: The DACP
---------------------
