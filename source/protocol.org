@@ -7,7 +7,7 @@
 
 e.g.
 
-#+begin_src org
+#+begin_src bash
 QmVRTb6yL9cajcHLeVG369zTMXXEgCiwW6qpcZHf3s1LMU
 #+end_src
 
@@ -17,13 +17,13 @@ QmVRTb6yL9cajcHLeVG369zTMXXEgCiwW6qpcZHf3s1LMU
 
 /Name:/
 
-#+begin_src org
+#+begin_src bash
 dog
 #+end_src
 
 /Address (distinct):/
 
-#+begin_src org
+#+begin_src bash
 QmXQKbAA75HTxiGQz3JJzzLgn2PJc7nRVM2jXPRJGGwK3Y
 #+end_src
 
@@ -31,7 +31,7 @@ QmXQKbAA75HTxiGQz3JJzzLgn2PJc7nRVM2jXPRJGGwK3Y
 
 e.g.
 
-#+begin_src org
+#+begin_src bash
 /animal/mammal/dog
 #+end_src
 
@@ -90,19 +90,19 @@ e.g.
 
 /dog, in the following:/
 
-#+begin_src org-mode
+#+begin_src bash
 /animal/mammal/dog
 #+end_src
 
 /inherits from:/
 
-#+begin_src org-mode
+#+begin_src bash
 mammal
 #+end_src
 
 /which in turn inherits from:/
 
-#+begin_src org-mode
+#+begin_src bash
 animal
 #+end_src
 

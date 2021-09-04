@@ -10,7 +10,7 @@ Protocol
 
 e.g.
 
-.. code:: org
+.. code:: bash
 
     QmVRTb6yL9cajcHLeVG369zTMXXEgCiwW6qpcZHf3s1LMU
 
@@ -20,13 +20,13 @@ e.g.
 
 *Name:*
 
-.. code:: org
+.. code:: bash
 
     dog
 
 *Address (distinct):*
 
-.. code:: org
+.. code:: bash
 
     QmXQKbAA75HTxiGQz3JJzzLgn2PJc7nRVM2jXPRJGGwK3Y
 
@@ -34,13 +34,13 @@ e.g.
 
 e.g.
 
-.. code:: org
+.. code:: bash
 
     /animal/mammal/dog
 
 4.1) If an object references an interpretation, then the bottom level can be considered its name (or one of its names).
 
-**5) A context is a complex object and a mapping from interpretations to addresses of other objects (these addresses being referred to as their meanings).**
+**5) A context is a complex object and a mapping from interpretations to addresses of other objects (referred to as their meanings).**
 
 e.g.
 
@@ -79,7 +79,7 @@ e.g.
 
 
 
-**6) A proof is a simple object which, given another object and in the context of some context, is either satisfied by or not satisfied by this other object (represented by 1 or 0, respectively).**
+**6) A proof is a simple object which, given another object and in some context, is either satisfied by or not satisfied by this other object (represented by 1 or 0, respectively).**
 
 6.1) If an object references a proof, it must satisfy this proof.
 
@@ -93,19 +93,19 @@ e.g.
 
 *dog, in the following:*
 
-.. code:: org-mode
+.. code:: bash
 
     /animal/mammal/dog
 
 *inherits from:*
 
-.. code:: org-mode
+.. code:: bash
 
     mammal
 
 *which in turn inherits from:*
 
-.. code:: org-mode
+.. code:: bash
 
     animal
 

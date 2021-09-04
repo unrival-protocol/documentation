@@ -13,7 +13,7 @@ Unrival is a protocol that enables agents to cooperate more effectively on accom
 
 **UNIVERSAL FEEDBACK**
 
-Any thing about which certain properties can be confirmed or denied by third parties (be they humans or computer programs) is an eligible Unrival object.  This may leave out some things, such as first-person experiences or inherently unfalsifiable claims, but most things are included (including some things that are typically beyond the scope of doubt):
+Any thing about which certain properties can be confirmed or denied by third parties (be they humans or computer programs) is an eligible Unrival object.  This may leave out some things, such as first-person experiences or inherently unfalsifiable claims, but most things are included - including things like:
 
 - political parties
 
@@ -31,11 +31,11 @@ With this protocol, the credibility of such things can be asserted by their prop
 
 Unbiased feedback is hard to come by.  Typical approaches, such as "likes" or "stars", have two major weaknesses:
 
-1. **lack of precision**: A one star review can be left on a product and there is no way of telling what, exactly, is being reviewed. (Is it the delivery service?  The manufacturer?  Their political views?  The reviewer is free to decide on a whim).
+1. **lack of precision**: A one star review can be left on a product and there is no way of telling what is being reviewed. (Is it the delivery service?  The manufacturer?  Their political views?  The reviewer is free to decide on a whim).
 
-2. **lack of skin in the game**: there is little to no accountability for reviewers leaving dishonest or inaccurate reviews, which makes leaving unfair reviews very cheap.
+2. **lack of skin in the game**: There is little to no accountability for reviewers leaving dishonest or inaccurate reviews.
 
-Unrival can make precise, accountable feedback mechanisms available where they are most needed (and their absence is most consequential).  It does this via *claims* and *assessments*, which will be explained in the section on complex objects.
+Unrival can make precise, accountable feedback mechanisms available where they are most needed (and their absence is most consequential).  It does this via *claims* and *assessments*, which will be explained in their respective sections.
 
 
 **RECTIFICATION OF NAMES**
@@ -124,7 +124,7 @@ We'll now shift our focus from problems to some historical attempts at solutions
 
 - The subjects of such claims (and the claims themselves) can be turned into Unrival objects, opening a feedback channel where none previously existed.  For agents, the strategic advantage gained thereby would be the ability to know whether these claims have been substantiated.
 
-- Naturally, not all objects have the potential to inspire dialogue with significant growth factor.  One particular object that may is the `Goal`_.  This is because:
+- Naturally, not all objects have the potential to inspire dialogue with significant growth factor.  One particular object that may is the goal.  This is because:
 
   - Individuals, especially those raised on social media, have a difficult time connecting with others in non-superficial ways.  This is largely a result of the media on which they coalesce; if platforms adopt the strategy of `limbic hijacking <https://www.fastcompany.com/1836569/hijacking-emotion-key-engaging-your-audience>`_ (which they must, in order to stay competitive), then their users' screen time will tend to increase to the detriment of their mental health.  Because humans have social needs, despite their social quarantining by "social" media, creating the illusion of social interaction is a significant value proposition for platforms.  Customers are all too willing to outsource their heretofore instinctual social bonding capacity to these platforms.  A way to share desires deeper than seeing the next Marvel movie is much needed in this meaning vacuum.  Thinking in terms of goals necessitates cognizance of desires or needs deeper to the surface-level behaviors these goals motivate.  Thus, an a social network based on an internet of goals could serve as a medium of meaningful human bonding.  *Would you rather connect with others who share the same goals as you, or with others who took the same clickbait?*  Today's social media platforms produce the latter.
 
@@ -141,7 +141,7 @@ But first, It may be necessary to provide some motivation for such a curious use
 
 How do we get there?  How are TODO items to be prioritized?  Who can interact with them?  All of these rules may be enforced by `Proof`_.  The following illustrates some conditions that may be required of data consumable by client applications:
 
-.. code:: txt
+.. code:: bash
 
     * A todo list is associated with an interpretation.
     * A todo list may have at most 10 todo items.
@@ -171,13 +171,13 @@ Moreover, we may already have the basis for such an affordance, given the goal o
 
 This would call for an upgraded search experience.  For starters, the text input field may be expecting the completion of the sentence **"I want ..."**, rather than being a self-invitation (on the part of search providers) to inundate with clickbait.  And what sort of resources would the user then be connected to?  For the goal:
 
-.. code:: txt
+.. code:: bash
 
     to learn calculus
 
 the most natural result would be a goal object including references related to the accomplishment of this goal (e.g. tutorials, courses, tutors, etc).  Furthermore, this goal, being a complex object, may contain references to pre-requisite goals:
 
-.. code:: txt
+.. code:: bash
 
     to learn algebra
 
@@ -201,7 +201,7 @@ Fast forward a few decades, and the information ecology is polluted beyond recov
 
     "A lie can travel around the world and back again while the truth is lacing up its boots." - Mark Twain
 
-At a deeper level, these are problems associated with information asymmetry, or one side of a communication knowing less than the other side.  The current state-of-the-art for addressing such problems seems to be the "like".  Unfortunately, such a primitive feedback mechanism isn't up to the task of putting skin in the game.  What is needed are subjective and objective ways of evaluating the integrity of signals, such that the signaller benefits or is penalized proportionally.  This is fulfilled by Unrival's `Claim`_ object, which creates a public feedback receptacle that converges on accurate representations of real opinions.
+At a deeper level, these are problems associated with information asymmetry, or one side of a communication knowing less than the other side.  The current state-of-the-art for addressing such problems seems to be the "like".  Unfortunately, such a primitive feedback mechanism isn't up to the task of putting skin in the game.  What is needed are subjective and objective ways of evaluating the integrity of signals, such that the signaller benefits or is penalized proportionally.  This is fulfilled by Unrival's claim object, which creates a public feedback receptacle converging on accurate representation of real opinions.
 
 There is much work to be done in designing mechanisms for incentivizing honesty, but we believe the infrastructure for doing so should start with the explication of claims and assessments, made possible by Unrival.
 
@@ -214,9 +214,19 @@ We've already established some competitive advantages in using the Unrival Proto
 Objects
 -------
 
-As mentioned, Unrival is based on objects that improve the ability of agents to cooperate.  It accomplishes this by giving agents a language for finding common ground with others.  Underlying this is the assumption that agents may err or deceive while communicating about these objects.  Since trust is a prerequisite to effectual communication (and solving coordination problems), Unrival objects have this baked into them as vaults do security.
+Unrival is based on shared objects that improve the ability of agents to cooperate.  It accomplishes this by giving agents a language that reflects reality.  Underlying this is the assumption that agents may err or deceive while communicating, and the medium of communication itself must have certain guard rails for facilitating faithful interaction.  
 
-Put simply, Unrival is a way of making sure objects are what they say they are.  In order to accomplish this, we make objects amenable to verification.  Objects reference *proofs*, either directly or indirectly, and these must be falsifiable.  A **proof** is a computer program that checks whether some object has certain properties.  A **claim** is like a proof that requires input from human agents, usually because the satisfiability criteria are subjective.  For example, a proof may require some integer stored at a certain address to be divisible by 3, while a claim can be made regarding this number's auspiciousness.  Since proofs can be arbitrarily complex, they can serve as the basis for inheritance and also for differentiating objects.
+Put simply, Unrival is a way of making sure objects are what they say they are.  In order to accomplish this, we make objects amenable to verification in a broad sense.  For subjective verification, objects reference *proofs*, either directly or indirectly, and these must be falsifiable.  A **proof** is a computer program that checks whether some object has certain properties.  A claim is like a proof that requires input from human agents, usually because the satisfiability criteria are subjective.  For example, a proof may require some integer stored at a certain address to be divisible by 3, while a claim can be made regarding this number's auspiciousness.  Since proofs can be arbitrarily complex, they can serve as the basis for inheritance and also for differentiating objects (where objects inherit proofs/claims from others).
+
+**Impermanence**
+
+What if we have some proof criteria we'd like to apply to some website?  We have a url pointing us to some data, and this should be enough to run a proof on, no?
+
+There are no guarantees that data located at a certain ip address won't change.  So we can prove something about it, but it could change immediately afterwards and our proof will be wrongly assuring us that we can trust the data at that location.  For this reason, we use content-based addresses, whereby data is strongly couple to its address.
+
+**Content-Based Addresses**
+
+A process called hashing can be used to create a unique signature from data that will always look the same, given the same input data.  We call this its **address**, and every object has one.
 
 There are two types of objects: simple and complex.
 
@@ -225,9 +235,6 @@ Simple Objects
 
 Simple objects are objects that are not composed of parts (i.e. references to further objects).  
 
-**Addresses**
-
-A process called hashing can be used to create a unique signature from data that will always look the same, given the same input data.  We call this its **address**, and every object has one.
 
 For example, hashing the data below:
 
@@ -244,7 +251,7 @@ For example, hashing the data below:
       }  
     ]
 
-using IPFS (which in turn uses the sha-256 hashing algorithm) produces the content-based address ``QmeDWRWMc3YoRKyueRAmqmJ3bVwD1oc74eVoEATtfdYJJh``.
+using IPFS (which in turn uses the sha-256 hashing algorithm) produces the content-based address ``QmcPfsZ9qVG74LRvDi4mGNjELsGbMbYGJaPQs39xd73MLc``.
 
 This is similar to an IP address in that it can be used to fetch data, but it also comes with certain advantages:
 
@@ -259,13 +266,13 @@ A name is a simple object and a possibly non-unique, humanly-readable way of ref
 
 *Name:*
 
-.. code:: txt
+.. code:: bash
 
     dog
 
 *Address (distinct):*
 
-.. code:: txt
+.. code:: bash
 
     QmXQKbAA75HTxiGQz3JJzzLgn2PJc7nRVM2jXPRJGGwK3Y
 
@@ -274,7 +281,7 @@ Interpretation
 
 An interpretation is a simple object and a hierarchical ordering of names, where levels are conventionally separated by slashes (/) and the bottom level comes last.
 
-.. code:: txt
+.. code:: bash
 
     /animal/mammal/dog
 
@@ -295,7 +302,7 @@ To continue our example from above, we could require a direct proof of the dalma
 
     from unrival_py import *
 
-    address = sys.argv[1] # could be equal to the above hash, for example (QmeDWRWMc3YoRKyueRAmqmJ3bVwD1oc74eVoEATtfdYJJh)
+    address = sys.argv[1] 
 
     object_string = read(address) # gets the data from the content-address
     parsed_object = parse(object_string) # converts the data into a python dictionary
@@ -335,17 +342,19 @@ Some objects do not contain explicit references to proofs.  Instead, they contai
 
 .. image:: static/images/indirect-proof-1.svg
 
-This means that in order to come into existence, "dog" must satisfy both the animal proof and the mammal proof (in this case, it doesn't have its own proof, which means it is not progenerative):
+This means that in order to be valid, "dog" must satisfy both the animal proof and the mammal proof (in this case, it doesn't have its own proof, which means it is not progenerative):
 
 .. image:: static/images/indirect-proof-2.svg
 
 Multiple Inheritance
 ::::::::::::::::::::
 
+It is possible for an object to declare multiple lines of ancestors.  For example, a person might be a father, a brother, and a policeman, and each of these things might have their own associated proofs, as well as their respective ancestors.
+
 Root Proof
 ::::::::::
 
-The properties of proofs described above are embodied in a single proof, called the **archetypal proof**.  
+All proof properties described above are embodied in a single proof, called the **root proof**.  
 
 A Python implementation relying on the `unrival\ :sub:`py`\ <https://github.com/unrival-protocol/unrival_py>`_ package is provided below:
 
@@ -388,7 +397,7 @@ Complex objects are content-addressed arrays of **parts**.  For example, the fol
 Context
 ^^^^^^^
 
-A context is a complex object and a mapping from interpretations to addresses of other objects (referred to as their meanings).   
+A context is a complex object and a mapping from interpretations to addresses of other objects (referred to as their values).   
 
 e.g.
 
@@ -398,7 +407,7 @@ e.g.
         {
             "interpretation": "/interpretation",
             "address": "QmWDd8Fc3hXevickhyxZqo5UhLJutWiJraNxjx4YCqnJ3m",
-            "meaning": "<address_of_another_object>"
+            "value": "<address_of_another_object>"
         }
     ]
 
@@ -414,7 +423,9 @@ The simplest possible context is the empty context:
     ]
 
 
-With the exception of the empty context, every complex object (including non-empty contexts) must reference a context, referred to as the parent context.  Context objects may reference multiple parents if they were created as the result of a merge.  Parent contexts determine how other objects referenced by the object in question should be interpreted.  To *interpret an object* means to look up the value assigned to a certain interpretation within a context.
+With the exception of the empty context, every complex object (including non-empty contexts) must reference a context, referred to as its parent context.  (Context objects created via a merge reference multiple parents contexts.)
+
+Parent contexts determine how other objects referenced by the object in question should be interpreted.  To *interpret an object* means to look up the value assigned to a certain interpretation within a context.
 
 .. note::
 
@@ -426,7 +437,7 @@ With the exception of the empty context, every complex object (including non-emp
         {
             "interpretation": "/interpretation",
             "address": "QmWDd8Fc3hXevickhyxZqo5UhLJutWiJraNxjx4YCqnJ3m",
-            "meaning": "<address_of_another_object>"
+            "value": "<address_of_another_object>"
         },
         {
             "interpretation": "/context"
@@ -440,55 +451,15 @@ A **namespace** is a collection of names that can be considered equivalent for s
 
 .. image:: static/images/namespace.svg
 
-Agent
-^^^^^
-
-Outcome
-^^^^^^^
-
-TODO define outcome
-:::::::::::::::::::
-
-Claim
-^^^^^
-
-TODO define claim
-:::::::::::::::::
-
-Assessment
-^^^^^^^^^^
-
-::
-
-    “Never trust anyone who doesn’t have skin in the game. Without it, fools and crooks will benefit, and their mistakes will never come back to haunt them.” - Nassim Nicholas Taleb
-
-TODO define assessment
-::::::::::::::::::::::
-
 Iterator
 ^^^^^^^^
 
-Interface
-^^^^^^^^^
-
-Promise
-^^^^^^^
-
-TODO define promise
-:::::::::::::::::::
-
-Of course, there are many ways to think about promises, some of them requiring no formalism or technology.  Our approach is meant to make promises applicable in many circumstances, and it starts with breaking promises into their component parts and making them interfaceable.  We call the component parts of a promise *objects*.  These are anything and everything that could be relevant to the management of promises.  In order to use them the way we want, as representations of complex human relationships, we have some criteria:    
-
-Goal
-^^^^
-
-TODO define goal
-::::::::::::::::
+An **iterator** is a complex object containing at least one part with a ``next`` key pointing to an address.
 
 Interface
 ^^^^^^^^^
 
-An **interface** is a complex object and a tree (nested set) of iterators.  
+An **interface** is a complex object and a tree (nested set) of iterators.
 
 
 An **interface** is a composition of a set of actions performable by some user(s).  For example, an interface may look like the following:
@@ -501,43 +472,32 @@ An **interface** is a composition of a set of actions performable by some user(s
         },
         {
             "interpretation": "/iterator",
+            "next": "some_address",
         },      
         {
             "interpretation": "/iterator",
+            "done": true
         }
     ]
-
-This information alone is sufficient to define an interface in Unrival.  
-
-Action
-^^^^^^
-
-An **action** should be performable in order to produce a desired outcome, without error.  Because actions are tied to *ends* and not *means*, there may be several alternate ways to perform actions.  This is why *actions aggregate adapters and providers*.  
-
-.. code:: json
-
-    [
-        {
-            "interpretation": "/action",
-            "label": "prototype"
-        },
-        {
-            "interpretation": "/provider",
-            "label": "pay bill",
-        },      
-        {
-            "interpretation": "/provider",
-            "labely": "check bill",
-        }
-    ]
-
-may contain an aggregate of adapters representing these diverse means.  Means, at this level, refers to a medium and not the provider of a medium.  In other words, given the action *pay bill*, one adapter (technically a *null* adapter) would allow you to pay in person, while another adapter would allow you to wire money from your bank account.  This leaves open the possibility for different providers to fulfill the transfer, which will be covered.
-
-Adapter
-^^^^^^^
 
 More Complex Objects
 ~~~~~~~~~~~~~~~~~~~~
+
+Iterator/Promise
+^^^^^^^^^^^^^^^^
+
+::
+
+    “Never trust anyone who doesn’t have skin in the game. Without it, fools and crooks will benefit, and their mistakes will never come back to haunt them.” - Nassim Nicholas Taleb
+
+TODO define assessment
+::::::::::::::::::::::
+
+Goal
+^^^^
+
+TODO define goal
+::::::::::::::::
 
 Iterator/Resource
 ^^^^^^^^^^^^^^^^^
