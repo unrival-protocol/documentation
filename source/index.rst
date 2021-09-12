@@ -15,6 +15,7 @@ Unrival Protocol
    gherkin
    development-milestones
    modules
+   unrival_cli
 
    
 

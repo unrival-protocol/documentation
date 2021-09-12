@@ -1,0 +1,1 @@
+An assessment is a [[complex-object]] that either verifies or invalidates a [[claim]].

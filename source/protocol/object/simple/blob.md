@@ -1,0 +1,1 @@
+A blob is a [[simple-object]] and container of unspecified data.

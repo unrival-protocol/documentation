@@ -1,0 +1,8 @@
+#+TITLE A Formal Language For Advertising
+
+* Introduction
+It's generally understood that whatever one sees in an ad shouldn't be taken at face value.  The fast food might look good on TV, but if you allow yourself to be swayed, you will probably take some issue with the depiction.
+
+What if there were a way to formally state something can be expected of an item that is being advertised?  To formally state something means to state it in such as way that it can be verified according to some agreed-upon definition.  To formally state that a burger is low-carb, for example, would require this term to be standardized somehow, making it verifiable.
+
+

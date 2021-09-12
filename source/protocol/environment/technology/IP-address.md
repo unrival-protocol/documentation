@@ -1,0 +1,1 @@
+An Internet Protocol address is a numerical label such as `192.0.2.1` that is connected to a computer network that uses the Internet Protocol for communication. An IP address serves two main functions: host or network interface identification and location addressing.
