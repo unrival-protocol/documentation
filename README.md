@@ -1,17 +1,17 @@
 
 # Table of Contents
 
--   [Introduction](#org7916692)
+-   [Introduction](#org4b8f91b)
 
 
 
-<a id="org7916692"></a>
+<a id="org4b8f91b"></a>
 
 # Introduction
 
 Unrival is a protocol for tracking the credibility of objects within a network, as defined by these objects on their own terms.  There is no top-down notion of credibility; instead, agents attach claims to objects to let other agents know what can be expected of them.  These claims are then assessed based on whether outcomes match expectations (which correlate strongly with claims).  Over time, the public record of claims and corresponding assessments creates a skin in the game mechanism for agents, whose good faith participation in the network is thus incentivized.
 
-To illustrate, consider a news article posted on the web.  News is supposed to be factual, relevant, and balanced, but these claims are mere implicit ideals; there's no way to hold a publication's feet to the fire when it misses the mark (and indeed, for many publications, this is a feature and not a bug).  When these ideals are made explicit via claims, however, accountability is possible.  Claims attached to objects in an Unrival network represent credibility that's been staked by stakeholders.  This is a signal to consuming agents that an object's quality is vouched for.  This allows consumers to find news based on 
+To illustrate, consider a news article posted on the web.  News is supposed to be factual, relevant, and balanced, but these claims are mere implicit ideals; there's no way to hold a publication's feet to the fire when it misses the mark (and indeed, for many publications, this is a feature and not a bug).  When these ideals are made explicit via claims, however, accountability is possible.  Claims attached to objects in an Unrival network represent credibility that's been staked by stakeholders.  This is a signal to consuming agents that an object's quality has been vouched for.  In this way, the criteria for promoting content are transparent and can serve attract consumption by overtly aligning with the interests of the consumers, rather than through exploitation.
 
 Not only are claims subject to assessment, but assessments are as well.  For example, if an agent leaves an unfair assessment for a certain product &#x2013; perhaps with an attached message indicating that this assessment is politically motivated &#x2013; then another agent is behooved to evaluate it as such, since their counter-assessment is more likely to be corroborated than the original assessment.  The justification for the counter-assessment would not be the political motivation of the original assessment, but rather its failure to faithfully assess the product *on its own terms* - i.e. according to what the creator or proponents of the object claim about it.  
 
