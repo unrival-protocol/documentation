@@ -1,44 +1,46 @@
 
 # Table of Contents
 
--   [Abstract](#orgcdf47f9)
--   [Overview](#org4006e73)
-    -   [Rectifying Names](#orge4dab81)
-    -   [Rectifying Observations](#org7d16240)
-        -   [First Order Observations](#org21a7be1)
-        -   [Second Order Observations](#orgd6fc978)
-    -   [Rectifying Values](#org3b45504)
-        -   [The Money to Reputation Pipeline](#org90b9eb5)
-        -   [Plugging the Pipeline](#org8cab881)
+-   [Abstract](#orgb47e107)
+-   [Overview](#orgf57f000)
+    -   [Rectifying Names](#orge8c598b)
+    -   [Rectifying Observations](#orgf3fe8ef)
+        -   [First-Order Observation](#org0562a2a)
+        -   [Second-Order Observation](#org84315d6)
+    -   [Rectifying Values](#org97a4530)
+        -   [The Money to Reputation Pipeline](#orgbd4c966)
+        -   [Plugging the Pipeline](#org11e7545)
 
 
 
-<a id="orgcdf47f9"></a>
+<a id="orgb47e107"></a>
 
 # Abstract
 
 Unrival is a protocol for tracking the credibility of objects within a network.  Credibility is not defined by a central authority, but rather by objects on their own terms.  Users of this protocol attach claims to objects they interact with in order to let their peers know what can be expected of such interactions.  These peers are then able to assess these claims based on whether outcomes match the expectations they engender.  Over time, the public record of claims and corresponding assessments creates *skin in the game* for participants, whose good faith participation in the network is thus incentivized.
 
 
-<a id="org4006e73"></a>
+<a id="orgf57f000"></a>
 
 # Overview
 
 
-<a id="orge4dab81"></a>
+<a id="orge8c598b"></a>
 
 ## Rectifying Names
 
-Roughly 2500 years ago, Confucius was asked what he would do if he were governor.  He would *rectify names*, he said, *to make words correspond with reality*.  Unrival can be seen as a technological strategy for accomplishing this.  
+Roughly 2500 years ago, Confucius was asked what he would do if he were governor.  He would *rectify names*, he said, *to make words correspond with reality*.  Unrival can be seen as a technological strategy for accomplishing this. Its approach is to address the underlying cause: *the signifier becomes misaligned with the signified when it is profitable for agents to use signs in such ways*.  Unrival creates a network of *objects* to represent names where intended significance is made explicit.  Objects representing properly given names tend to propagate, which has the effect of rectifying names within the confines of the network.  And due to the considerable value of economic agents' real opinions, this network has much potential to expand.  This is how Unrival intends to address the loss of authenticity.
 
 In the present, what we call *news* comes with a fixed set of associations, or implicit claims that make news *news*.  Whatever is deserving of the title should be relevant and factual, for starters.  Yet, as we're all aware, these descriptions hardly apply to much of what is commonly called news.  To rectify the name *news* would mean creating a mechanism whereby things justifiably bearing this name would tend to be reach readers over content exploiting weaknesses in human cognitive architecture for profit.
 
-Creating such a mechanism, such that it relies on the self-interest of individuals and not on starry-eyed ideology to take flight, is the focus of the next sections.
+Creating such a mechanism, such that it relies on the self-interest of individuals and not on starry-eyed idealism to take flight, is the focus of the next sections.
 
 
-<a id="org7d16240"></a>
+<a id="orgf3fe8ef"></a>
 
 ## Rectifying Observations
+
+Trends in communications technology are making the task of gauging true opinion ever more difficult.  If we consider some data points meant to reflect popular opinions, we can see they 
 
 The German sociologist Niklaus Luhmann distinguished between *First Order Observations*, whereby observers' assessments represent their personal reactions, and *Second Order Observations*, whereby observers' assessments are based on their projections of other observers' reactions.  A similar phenomenon was illustrated with an analogy to a beauty pageant by John Maynard Keynes in his *General Theory of Employment, Interest and Money*:
 
@@ -49,49 +51,47 @@ One key difference between our world and that of Confucius is the dominant role 
 What implications does this have for our project to rectify names?  Since we are describing a decentralized means of credibility accounting, we are dependent on the judgments of agents for pointing out naming (claim) discrepancies.  There are no authoritative standards for determining proper naming - instead, this is determined by the amount of corroboration agents' assessments receive.  In light of what we know about second-order observations, this may present a problem: it is theoretically possible for insincere opinions to be rewarded, if agents have reason to believe they will be corroborated.  This means we must find ways to encourage agents to engage in first order observation in order to maximize the effectiveness of our bottom-up method for rectifying names (i.e. consistently accounting for credibility).  We do so with the knowledge that basically all observations in our digital environments will be second-order; the challenge, then, is to extract *First Order Information* from Second Order Observations.  We will consider ways to achieve this below.
 
 
-<a id="org21a7be1"></a>
+<a id="org0562a2a"></a>
 
-### First Order Observations
+### First-Order Observation
 
--   By Decision Theory
+-   Decision Theory
 
     In his 1969 book *Convention*, philosopher David Lewis pointed out that agents told to go to random locations on a map will not choose locations randomly.  Some locations &#x2013; such as bridges &#x2013; will have inherent value that agents are likely to agree on, and be more likely to go to.  By extension, it is not the case that if you offer an agent $100, *should they happen to choose the same location as another agent on a map of N x N squares*, then their chances of success are 1 / N<sup>2</sup>.  (Equivalently: the expected value of this offer is > $100/N<sup>2</sup>).
     
-    A similar argument can be made to show that Unrival agents will stake their credibility on (i.e. assess) claims faithfully as a consequence of self interest.  There is one way to be right about a claim, but many ways to be wrong.  The one way of being right, in line with a true, first order observation, acts like a beacon on a map for self-interested agents to convene upon and profit.
+    A similar argument can be made to show that Unrival agents will stake their credibility on (i.e. assess) claims faithfully as a consequence of self interest.  There is one way to be right about a claim, but many ways to be wrong.  The one way of being right &#x2013; in line with unadulterated, first order observation &#x2013; acts like a beacon on a map for self-interested agents to convene upon and profit.
 
--   By Selective Anonymity
+-   Selective Anonymity
 
     When votes are made public (as in the case of congressional votes, for example), then voters are made more accountable for their votes.  But there is also a tradeoff: second-order observation &#x2013; voters considering how their votes will be perceived &#x2013; may cause voters to vote against their beliefs.  
     
-    Private votes are also problematic, as they 
+    Private votes are also problematic, as they can be cast against the interests of the public without accountability for the voter.  
     
-    Unrival's strategy is to internalize the external benefits (e.g. political legitimacy, campaign donations, etc.) that voters gain by voting in line with their public personas.  Ultimately, these things have a monetary value, and this value can also be derived from the value created for those affected by the vote (e.g. constituents).  
-    
-    Our protocol includes measures to prevent this, but we would also argue that it is unlikely to threaten the integrity of the system.    
+    Unrival's strategy is to internalize the external benefits (e.g. political legitimacy, campaign donations, etc.) that voters gain by voting for the purpose of image.  Ultimately, these things have a monetary value.
 
 
-<a id="orgd6fc978"></a>
+<a id="org84315d6"></a>
 
-### Second Order Observations
+### Second-Order Observation
 
-What role should second-order observations play in decentralized credibility accounting?  We may have created a feedback mechanism for correcting the giving of improper names, but we haven't yet addressed .  Agents
+What role, if any, should *second-order observations* play in a healthy informational ecosystem?  Citizens voting for representatives are playing such a role by observing the alleged first-order observers.  
 
-Not only are claims subject to assessment, but assessments are as well.  For example, if an agent leaves an unfair assessment for a certain product &#x2013; perhaps with an attached message indicating that this assessment is politically motivated &#x2013; then another agent is behooved to evaluate it as such, since their counter-assessment is more likely to be corroborated than the original assessment.  The justification for the counter-assessment would not be the political motivation of the original assessment, but rather its failure to faithfully assess the product *on its own terms* - i.e. according to what the creator or proponents of the object claim about it.      
+It seems such observations cause trouble when they are connected to agents' payoffs.  The senator who votes to preserve an image is calculating a personal payoff unrelated to the impact of their vote on constituents.  
 
 
-<a id="org3b45504"></a>
+<a id="org97a4530"></a>
 
 ## Rectifying Values
 
 
-<a id="org90b9eb5"></a>
+<a id="orgbd4c966"></a>
 
 ### The Money to Reputation Pipeline
 
 We use money as a medium of exchange - to communicate how much we value the things we exchange.  Money's advantage over commodities in this regard is its ability to make the notion of value abstract, so that those with whom we exchange musn't value particular objects the same way we do - they just have to agree to value *something*.  But this is a bug as well as a feature; it is also possible to put a price tag on things that work best when they are not saleable - like reputation, for instance.  This is what happens when a patron of an e-commerce site is browsing through textbooks and decides to buy the one with the most 5 star reviews, unaware of the fact that some authors promote their books by offering special benefits to five-star reviewers.  These reviewers are happy to oblige, since they have nothing to lose if their review eventually contributes to unrealistic expectations.  This is a consequence of money's boundless ability to fulfill any abstract purpose.  
 
 
-<a id="org8cab881"></a>
+<a id="org11e7545"></a>
 
 ### Plugging the Pipeline
 
