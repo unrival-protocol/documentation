@@ -1,31 +1,31 @@
 
 # Table of Contents
 
--   [Abstract](#orgaa45b6a)
--   [Overview](#org2964694)
-    -   [Rectifying Names](#org34e5635)
-    -   [Rectifying Observations](#org730eeeb)
-        -   [First-Order Observation](#org1eb395b)
-        -   [Second-Order Observation](#orgda5b063)
-    -   [Rectifying Values](#org37f7222)
-        -   [The Money to Reputation Pipeline](#org629456c)
-        -   [Plugging the Pipeline](#orgdf18540)
+-   [Abstract](#orgef9b4d6)
+-   [Overview](#orgbd786a1)
+    -   [Rectifying Names](#orgc25273c)
+    -   [Rectifying Observations](#orgfd67d56)
+        -   [First-Order Observation](#org25a186a)
+        -   [Second-Order Observation](#org179a28b)
+    -   [Rectifying Values](#org26c7a0c)
+        -   [The Money to Reputation Pipeline](#orgd800a3e)
+        -   [Plugging the Pipeline](#orgf0ba335)
 
 
 
-<a id="orgaa45b6a"></a>
+<a id="orgef9b4d6"></a>
 
 # Abstract
 
 Unrival is a protocol for tracking the credibility of objects within a network.  Credibility is not defined by a central authority, but rather by objects on their own terms.  Users of this protocol attach claims to objects they interact with in order to let their peers know what can be expected of such interactions.  These peers are then able to assess these claims based on whether outcomes match the expectations they engender.  Over time, the public record of claims and corresponding assessments creates *skin in the game* for participants, whose good faith participation in the network is thus incentivized.
 
 
-<a id="org2964694"></a>
+<a id="orgbd786a1"></a>
 
 # Overview
 
 
-<a id="org34e5635"></a>
+<a id="orgc25273c"></a>
 
 ## Rectifying Names
 
@@ -33,31 +33,35 @@ Roughly 2500 years ago, Confucius was asked what he would do if he were governor
 
 Unrival can be seen as a technological strategy for accomplishing this.  Though Confucius' program may seem impossibly abstract, Unrival is rooted in practical application, from building more effective ratings systems to enabling decentralized decision making to solving economic coordination problems.
 
-It starts by addressing the underlying cause Confucius may have been after: the name (the *signifier*) becomes misaligned with the reality (the *signified*) because this benefits someone - usually with influence.  Look no further than politics for examples: Does "support the troops" mean keeping troops out of harm's way, or sending them to war?  When the latter becomes the more common usage, it may indicate a misalignment between *name* and *reality* - which in turn points to there being a *someone* benefiting from this.
+It starts by addressing the underlying cause Confucius may have been after: the name (the *signifier*) becomes misaligned with the reality (the *signified*) because this benefits someone - usually with influence over how language is used.  Look no further than politics for examples: Does "support the troops" mean keeping troops out of harm's way, or sending them to war?  When the latter becomes the more common usage, it may indicate a misalignment between *name* and *reality* - which in turn points to there being a *someone* benefiting from this.
 
 In the present, what we call *news* comes with a fixed set of associations, or implicit claims that make news *news*.  Whatever is deserving of the title should be relevant and factual, for starters.  Yet, as we're all aware, these descriptions hardly apply to much of what is commonly called news.  To rectify the name *news* would mean creating a mechanism whereby things justifiably called news would tend to reach readers over content that abuses the name.  
 
-Creating such a mechanism, such that it relies on the self-interest of individuals and not on starry-eyed idealism to take flight, is the focus of the next sections.  To preview where we're headed: we shall describe a protocol for creating networks of connected resources (e.g. news articles, software repositories, e-commerce offers, or anything else we can give a *name*) with a feedback layer for eliciting honest opinion from network users.  The result is akin to the Web, but with built-in quality control.  Since the domain of things we give names to is becoming synonymous with the domain of things available over the web, we consider this a 21st century revival of Confucius' project.
+Creating such a mechanism, such that it relies on the self-interest of individuals and not on starry-eyed idealism to take flight, is the focus of the next sections.
+
+To preview where we're headed: we shall describe a protocol for creating networks of connected objects (e.g. news articles, software repositories, e-commerce offers, or anything else we can give a *name*) with a feedback layer for eliciting honest opinion from network users.  The result is akin to the Web, but with built-in quality control.  Since the domain of things we give names to is becoming synonymous with the domain of things available over the web, we consider this a 21st century revival of Confucius' project.
 
 
-<a id="org730eeeb"></a>
+<a id="orgfd67d56"></a>
 
 ## Rectifying Observations
 
-If we consider what it takes to assess public opinion on a matter, we may notice this task growing in difficulty as those with opinions become more aware of the opinions of others.
+If we consider what it takes to assess public opinion on a matter, we may notice this task growing in difficulty the more those with opinions are aware of the opinions of others.
 
-The German sociologist Nicholas Luhmann distinguished between *First Order Observations*, whereby observations lead to spontaneous reactions, and *Second Order Observations*, whereby observers react based on their projections of others' reactions.  John Maynard Keynes used a beauty pageant to illustrate this phenomenon in his *General Theory of Employment, Interest and Money*:
+The German sociologist Niklas Luhmann distinguished between *First Order Observations*, whereby observations lead to spontaneous reactions, and *Second Order Observations*, whereby observers react based on their projections of others' reactions.  John Maynard Keynes illustrated this phenomenon using a beauty pageant in his *General Theory of Employment, Interest and Money*:
 
 > It is not a case of choosing those [faces] that, to the best of one's judgment, are really the prettiest, nor even those that average opinion genuinely thinks the prettiest. We have reached the third degree where we devote our intelligences to anticipating what average opinion expects the average opinion to be. And there are some, I believe, who practice the fourth, fifth and higher degrees.
 
-One key difference between our world and that of Confucius, or Depression-era beauty pageants for that matter, is the supreme importance of second-order observation in informing our judgments.  To live in the digital age is to be immersed in the reactions of others.  We've gone from laugh tracks in 20th century sitcoms (*can I laugh now?*) to explicitly labeled *reaction videos* trending on Youtube.  The concept of watching someone watch a video meant to be watched by oneself would be puzzling indeed without an understanding of the growing prevalence of second order observation.
+One key difference between our world and that of Confucius, or Depression-era beauty pageants for that matter, is the supreme importance of second-order observations in informing our judgments.  To live in the digital age is to be immersed in the reactions of others.  We've gone from laugh tracks in 20th century sitcoms (*can I laugh now?*) to explicitly labeled *reaction videos* trending on Youtube.  The concept of watching someone watch a video meant to be watched by oneself would be puzzling indeed without an understanding of the growing prevalence of second order observation.
 
-What implications does this have for our project to rectify names?  Since we are describing a decentralized means of credibility accounting, we are dependent on the judgments of agents for pointing out naming discrepancies.  There are no authoritative standards for determining proper naming - instead, this is determined by the amount of corroboration agents' assessments receive.  In light of what we know about second-order observations, this may present a problem: it is theoretically possible for insincere opinions to be rewarded, if agents have reason to believe they will be corroborated.  Our system must therefore encourage agents to report their first order observations in order to maximize the effectiveness of our bottom-up strategy for credibility accounting (where credibility &#x2013; e.g of an interpretation &#x2013; isn't determined a central authority).  We do so with the knowledge that any observation mediated through a digital environment will be higher-order to some degree.  The challenge, then, is to extract *First Order Information* from Second/Higher Order Observations.  We will consider ways to achieve this below.
+What implications does this have for our project to rectify names?  Since we are describing a decentralized means of credibility accounting, we are dependent on the judgments of agents for pointing out naming discrepancies.  There are no authoritative standards for determining proper naming - instead, this is determined by the amount of corroboration agents' assessments receive.  In light of what we know about second-order observations, this may present a problem: it is theoretically possible for insincere opinions to be rewarded, if agents have reason to believe they will be corroborated.  Our system must therefore encourage agents to report their first order observations in order to maximize the effectiveness of our bottom-up strategy for credibility accounting (where credibility &#x2013; e.g of an interpretation &#x2013; isn't determined a central authority).  We do so with the knowledge that any observation mediated through a digital environment will be higher-order to some degree.  The challenge, then, is to extract *First Order Information* from Second/Higher Order Observations.
 
 
-<a id="org1eb395b"></a>
+<a id="org25a186a"></a>
 
 ### First-Order Observation
+
+In the following, we consider ways of finding the first-order signal, necessary to rectify names, in environments of second-order noise.
 
 -   Decision Theory
 
@@ -71,7 +75,7 @@ What implications does this have for our project to rectify names?  Since we are
     
     -   The Possibility of Collusion
     
-        Nonetheless, problems may still arise if agents have perfect knowledge of their peers' opinions, and can hold one another accountable in schemes of collusion.  It would be possible for agents to vouch against a justified claim and not be punished for this if they can effectively coordinate on this, in other words.  This becomes less tenable when the colluding agents have no knowledge of each other's actions.  Naturally, agents would prefer not to engage in risky behavior, but still reap the rewards of other agents having done so (a sort of inverse *Tragedy of the Commons*).  A system design that enables this undermines such collusion.  This goes to show that *varying the amount of information agents have of each other's actions* may be a useful strategy for incentivizing faithful opinion signalling - a precondition for the success of Unrival.
+        Nonetheless, problems may still arise if agents have perfect knowledge of their peers' opinions, and can hold one another accountable in colluding against reality.  It would be possible for agents to vouch against a justified claim and not be punished for this if they can effectively coordinate on this, in other words.  This becomes less tenable when the colluding agents have no knowledge of each other's actions.  Naturally, agents would prefer not to engage in risky behavior, but still reap the rewards of other agents having done so (a sort of inverse *Tragedy of the Commons*).  A system design that makes this inevitable undermines such schemes.  This goes to show that *varying the amount of information agents have of each other's actions* may be a useful strategy for incentivizing faithful opinion signalling - a precondition for the success of Unrival.
 
 -   Selective Anonymity
 
@@ -83,33 +87,33 @@ What implications does this have for our project to rectify names?  Since we are
     
         Private votes are also problematic: they can be cast against the interests of the public without accountability for the voter.  This is particularly a problem when it is possible for an influential minority to verify that votes were cast in their favor.  The vast majority of those impacted by the vote may not have enough information about votes cast to hold privately-cast voters accountable, but 
     
-    -   A Happy Compromise
+    -   A Compromise
     
         Unrival's strategy is to internalize the external benefits (e.g. political legitimacy, campaign donations, etc.) that voters gain by voting for the purpose of image.  Ultimately, these things have a monetary value.
 
 
-<a id="orgda5b063"></a>
+<a id="org179a28b"></a>
 
 ### Second-Order Observation
 
-What role, if any, should *second-order observations* play in a healthy information ecology?  Citizens voting for representatives are playing such a role by observing the actions of their theoretically first-order-observing representatives.
+What role, if any, should *second-order observations* play in a healthy information ecology?  Citizens voting for representatives are playing the role of ordained second-order observers of theoretically first-order-observing representatives.
 
-It seems such observations cause trouble when they are connected to agents' payoffs.  The senator who votes in contradiction to their beliefs in order to maintain an image is calculating a personal payoff apart from that of their constituents.  If this chance to benefit personally is taken away, we could expect votes more in line with beliefs.
+It seems such observations cause trouble when they are connected to agents' payoffs.  The senator who votes in contradiction to their beliefs in order to maintain an image is calculating a personal payoff apart from that incurred by their constituents.  If this chance to benefit personally is taken away, we could expect votes more in line with beliefs.
 
 
-<a id="org37f7222"></a>
+<a id="org26c7a0c"></a>
 
 ## Rectifying Values
 
 
-<a id="org629456c"></a>
+<a id="orgd800a3e"></a>
 
 ### The Money to Reputation Pipeline
 
 We use money as a medium of exchange - to communicate how much we value the things we exchange.  Money's advantage over commodities in this regard is its ability to make the notion of value abstract, so that those with whom we exchange musn't value particular objects the same way we do - they just have to agree to value *something*.  But this is a bug as well as a feature; it is also possible to put a price tag on things that work best when they are not saleable - like reputation, for instance.  This is what happens when a patron of an e-commerce site is browsing through textbooks and decides to buy the one with the most 5 star reviews, unaware of the fact that some authors promote their books by offering special benefits to five-star reviewers.  These reviewers are happy to oblige, since they have nothing to lose if their review eventually contributes to unrealistic expectations.  This is a consequence of money's boundless ability to fulfill any abstract purpose.  
 
 
-<a id="orgdf18540"></a>
+<a id="orgf0ba335"></a>
 
 ### Plugging the Pipeline
 
