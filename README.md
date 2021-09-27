@@ -1,51 +1,51 @@
 
 # Table of Contents
 
--   [Abstract](#orgeb987ba)
--   [Overview](#org373846c)
-    -   [Rectifying Names](#org2b2266a)
-        -   [The Mechanism](#org647469a)
-    -   [Rectifying Observations](#org3e87ab5)
-        -   [First-Order Observation](#org44382b6)
-        -   [Second-Order Observation](#orgd138ede)
-    -   [Rectifying Values](#org6138a93)
-        -   [The Money to Reputation Pipeline](#orgd9f3870)
-        -   [Plugging the Pipeline](#orgb9df944)
--   [Implementation](#org98d2696)
-    -   [Code vs Data](#org6492b50)
-    -   [Objects](#orga18bc5e)
-        -   [Simple Objects](#org689c1b1)
-        -   [Complex Objects](#org40ab102)
-    -   [Architecture](#orgf72d78e)
-        -   [Server](#org184754b)
-        -   [Client](#orgc92bcf8)
-        -   [Network](#orgc4a06f6)
--   [Application](#org4c6f094)
-    -   [Rating Systems](#org7405676)
-    -   [Decentralized Sensemaking](#org1b0ce2a)
-    -   [Coordination Problems](#orgc1e7b0d)
+-   [Abstract](#org499b313)
+-   [Overview](#org73852b4)
+    -   [Rectifying Names (正名)](#orgb6262e5)
+        -   [The Mechanism](#orgfcf45fc)
+    -   [Rectifying Observations](#org8a787b8)
+        -   [First-Order Observation](#org611c19c)
+        -   [Second-Order Observation](#org56711fa)
+    -   [Rectifying Values](#org7f352b7)
+        -   [The Money to Reputation Pipeline](#org97ca147)
+        -   [Plugging the Pipeline](#orgbe0fba2)
+-   [Implementation](#org52b3d5f)
+    -   [Code vs Data](#org81e3895)
+    -   [Objects](#orgbd01c2b)
+        -   [Simple Objects](#org79b65bc)
+        -   [Complex Objects](#org81cdaa2)
+    -   [Architecture](#orga061c63)
+        -   [Server](#org34185ba)
+        -   [Client](#orgc5c70ce)
+        -   [Network](#orgf34b1d1)
+-   [Application](#org3691dd3)
+    -   [Rating Systems](#org7086d2a)
+    -   [Decentralized Sensemaking](#orgc71ba57)
+    -   [Coordination Problems](#org7f5e0f8)
 
 
 
-<a id="orgeb987ba"></a>
+<a id="org499b313"></a>
 
 # Abstract
 
 Unrival is a protocol for tracking the credibility of objects within a network.  Credibility is not defined by a central authority, but rather by objects on their own terms.  Users of this protocol attach claims to objects they interact with in order to let their peers know what can be expected of such interactions.  These peers are then able to assess these claims based on whether outcomes match the expectations they engender.  Over time, the public record of claims and corresponding assessments creates *skin in the game* for participants, whose good faith participation in the network is thus incentivized.
 
 
-<a id="org373846c"></a>
+<a id="org73852b4"></a>
 
 # Overview
 
 
-<a id="org2b2266a"></a>
+<a id="orgb6262e5"></a>
 
-## Rectifying Names
+## Rectifying Names (正名)
 
 Roughly 2500 years ago, Confucius was asked what he would do if he were governor.  He would *rectify names*, he said, *to make words correspond with reality*.
 
-Unrival can be seen as a technological strategy for accomplishing this.  Whereas Confucius' project may seem impossibly abstract, Unrival is rooted in practical application - from building more effective [rating systems](#org7405676) to enabling decentralized sensemaking.
+Unrival can be seen as a technological strategy for accomplishing this.  Whereas Confucius' project may seem impossibly abstract, Unrival is rooted in practical application - from building more effective [rating systems](#org7086d2a) to enabling decentralized sensemaking.
 
 It starts by addressing the underlying cause Confucius may have been after: the name (the *signifier*) becomes misaligned with the reality (the *signified*) because this benefits someone - usually with influence over how language is used.  Look no further than politics for examples: Does "support the troops" mean keeping troops out of harm's way, or sending them to war?  When the latter becomes the more common usage, it may indicate a misalignment between *name* and *reality* - which in turn points to there being a *someone* benefiting from this.
 
@@ -56,14 +56,14 @@ Creating such a mechanism, such that it relies on the self-interest of individua
 To preview where we're headed:
 
 
-<a id="org647469a"></a>
+<a id="orgfcf45fc"></a>
 
 ### The Mechanism
 
 We shall describe a protocol for creating networks of connected objects (e.g. news articles, software repositories, e-commerce offers, or anything else we can give a *name*) that benefit from feedback by network users who are incentivized to offer their opinions honestly.  The result is akin to the Web, but with built-in quality control.  *Since the domain of things to which we give names to is becoming synonymous with the domain of things available over the web, we consider this a 21st century revival of Confucius' project*.
 
 
-<a id="org3e87ab5"></a>
+<a id="org8a787b8"></a>
 
 ## Rectifying Observations
 
@@ -78,7 +78,7 @@ One key difference between our world and that of Confucius, or Depression-era be
 What implications does this have for our project to rectify names?  Since we are describing a decentralized means of credibility accounting, we are dependent on the judgments of agents for pointing out naming discrepancies.  There are no authoritative standards for determining proper naming - instead, this is determined by the amount of corroboration agents' assessments receive.  In light of what we know about second-order observations, this may present a problem: it is theoretically possible for insincere opinions to be rewarded, if agents have reason to believe they will be corroborated.  Our system must therefore encourage agents to report their first order observations in order to maximize the effectiveness of our bottom-up strategy for credibility accounting (where credibility &#x2013; e.g of an interpretation &#x2013; isn't determined a central authority).  We do so with the knowledge that any observation mediated through a digital environment will be higher-order to some degree.  The challenge, then, is to extract *First Order Information* from Second/Higher Order Observations.
 
 
-<a id="org44382b6"></a>
+<a id="org611c19c"></a>
 
 ### First-Order Observation
 
@@ -125,7 +125,7 @@ In the following, we consider ways of finding the first-order signal, necessary 
             Unrival's strategy is to internalize the external benefits (e.g. political legitimacy, campaign donations, etc.) that voters gain by voting for the purpose of image.  Ultimately, these things have a monetary value.
 
 
-<a id="orgd138ede"></a>
+<a id="org56711fa"></a>
 
 ### Second-Order Observation
 
@@ -136,19 +136,19 @@ Citizens voting for representatives are playing the role of ordained second-orde
 It seems such observations cause trouble when they are connected to agents' payoffs.  The senator who votes in contradiction to their beliefs in order to maintain an image is calculating a personal payoff apart from that incurred by their constituents.  If this chance to benefit personally is taken away, we could expect votes more in line with beliefs.
 
 
-<a id="org6138a93"></a>
+<a id="org7f352b7"></a>
 
 ## Rectifying Values
 
 
-<a id="orgd9f3870"></a>
+<a id="org97ca147"></a>
 
 ### The Money to Reputation Pipeline
 
 We use money as a medium of exchange - to communicate how much we value the things we exchange.  Money's advantage over commodities in this regard is its ability to make the notion of value abstract, so that those with whom we exchange musn't value particular objects the same way we do - they just have to agree to value *something*.  But this is a bug as well as a feature; it is also possible to put a price tag on things that work best when they are not saleable - like reputation, for instance.  This is what happens when a patron of an e-commerce site is browsing through textbooks and decides to buy the one with the most 5 star reviews, unaware of the fact that some authors promote their books by offering special benefits to five-star reviewers.  These reviewers are happy to oblige, since they have nothing to lose if their review eventually contributes to unrealistic expectations.  This is a consequence of money's boundless ability to fulfill any abstract purpose.  
 
 
-<a id="orgb9df944"></a>
+<a id="orgbe0fba2"></a>
 
 ### Plugging the Pipeline
 
@@ -167,24 +167,24 @@ A context includes:
 The challenge we face is one of authenticity.  We'd like to rectify names to address the meta-crisis we find ourselves in - but doing so will require us to calibrate these names based on faithful judgments of what they should refer to.  Should an agent be rewarded for an honest exertion of mental effort to verify that a thing is what it claims to be, or should they be rewarded for predicting the conclusions others will come to, perhaps erroneously?  If we'd like to find a successful strategy for rectifying names, then we'd prefer the former.
 
 
-<a id="org98d2696"></a>
+<a id="org52b3d5f"></a>
 
 # Implementation
 
 
-<a id="org6492b50"></a>
+<a id="org81e3895"></a>
 
 ## Code vs Data
 
 Being a protocol, Unrival doesn't prescribe ways of implementing the dynamics we've described.
 
 
-<a id="orga18bc5e"></a>
+<a id="orgbd01c2b"></a>
 
 ## Objects
 
 
-<a id="org689c1b1"></a>
+<a id="org79b65bc"></a>
 
 ### Simple Objects
 
@@ -197,7 +197,7 @@ Being a protocol, Unrival doesn't prescribe ways of implementing the dynamics we
 -   Blob
 
 
-<a id="org40ab102"></a>
+<a id="org81cdaa2"></a>
 
 ### Complex Objects
 
@@ -214,42 +214,42 @@ Being a protocol, Unrival doesn't prescribe ways of implementing the dynamics we
 -   Context
 
 
-<a id="orgf72d78e"></a>
+<a id="orga061c63"></a>
 
 ## Architecture
 
 
-<a id="org184754b"></a>
+<a id="org34185ba"></a>
 
 ### Server
 
 
-<a id="orgc92bcf8"></a>
+<a id="orgc5c70ce"></a>
 
 ### Client
 
 
-<a id="orgc4a06f6"></a>
+<a id="orgf34b1d1"></a>
 
 ### Network
 
 
-<a id="org4c6f094"></a>
+<a id="org3691dd3"></a>
 
 # Application
 
 
-<a id="org7405676"></a>
+<a id="org7086d2a"></a>
 
 ## Rating Systems
 
 
-<a id="org1b0ce2a"></a>
+<a id="orgc71ba57"></a>
 
 ## Decentralized Sensemaking
 
 
-<a id="orgc1e7b0d"></a>
+<a id="org7f5e0f8"></a>
 
 ## Coordination Problems
 
